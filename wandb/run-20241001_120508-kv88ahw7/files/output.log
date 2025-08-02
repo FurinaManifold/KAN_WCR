@@ -1,0 +1,94 @@
+
+cfg_nn:{'dim': 1, 'widthk': 40, 'depthk': 1, 'grid': 5, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'KAN', 'width': 100, 'depth': 5}
+data:  torch.Size([11, 20000, 1]) tensor(3.5925, device='cuda:0') tensor(-3.8911, device='cuda:0')
+'sampleTestFunc_all' took 0.027664 s
+The model directory exists. Overwrite? True
+Epoch 3:   0%|          | 0/1 [00:00<?, ?it/s, v_num=ahw7, loss_step=0.888, loss_epoch=0.888]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 16.8 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+16.8 K    Trainable params
+0         Non-trainable params
+16.8 K    Total params
+
+
+
+
+
+
+
+
+
+
+
+Epoch 209: 100%|██████████| 1/1 [00:00<00:00,  8.93it/s, v_num=ahw7, loss_step=0.0268, loss_epoch=0.0284, val_residual=0.031, drift_error=0.321, diffusion_error=0.000, val_loss=0.321]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 479: 100%|██████████| 1/1 [00:00<00:00,  8.94it/s, v_num=ahw7, loss_step=0.0161, loss_epoch=0.0163, val_residual=0.0168, drift_error=0.314, diffusion_error=0.000, val_loss=0.314]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 799: 100%|██████████| 1/1 [00:00<00:00,  6.15it/s, v_num=ahw7, loss_step=0.0145, loss_epoch=0.0142, val_residual=0.0153, drift_error=0.321, diffusion_error=0.000, val_loss=0.321]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 989: 100%|██████████| 1/1 [00:00<00:00,  5.34it/s, v_num=ahw7, loss_step=0.0149, loss_epoch=0.0141, val_residual=0.0148, drift_error=0.329, diffusion_error=0.000, val_loss=0.329]
+
+Validation DataLoader 0:   0%|          | 0/1 [00:00<?, ?it/s]
+`Trainer.fit` stopped: `max_epochs=1000` reached.

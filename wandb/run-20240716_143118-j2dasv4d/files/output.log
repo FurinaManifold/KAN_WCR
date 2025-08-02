@@ -1,0 +1,111 @@
+data:  torch.Size([11, 20000, 1]) tensor(2.1271, device='cuda:0') tensor(-2.1785, device='cuda:0')
+'sampleTestFunc_all' took 0.017377 s
+gaussshape: torch.Size([300, 9, 20000, 1])
+The model directory exists. Overwrite? True
+Sanity Checking DataLoader 0:   0%|          | 0/1 [00:00<?, ?it/s]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 17.4 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+17.4 K    Trainable params
+0         Non-trainable params
+17.4 K    Total params
+
+Epoch 0:   0%|          | 0/1 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/ubuntu/myproject/wcr_neural_kan/main_pl.py", line 121, in <module>
+    main(config_file)
+  File "/home/ubuntu/myproject/wcr_neural_kan/main_pl.py", line 111, in main
+    trainer.fit(model, train_loader, val_loader)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 544, in fit
+    call._call_and_handle_interrupt(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/trainer/call.py", line 44, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 580, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 987, in _run
+    results = self._run_stage()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1033, in _run_stage
+    self.fit_loop.run()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/loops/fit_loop.py", line 205, in run
+    self.advance()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/loops/fit_loop.py", line 363, in advance
+    self.epoch_loop.run(self._data_fetcher)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/loops/training_epoch_loop.py", line 140, in run
+    self.advance(data_fetcher)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/loops/training_epoch_loop.py", line 250, in advance
+    batch_output = self.automatic_optimization.run(trainer.optimizers[0], batch_idx, kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/loops/optimization/automatic.py", line 190, in run
+    self._optimizer_step(batch_idx, closure)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/loops/optimization/automatic.py", line 268, in _optimizer_step
+    call._call_lightning_module_hook(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/trainer/call.py", line 157, in _call_lightning_module_hook
+    output = fn(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/core/module.py", line 1303, in optimizer_step
+    optimizer.step(closure=optimizer_closure)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/core/optimizer.py", line 152, in step
+    step_output = self._strategy.optimizer_step(self._optimizer, closure, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/strategies/strategy.py", line 239, in optimizer_step
+    return self.precision_plugin.optimizer_step(optimizer, model=model, closure=closure, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/plugins/precision/precision.py", line 122, in optimizer_step
+    return optimizer.step(closure=closure, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/torch/optim/lr_scheduler.py", line 75, in wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/torch/optim/optimizer.py", line 391, in wrapper
+    out = func(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/torch/optim/optimizer.py", line 76, in _use_grad
+    ret = func(self, *args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/torch/optim/adamw.py", line 165, in step
+    loss = closure()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/plugins/precision/precision.py", line 108, in _wrap_closure
+    closure_result = closure()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/loops/optimization/automatic.py", line 144, in __call__
+    self._result = self.closure(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/loops/optimization/automatic.py", line 129, in closure
+    step_output = self._step_fn()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/loops/optimization/automatic.py", line 318, in _training_step
+    training_step_output = call._call_strategy_hook(trainer, "training_step", *kwargs.values())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/trainer/call.py", line 309, in _call_strategy_hook
+    output = fn(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/strategies/strategy.py", line 391, in training_step
+    return self.lightning_module.training_step(*args, **kwargs)
+  File "/home/ubuntu/myproject/wcr_neural_kan/model/model.py", line 266, in training_step
+    residual = self(batch[0][0],'sgd')
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ubuntu/myproject/wcr_neural_kan/model/model.py", line 261, in forward
+    loss = self.model.compute_loss(x,mode)
+  File "/home/ubuntu/myproject/wcr_neural_kan/model/model.py", line 156, in compute_loss
+    diffusion_pred = self.net_diffusion(TX) # [t,sample, dim]
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ubuntu/myproject/wcr_neural_kan/model/net.py", line 92, in forward
+    return self.net(x.double())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/torch/nn/modules/container.py", line 217, in forward
+    input = module(input)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ubuntu/myproject/wcr_neural_kan/model/efkan.py", line 160, in forward
+    self.b_splines(x).view(x.size(0), -1),
+  File "/home/ubuntu/myproject/wcr_neural_kan/model/efkan.py", line 94, in b_splines
+    bases = ((x >= grid[:, :-1]) & (x < grid[:, 1:])).to(x.dtype)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 484.00 MiB. GPU

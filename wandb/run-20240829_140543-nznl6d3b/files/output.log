@@ -1,0 +1,89 @@
+
+cfg_nn:{'dim': 3, 'widthk': 30, 'depthk': 2, 'grid': 1, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.4, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'KAN', 'width': 100, 'depth': 5}
+data:  torch.Size([11, 30000, 3]) tensor(3.1139, device='cuda:0') tensor(-3.3571, device='cuda:0')
+'sampleTestFunc_all' took 0.031517 s
+The model directory exists. Overwrite? True
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 6.5 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+6.5 K     Trainable params
+0         Non-trainable params
+6.5 K     Total params
+0.026     Total estimated model params size (MB)
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 219: 100%|███████████| 1/1 [00:00<00:00,  7.97it/s, v_num=6d3b, loss_step=0.065, loss_epoch=0.0667, val_residual=0.067, drift_error=0.387, diffusion_error=0.0247, val_loss=0.412]
+
+
+
+
+Epoch 279: 100%|█████████| 1/1 [00:00<00:00,  7.96it/s, v_num=6d3b, loss_step=0.0648, loss_epoch=0.0667, val_residual=0.0656, drift_error=0.385, diffusion_error=0.0247, val_loss=0.410]
+
+
+Epoch 339: 100%|█████████| 1/1 [00:00<00:00,  7.98it/s, v_num=6d3b, loss_step=0.0619, loss_epoch=0.0611, val_residual=0.0648, drift_error=0.409, diffusion_error=0.0247, val_loss=0.434]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 579: 100%|██████████| 1/1 [00:00<00:00,  7.98it/s, v_num=6d3b, loss_step=0.0589, loss_epoch=0.0583, val_residual=0.063, drift_error=0.451, diffusion_error=0.0247, val_loss=0.476]
+
+
+
+
+
+
+
+Epoch 699: 100%|██████████| 1/1 [00:00<00:00,  7.96it/s, v_num=6d3b, loss_step=0.061, loss_epoch=0.0645, val_residual=0.0623, drift_error=0.465, diffusion_error=0.0247, val_loss=0.490]
+
+
+
+
+
+
+
+Epoch 819: 100%|██████████| 1/1 [00:00<00:00,  7.96it/s, v_num=6d3b, loss_step=0.0631, loss_epoch=0.0593, val_residual=0.062, drift_error=0.475, diffusion_error=0.0247, val_loss=0.500]
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 998:   0%|                 | 0/1 [00:00<?, ?it/s, v_num=6d3b, loss_step=0.0626, loss_epoch=0.0626, val_residual=0.0614, drift_error=0.489, diffusion_error=0.0247, val_loss=0.513]
+
+Epoch 999: 100%|█████████| 1/1 [00:00<00:00,  4.96it/s, v_num=6d3b, loss_step=0.0615, loss_epoch=0.0615, val_residual=0.0613, drift_error=0.485, diffusion_error=0.0247, val_loss=0.510]

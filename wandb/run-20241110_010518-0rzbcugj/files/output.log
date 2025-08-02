@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/myproject/wcr_neural_kan/medias.py", line 36, in <module>
+    drawfigures(args.config_file)
+  File "/home/ubuntu/myproject/wcr_neural_kan/medias.py", line 22, in drawfigures
+    net_diffusion.load_state_dict(checkpoint['model_state_dict'])
+NameError: name 'checkpoint' is not defined

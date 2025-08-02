@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/myproject/wcr_neural_kan/medias.py", line 73, in <module>
+    drawfigures(args.config_file)
+  File "/home/ubuntu/myproject/wcr_neural_kan/medias.py", line 65, in drawfigures
+    plot_error(drift,net_drift,diffusion,net_diffusion,'cuda',config['train']['plot_type'],config['data'])
+  File "/home/ubuntu/myproject/wcr_neural_kan/utils/plot.py", line 119, in plot_error
+    plot_distribution1(drift_fun,drift_net,diffusion_fun,diffusion_net,cfg_data)
+  File "/home/ubuntu/myproject/wcr_neural_kan/utils/plot.py", line 83, in plot_distribution1
+    data = dataset.get_data(plot_hist=True,logname="1ddata_plot_1") # t, sample_num ,dim
+  File "/home/ubuntu/myproject/wcr_neural_kan/data/GenerateData_fun.py", line 76, in get_data
+    plt.ylabel()
+TypeError: ylabel() missing 1 required positional argument: 'ylabel'

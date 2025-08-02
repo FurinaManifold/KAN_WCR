@@ -1,0 +1,114 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    python_version: 3.10.10
+    cli_version: 0.17.0
+    framework: lightning
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1744489801
+    t:
+      1:
+      - 1
+      - 5
+      - 9
+      - 53
+      - 55
+      - 103
+      2:
+      - 1
+      - 5
+      - 9
+      - 53
+      - 55
+      - 103
+      3:
+      - 2
+      - 7
+      - 13
+      - 23
+      - 63
+      4: 3.10.10
+      5: 0.17.0
+      8:
+      - 5
+      13: linux-x86_64
+    m:
+    - 1: drift_error
+      6:
+      - 3
+      7:
+      - 1
+seed:
+  desc: null
+  value: 42
+Project:
+  desc: null
+  value:
+    name: 1d_poly_KAN2_2_30_constdif
+    checkpoint: false
+    save: true
+    save_top_k: 1
+    erase: true
+    devices: 1
+    accelerator: gpu
+    PATH: /home/ubuntu/myproject/wcr_neural_kan/save_files
+    save_dir: 1d
+data:
+  desc: null
+  value:
+    dt: 0.001
+    sample: 20000
+    intervalradius: 1.5
+    sigma_init: 0.3
+    plotsample: 5
+    pltxlim: 3
+    dim: 1
+    nt: 4
+    start: 0.1
+    plotnt: 101
+    T: 1
+    plotT: 2
+    plot_path: /home/ubuntu/myproject/wcr_neural_kan/result1D
+    model: pdcd
+    frequency: 8
+train:
+  desc: null
+  value:
+    checkepoch: 10
+    sigma_init: 0.3
+    known_diffusion: false
+    plotstep: []
+    testfunction: gauss
+    gauss_number: 500
+    bump_number: 1000
+    sampling: SDE
+    LMM: LMM_3
+    sgd_ratio: 0.5
+    epochs: 1000
+    mean_samp_way: SDE_dist
+    var_samp_way: dist
+    error_type: uniform1d
+    plot_type: 1d
+    samp_coef:
+      lhs_ratio: 0.7
+      variance_min: 0.3
+      variance_max: 0.7
+NN:
+  desc: null
+  value:
+    dim: 1
+    widthk: 30
+    depthk: 2
+    grid: 2
+    activation: GeLU
+    lr: 0.01
+    gamma: 0.5
+    step_size: 200
+    weight_decay: 1.0e-05
+    iter: 2000
+    mode: KAN0
+    depth: 5
+    width: 100

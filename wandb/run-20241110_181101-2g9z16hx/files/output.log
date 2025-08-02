@@ -1,0 +1,67 @@
+cfg_nn:{'dim': 1, 'widthk': 30, 'depthk': 2, 'grid': 2, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'KAN', 'depth': 5, 'width': 100}
+data:  torch.Size([11, 20000, 1]) tensor(2.1591, device='cuda:0') tensor(-2.2868, device='cuda:0')
+'sampleTestFunc_all' took 0.017210 s
+Epoch 6: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 23.93it/s, v_num=16hx, loss_step=2.870, loss_epoch=2.870]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 6.7 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+6.7 K     Trainable params
+0         Non-trainable params
+6.7 K     Total params
+
+Epoch 49: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 11.34it/s, v_num=16hx, loss_step=0.183, loss_epoch=0.177, val_residual=0.226, drift_error=0.205, diffusion_error=0.000, val_loss=0.205]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 999: 100%|██████████████████████████████████| 1/1 [00:00<00:00,  7.34it/s, v_num=16hx, loss_step=0.0749, loss_epoch=0.0749, val_residual=0.0739, drift_error=0.0125, diffusion_error=0.000, val_loss=0.0125]
+save model done
+`Trainer.fit` stopped: `max_epochs=1000` reached.

@@ -1,0 +1,157 @@
+
+cfg_nn:{'dim': 2, 'widthk': 30, 'depthk': 2, 'grid': 3, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'KAN', 'width': 100, 'depth': 5}
+data:  torch.Size([11, 50000, 2]) tensor(5.8085, device='cuda:0') tensor(-5.8446, device='cuda:0')
+'sampleTestFunc_all' took 0.016703 s
+Epoch 1: 100%|██████████| 1/1 [00:00<00:00,  9.48it/s, v_num=cbin, loss_step=0.707, loss_epoch=0.707]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 8.2 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+8.2 K     Trainable params
+0         Non-trainable params
+8.2 K     Total params
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 169: 100%|██████████| 1/1 [00:00<00:00,  3.83it/s, v_num=cbin, loss_step=0.0712, loss_epoch=0.0793, val_residual=0.0665, drift_error=0.437, diffusion_error=0.000, val_loss=0.437]
+
+
+
+Epoch 199: 100%|██████████| 1/1 [00:00<00:00,  3.82it/s, v_num=cbin, loss_step=0.0656, loss_epoch=0.0702, val_residual=0.0613, drift_error=0.424, diffusion_error=0.000, val_loss=0.424]
+
+
+
+Epoch 229: 100%|██████████| 1/1 [00:00<00:00,  3.83it/s, v_num=cbin, loss_step=0.0609, loss_epoch=0.065, val_residual=0.0562, drift_error=0.384, diffusion_error=0.000, val_loss=0.384]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 689: 100%|██████████| 1/1 [00:00<00:00,  3.83it/s, v_num=cbin, loss_step=0.057, loss_epoch=0.052, val_residual=0.049, drift_error=0.256, diffusion_error=0.000, val_loss=0.256]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 997:   0%|          | 0/1 [00:00<?, ?it/s, v_num=cbin, loss_step=0.0559, loss_epoch=0.0559, val_residual=0.0481, drift_error=0.252, diffusion_error=0.000, val_loss=0.252]
+Epoch 999: 100%|██████████| 1/1 [00:00<00:00,  2.65it/s, v_num=cbin, loss_step=0.0543, loss_epoch=0.0543, val_residual=0.0481, drift_error=0.255, diffusion_error=0.000, val_loss=0.255]
+save model done

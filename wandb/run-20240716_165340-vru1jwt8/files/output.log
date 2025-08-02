@@ -1,0 +1,2 @@
+
+data:  torch.Size([11, 20000, 1]) tensor(3.5925, device='cuda:0') tensor(-3.8911, device='cuda:0')

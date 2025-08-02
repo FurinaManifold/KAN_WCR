@@ -1,0 +1,24 @@
+data:  torch.Size([11, 20000, 1]) tensor(3.5925, device='cuda:0') tensor(-3.8911, device='cuda:0')
+'sampleTestFunc_all' took 0.001326 s
+Sanity Checking DataLoader 0:   0%|          | 0/1 [00:00<?, ?it/s]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 20.8 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+20.8 K    Trainable params
+0         Non-trainable params
+20.8 K    Total params
+
+Epoch 39: 100%|██████████| 1/1 [00:00<00:00, 43.19it/s, v_num=67nq, loss_step=0.270, loss_epoch=0.323, val_residual=0.454, drift_error=0.941, diffusion_error=0.0061, val_loss=0.947]
+
+Epoch 99: 100%|██████████| 1/1 [00:00<00:00, 42.33it/s, v_num=67nq, loss_step=0.139, loss_epoch=0.143, val_residual=0.150, drift_error=0.761, diffusion_error=0.00314, val_loss=0.764]
+
+
+Epoch 309: 100%|██████████| 1/1 [00:00<00:00, 42.53it/s, v_num=67nq, loss_step=0.0207, loss_epoch=0.0208, val_residual=0.0191, drift_error=0.883, diffusion_error=0.011, val_loss=0.894]

@@ -1,0 +1,138 @@
+data:  torch.Size([11, 20000, 1]) tensor(4.8400, device='cuda:0') tensor(-3.7833, device='cuda:0')
+'sampleTestFunc_all' took 0.029396 s
+gaussshape: torch.Size([300, 9, 20000, 1])
+The model directory exists. Overwrite? True
+Sanity Checking DataLoader 0:   0%|          | 0/1 [00:00<?, ?it/s]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 2.4 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+2.4 K     Trainable params
+0         Non-trainable params
+2.4 K     Total params
+
+Epoch 9: 100%|██████████| 1/1 [00:00<00:00,  3.72it/s, v_num=k6xb, loss_step=0.845, loss_epoch=0.840]
+
+
+Epoch 29: 100%|██████████| 1/1 [00:00<00:00,  3.71it/s, v_num=k6xb, loss_step=0.698, loss_epoch=0.787, val_residual=0.815, drift_error=1.000, diffusion_error=0.00329, val_loss=1.000]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 129: 100%|██████████| 1/1 [00:00<00:00,  3.71it/s, v_num=k6xb, loss_step=0.238, loss_epoch=0.239, val_residual=0.377, drift_error=0.947, diffusion_error=0.00566, val_loss=0.952]
+
+
+Epoch 149: 100%|██████████| 1/1 [00:00<00:00,  3.70it/s, v_num=k6xb, loss_step=0.249, loss_epoch=0.268, val_residual=0.358, drift_error=0.942, diffusion_error=0.00231, val_loss=0.944]
+
+Epoch 159: 100%|██████████| 1/1 [00:00<00:00,  3.71it/s, v_num=k6xb, loss_step=0.185, loss_epoch=0.174, val_residual=0.229, drift_error=0.911, diffusion_error=0.0022, val_loss=0.913]
+
+
+Epoch 179: 100%|██████████| 1/1 [00:00<00:00,  3.71it/s, v_num=k6xb, loss_step=0.0887, loss_epoch=0.0909, val_residual=0.128, drift_error=0.881, diffusion_error=0.00109, val_loss=0.882]
+
+
+Epoch 199: 100%|██████████| 1/1 [00:00<00:00,  3.70it/s, v_num=k6xb, loss_step=0.0458, loss_epoch=0.0444, val_residual=0.0672, drift_error=0.760, diffusion_error=9.6e-5, val_loss=0.760]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 369: 100%|██████████| 1/1 [00:00<00:00,  3.72it/s, v_num=k6xb, loss_step=0.0169, loss_epoch=0.0166, val_residual=0.0179, drift_error=0.513, diffusion_error=7.19e-6, val_loss=0.513]
+
+
+Epoch 389: 100%|██████████| 1/1 [00:00<00:00,  3.71it/s, v_num=k6xb, loss_step=0.0156, loss_epoch=0.0147, val_residual=0.0153, drift_error=0.515, diffusion_error=1.09e-5, val_loss=0.515]
+
+
+
+
+Epoch 419: 100%|██████████| 1/1 [00:00<00:00,  3.71it/s, v_num=k6xb, loss_step=0.0123, loss_epoch=0.014, val_residual=0.014, drift_error=0.518, diffusion_error=1.33e-5, val_loss=0.518]
+
+
+Epoch 439: 100%|██████████| 1/1 [00:00<00:00,  3.70it/s, v_num=k6xb, loss_step=0.0125, loss_epoch=0.0132, val_residual=0.0135, drift_error=0.520, diffusion_error=1.25e-5, val_loss=0.520]
+
+
+
+
+Epoch 469: 100%|██████████| 1/1 [00:00<00:00,  3.71it/s, v_num=k6xb, loss_step=0.0137, loss_epoch=0.0121, val_residual=0.0129, drift_error=0.525, diffusion_error=1.13e-5, val_loss=0.525]
+
+
+Epoch 489: 100%|██████████| 1/1 [00:00<00:00,  3.71it/s, v_num=k6xb, loss_step=0.0117, loss_epoch=0.0123, val_residual=0.0126, drift_error=0.525, diffusion_error=1.06e-5, val_loss=0.525]
+
+Epoch 499: 100%|██████████| 1/1 [00:00<00:00,  3.71it/s, v_num=k6xb, loss_step=0.012, loss_epoch=0.0122, val_residual=0.0126, drift_error=0.527, diffusion_error=1.14e-5, val_loss=0.527]
+Validation DataLoader 0:   0%|          | 0/1 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/ubuntu/myproject/wcr_neural_kan/main_pl.py", line 122, in <module>
+    main(config_file)
+  File "/home/ubuntu/myproject/wcr_neural_kan/main_pl.py", line 112, in main
+    trainer.fit(model, train_loader, val_loader)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 544, in fit
+    call._call_and_handle_interrupt(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/trainer/call.py", line 44, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 580, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 987, in _run
+    results = self._run_stage()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1033, in _run_stage
+    self.fit_loop.run()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/loops/fit_loop.py", line 205, in run
+    self.advance()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/loops/fit_loop.py", line 363, in advance
+    self.epoch_loop.run(self._data_fetcher)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/loops/training_epoch_loop.py", line 141, in run
+    self.on_advance_end(data_fetcher)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/loops/training_epoch_loop.py", line 295, in on_advance_end
+    self.val_loop.run()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/loops/utilities.py", line 182, in _decorator
+    return loop_run(self, *args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/loops/evaluation_loop.py", line 135, in run
+    self._evaluation_step(batch, batch_idx, dataloader_idx, dataloader_iter)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/loops/evaluation_loop.py", line 396, in _evaluation_step
+    output = call._call_strategy_hook(trainer, hook_name, *step_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/trainer/call.py", line 309, in _call_strategy_hook
+    output = fn(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/strategies/strategy.py", line 412, in validation_step
+    return self.lightning_module.validation_step(*args, **kwargs)
+  File "/home/ubuntu/myproject/wcr_neural_kan/model/model.py", line 281, in validation_step
+    self.sample_gaussian()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1709, in __getattr__
+    raise AttributeError(f"'{type(self).__name__}' object has no attribute '{name}'")
+AttributeError: 'Model_pl' object has no attribute 'sample_gaussian'

@@ -1,0 +1,35 @@
+
+cfg_nn:{'dim': 1, 'widthk': 50, 'depthk': 1, 'grid': 3, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'DNN', 'depth': 5, 'width': 100}
+data:  torch.Size([11, 20000, 1]) tensor(2.1591, device='cuda:0') tensor(-2.2868, device='cuda:0')
+'sampleTestFunc_all' took 0.017021 s
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 20.8 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+20.8 K    Trainable params
+0         Non-trainable params
+20.8 K    Total params
+0.083     Total estimated model params size (MB)
+
+Epoch 209: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 42.10it/s, v_num=oosw, loss_step=0.0295, loss_epoch=0.0292, val_residual=0.0322, drift_error=0.210, diffusion_error=0.00428, val_loss=0.215]
+
+
+
+
+
+
+
+
+
+
+
+Epoch 986: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00, 41.63it/s, v_num=oosw, loss_step=0.027, loss_epoch=0.027, val_residual=0.0275, drift_error=0.142, diffusion_error=0.00453, val_loss=0.147]
+Epoch 999: 100%|████████████████████████████████████████| 1/1 [00:00<00:00, 19.98it/s, v_num=oosw, loss_step=0.0263, loss_epoch=0.0263, val_residual=0.0276, drift_error=0.148, diffusion_error=0.00446, val_loss=0.153]
+save model done

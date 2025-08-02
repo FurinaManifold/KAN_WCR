@@ -1,0 +1,10 @@
+
+cfg_nn:{'dim': 2, 'widthk': 50, 'depthk': 1, 'grid': 2, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'DNN', 'width': 100, 'depth': 5}
+Traceback (most recent call last):
+  File "/home/ubuntu/myproject/wcr_neural_kan/main_pl.py", line 128, in <module>
+    main(config_file)
+  File "/home/ubuntu/myproject/wcr_neural_kan/main_pl.py", line 53, in main
+    data = dataset.get_data(plot2d_hist=True,logname="2ddata_plot")
+  File "/home/ubuntu/myproject/wcr_neural_kan/data/GenerateData_fun.py", line 100, in get_data
+    ticklables[grid_size/2]='0'
+TypeError: list indices must be integers or slices, not float

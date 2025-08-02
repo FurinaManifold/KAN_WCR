@@ -1,0 +1,44 @@
+
+cfg_nn:{'dim': 1, 'widthk': 50, 'depthk': 1, 'grid': 3, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'DNN', 'depth': 5, 'width': 100}
+data:  torch.Size([11, 20000, 1]) tensor(2.1591, device='cuda:0') tensor(-2.2868, device='cuda:0')
+'sampleTestFunc_all' took 0.017344 s
+Sanity Checking DataLoader 0:   0%|          | 0/1 [00:00<?, ?it/s]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 10.4 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+10.4 K    Trainable params
+0         Non-trainable params
+10.4 K    Total params
+
+Epoch 179: 100%|██████████| 1/1 [00:00<00:00, 64.84it/s, v_num=28zx, loss_step=0.0689, loss_epoch=0.0726, val_residual=0.0738, drift_error=0.0635, diffusion_error=0.000, val_loss=0.0635]
+
+
+Epoch 489: 100%|██████████| 1/1 [00:00<00:00, 65.96it/s, v_num=28zx, loss_step=0.073, loss_epoch=0.0692, val_residual=0.0697, drift_error=0.0957, diffusion_error=0.000, val_loss=0.0957]
+
+
+
+Epoch 919: 100%|██████████| 1/1 [00:00<00:00, 66.23it/s, v_num=28zx, loss_step=0.0716, loss_epoch=0.0685, val_residual=0.0687, drift_error=0.226, diffusion_error=0.000, val_loss=0.226]
+
+Validation DataLoader 0:   0%|          | 0/1 [00:00<?, ?it/s]
+`Trainer.fit` stopped: `max_epochs=1000` reached.
+Traceback (most recent call last):
+  File "/home/ubuntu/myproject/wcr_neural_kan/main_pl.py", line 130, in <module>
+    main(config_file)
+  File "/home/ubuntu/myproject/wcr_neural_kan/main_pl.py", line 121, in main
+    torch.save(model, save_path)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/torch/serialization.py", line 627, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/torch/serialization.py", line 501, in _open_zipfile_writer
+    return container(name_or_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/torch/serialization.py", line 472, in __init__
+    super().__init__(torch._C.PyTorchFileWriter(self.name))
+
+RuntimeError: Parent directory ./modelckpts does not exist.

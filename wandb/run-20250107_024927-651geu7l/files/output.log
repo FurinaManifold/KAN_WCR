@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/myproject/wcr_neural_kan/medias.py", line 37, in <module>
+    drawfigures(args.config_file)
+  File "/home/ubuntu/myproject/wcr_neural_kan/medias.py", line 29, in drawfigures
+    plot_error(drift,net_drift,diffusion,net_diffusion,'cuda',config['train']['plot_type'],config['data'])
+  File "/home/ubuntu/myproject/wcr_neural_kan/utils/plot.py", line 116, in plot_error
+    plot_distribution1(drift_fun,drift_net,diffusion_fun,diffusion_net,cfg_data)
+  File "/home/ubuntu/myproject/wcr_neural_kan/utils/plot.py", line 84, in plot_distribution1
+    data = dataset.get_data(plot2d_hist=True,logname="2ddata_plot_1")
+  File "/home/ubuntu/myproject/wcr_neural_kan/data/GenerateData_fun.py", line 81, in get_data
+    plt.figure((14,10))
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/matplotlib/pyplot.py", line 1006, in figure
+    num = int(num)  # crude validation of num argument
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'tuple'

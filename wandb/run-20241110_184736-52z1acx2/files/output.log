@@ -1,0 +1,99 @@
+cfg_nn:{'dim': 1, 'widthk': 50, 'depthk': 1, 'grid': 2, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'KAN', 'depth': 5, 'width': 100}
+data:  torch.Size([11, 20000, 1]) tensor(2.1468, device='cuda:0') tensor(-2.2273, device='cuda:0')
+'sampleTestFunc_all' took 0.016676 s
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 19.4 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+19.4 K    Trainable params
+0         Non-trainable params
+19.4 K    Total params
+0.078     Total estimated model params size (MB)
+
+
+
+
+
+
+
+
+Epoch 119: 100%|████████████████████████████████| 1/1 [00:00<00:00,  6.67it/s, v_num=acx2, loss_step=0.0172, loss_epoch=0.0176, val_residual=0.0296, drift_error=0.0426, diffusion_error=0.000402, val_loss=0.043]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 749: 100%|██████████████████████████████| 1/1 [00:00<00:00,  6.65it/s, v_num=acx2, loss_step=0.0118, loss_epoch=0.0121, val_residual=0.0128, drift_error=0.00298, diffusion_error=8.86e-6, val_loss=0.00299]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 939: 100%|██████████████████████████████| 1/1 [00:00<00:00,  6.60it/s, v_num=acx2, loss_step=0.0121, loss_epoch=0.0114, val_residual=0.0127, drift_error=0.00301, diffusion_error=1.14e-5, val_loss=0.00302]
+
+
+
+
+Epoch 991: 100%|██████████████████████████████| 1/1 [00:00<00:00, 15.01it/s, v_num=acx2, loss_step=0.0112, loss_epoch=0.0112, val_residual=0.0127, drift_error=0.00302, diffusion_error=9.39e-6, val_loss=0.00303]
+Epoch 999: 100%|██████████████████████████████| 1/1 [00:00<00:00,  4.44it/s, v_num=acx2, loss_step=0.0115, loss_epoch=0.0115, val_residual=0.0127, drift_error=0.00287, diffusion_error=9.07e-6, val_loss=0.00288]
+save model done

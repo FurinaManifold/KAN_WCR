@@ -1,0 +1,40 @@
+
+cfg_nn:{'dim': 1, 'widthk': 80, 'depthk': 1, 'grid': 2, 'activation': 'GeLU', 'lr': 0.018, 'gamma': 0.4, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'DNN', 'width': 100, 'depth': 5}
+data:  torch.Size([11, 20000, 1]) tensor(2.1468, device='cuda:0') tensor(-2.2273, device='cuda:0')
+'sampleTestFunc_all' took 0.026851 s
+The model directory exists. Overwrite? True
+Epoch 9: 100%|██████████| 1/1 [00:00<00:00, 68.34it/s, v_num=py2l, loss_step=0.600, loss_epoch=1.090]
+Validation DataLoader 0:   0%|          | 0/1 [00:00<?, ?it/s]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 10.4 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+10.4 K    Trainable params
+0         Non-trainable params
+10.4 K    Total params
+
+Epoch 89: 100%|██████████| 1/1 [00:00<00:00, 69.56it/s, v_num=py2l, loss_step=0.0158, loss_epoch=0.0147, val_residual=0.0164, drift_error=0.0181, diffusion_error=0.000, val_loss=0.0181]
+
+Epoch 169: 100%|██████████| 1/1 [00:00<00:00, 69.92it/s, v_num=py2l, loss_step=0.013, loss_epoch=0.0158, val_residual=0.0158, drift_error=0.0164, diffusion_error=0.000, val_loss=0.0164]
+
+Epoch 249: 100%|██████████| 1/1 [00:00<00:00, 68.00it/s, v_num=py2l, loss_step=0.0116, loss_epoch=0.0116, val_residual=0.0131, drift_error=0.00652, diffusion_error=0.000, val_loss=0.00652]
+
+Epoch 369: 100%|██████████| 1/1 [00:00<00:00, 68.49it/s, v_num=py2l, loss_step=0.0119, loss_epoch=0.0119, val_residual=0.0128, drift_error=0.00752, diffusion_error=0.000, val_loss=0.00752]
+
+Epoch 649: 100%|██████████| 1/1 [00:00<00:00, 67.77it/s, v_num=py2l, loss_step=0.0118, loss_epoch=0.0109, val_residual=0.0125, drift_error=0.00611, diffusion_error=0.000, val_loss=0.00611]
+
+
+
+Epoch 879: 100%|██████████| 1/1 [00:00<00:00, 67.76it/s, v_num=py2l, loss_step=0.0117, loss_epoch=0.0117, val_residual=0.0124, drift_error=0.00613, diffusion_error=0.000, val_loss=0.00613]
+
+Epoch 959: 100%|██████████| 1/1 [00:00<00:00, 68.77it/s, v_num=py2l, loss_step=0.0116, loss_epoch=0.0114, val_residual=0.0124, drift_error=0.00602, diffusion_error=0.000, val_loss=0.00602]
+
+Validation DataLoader 0:   0%|          | 0/1 [00:00<?, ?it/s]
+`Trainer.fit` stopped: `max_epochs=1000` reached.

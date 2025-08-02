@@ -1,0 +1,26 @@
+
+cfg_nn:{'dim': 1, 'widthk': 80, 'depthk': 1, 'grid': 4, 'activation': 'GeLU', 'lr': 0.015, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'KAN', 'width': 100, 'depth': 5}
+data:  torch.Size([11, 430000, 1]) tensor(5.2425, device='cuda:0') tensor(-4.6208, device='cuda:0')
+'sampleTestFunc_all' took 0.031292 s
+Traceback (most recent call last):
+  File "/home/ubuntu/myproject/wcr_neural_kan/main_pl.py", line 125, in <module>
+    main(config_file)
+  File "/home/ubuntu/myproject/wcr_neural_kan/main_pl.py", line 65, in main
+    model = Model_pl(t = t,
+  File "/home/ubuntu/myproject/wcr_neural_kan/model/model.py", line 310, in __init__
+    self.model = Model( t = t,
+  File "/home/ubuntu/myproject/wcr_neural_kan/model/model.py", line 76, in __init__
+    self.sample_gaussian()
+  File "/home/ubuntu/myproject/wcr_neural_kan/model/model.py", line 124, in sample_gaussian
+    self.sampleTestFunc()
+  File "/home/ubuntu/myproject/wcr_neural_kan/model/model.py", line 147, in sampleTestFunc
+    self.testnp1_1 = testnp1(TX[1:-1], diff_order=1) #gauss,t-2,sample,dim
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ubuntu/myproject/wcr_neural_kan/model/test_fun.py", line 53, in forward
+    return self.gaussFirst(x, self.g0).to(self.device)
+  File "/home/ubuntu/myproject/wcr_neural_kan/model/test_fun.py", line 34, in gaussFirst
+    func[:, :, :, d] = -(x[:, :, d].unsqueeze(0) - self.mu[:, :, :, d])/self.sigma**2 * g0
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 4.33 GiB. GPU

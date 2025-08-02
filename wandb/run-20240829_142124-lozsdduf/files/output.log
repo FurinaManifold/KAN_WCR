@@ -1,0 +1,148 @@
+
+cfg_nn:{'dim': 3, 'widthk': 80, 'depthk': 1, 'grid': 2, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.4, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'KAN', 'width': 100, 'depth': 5}
+data:  torch.Size([11, 30000, 3]) tensor(3.4056, device='cuda:0') tensor(-3.7514, device='cuda:0')
+'sampleTestFunc_all' took 0.033678 s
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 48.2 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+48.2 K    Trainable params
+0         Non-trainable params
+48.2 K    Total params
+0.193     Total estimated model params size (MB)
+The model directory exists. Overwrite? True
+
+
+
+
+
+
+
+
+
+
+
+Epoch 99: 100%|████████████| 1/1 [00:00<00:00,  4.18it/s, v_num=dduf, loss_step=0.012, loss_epoch=0.0108, val_residual=0.0119, drift_error=0.481, diffusion_error=0.000, val_loss=0.481]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 369: 100%|███████| 1/1 [00:00<00:00,  4.19it/s, v_num=dduf, loss_step=0.00925, loss_epoch=0.00976, val_residual=0.00957, drift_error=0.333, diffusion_error=0.000, val_loss=0.333]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 529: 100%|███████| 1/1 [00:00<00:00,  4.20it/s, v_num=dduf, loss_step=0.00874, loss_epoch=0.00892, val_residual=0.00955, drift_error=0.321, diffusion_error=0.000, val_loss=0.321]
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 639: 100%|███████| 1/1 [00:00<00:00,  4.20it/s, v_num=dduf, loss_step=0.00849, loss_epoch=0.00909, val_residual=0.00952, drift_error=0.318, diffusion_error=0.000, val_loss=0.318]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 909: 100%|███████| 1/1 [00:00<00:00,  4.20it/s, v_num=dduf, loss_step=0.00919, loss_epoch=0.00911, val_residual=0.00951, drift_error=0.315, diffusion_error=0.000, val_loss=0.315]
+
+
+
+
+
+
+
+
+
+
+
+Epoch 997: 100%|███████| 1/1 [00:00<00:00, 10.30it/s, v_num=dduf, loss_step=0.00834, loss_epoch=0.00834, val_residual=0.00951, drift_error=0.316, diffusion_error=0.000, val_loss=0.316]
+
+Epoch 999: 100%|███████| 1/1 [00:00<00:00,  2.73it/s, v_num=dduf, loss_step=0.00935, loss_epoch=0.00935, val_residual=0.00952, drift_error=0.315, diffusion_error=0.000, val_loss=0.315]

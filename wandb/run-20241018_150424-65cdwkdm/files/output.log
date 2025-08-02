@@ -1,0 +1,112 @@
+cfg_nn:{'dim': 1, 'widthk': 20, 'depthk': 2, 'grid': 3, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'KAN', 'depth': 5, 'width': 100}
+data:  torch.Size([11, 50000, 1]) tensor(4.1357, device='cuda:0') tensor(-4.2942, device='cuda:0')
+'sampleTestFunc_all' took 0.046244 s
+The model directory exists. Overwrite? True
+Epoch 5: 100%|███████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 14.03it/s, v_num=wkdm, loss_step=40.50, loss_epoch=40.50]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 3.5 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+3.5 K     Trainable params
+0         Non-trainable params
+3.5 K     Total params
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 319: 100%|██████████| 1/1 [00:00<00:00,  5.88it/s, v_num=wkdm, loss_step=0.0281, loss_epoch=0.0288, val_residual=0.0312, drift_error=0.0198, diffusion_error=0.000, val_loss=0.0198]
+
+
+
+
+
+
+
+Epoch 409: 100%|████████████| 1/1 [00:00<00:00,  5.88it/s, v_num=wkdm, loss_step=0.0229, loss_epoch=0.0274, val_residual=0.0285, drift_error=0.016, diffusion_error=0.000, val_loss=0.016]
+
+
+
+
+
+
+
+
+
+
+Epoch 519: 100%|██████████| 1/1 [00:00<00:00,  5.88it/s, v_num=wkdm, loss_step=0.0237, loss_epoch=0.0266, val_residual=0.0271, drift_error=0.0143, diffusion_error=0.000, val_loss=0.0143]
+
+
+
+
+
+
+
+Epoch 609: 100%|██████████| 1/1 [00:00<00:00,  5.87it/s, v_num=wkdm, loss_step=0.0233, loss_epoch=0.0229, val_residual=0.0261, drift_error=0.0131, diffusion_error=0.000, val_loss=0.0131]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 999: 100%|███████████| 1/1 [00:00<00:00,  5.86it/s, v_num=wkdm, loss_step=0.021, loss_epoch=0.0219, val_residual=0.0246, drift_error=0.0114, diffusion_error=0.000, val_loss=0.0114]
+
+Validation DataLoader 0:   0%|                                                                                                                                      | 0/1 [00:00<?, ?it/s]
+`Trainer.fit` stopped: `max_epochs=1000` reached.

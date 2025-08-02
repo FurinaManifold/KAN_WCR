@@ -1,0 +1,92 @@
+2024-09-01 13:10:34,697 INFO    StreamThr :208197 [internal.py:wandb_internal():85] W&B internal server running at pid: 208197, started at: 2024-09-01 13:10:34.696507
+2024-09-01 13:10:34,703 DEBUG   HandlerThread:208197 [handler.py:handle_request():158] handle_request: status
+2024-09-01 13:10:34,705 INFO    WriterThread:208197 [datastore.py:open_for_write():87] open: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20240901_131034-mudmddpg/run-mudmddpg.wandb
+2024-09-01 13:10:34,706 DEBUG   SenderThread:208197 [sender.py:send():378] send: header
+2024-09-01 13:10:34,706 DEBUG   SenderThread:208197 [sender.py:send():378] send: run
+2024-09-01 13:10:35,669 INFO    SenderThread:208197 [dir_watcher.py:__init__():211] watching files in: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20240901_131034-mudmddpg/files
+2024-09-01 13:10:35,670 INFO    SenderThread:208197 [sender.py:_start_run_threads():1123] run started: mudmddpg with start time 1725167434.695576
+2024-09-01 13:10:35,684 DEBUG   HandlerThread:208197 [handler.py:handle_request():158] handle_request: check_version
+2024-09-01 13:10:35,685 DEBUG   SenderThread:208197 [sender.py:send_request():405] send_request: check_version
+2024-09-01 13:10:40,685 DEBUG   HandlerThread:208197 [handler.py:handle_request():158] handle_request: keepalive
+2024-09-01 13:10:40,688 DEBUG   HandlerThread:208197 [handler.py:handle_request():158] handle_request: status_report
+2024-09-01 13:10:40,698 DEBUG   HandlerThread:208197 [handler.py:handle_request():158] handle_request: run_start
+2024-09-01 13:10:40,710 DEBUG   HandlerThread:208197 [system_info.py:__init__():26] System info init
+2024-09-01 13:10:40,710 DEBUG   HandlerThread:208197 [system_info.py:__init__():41] System info init done
+2024-09-01 13:10:40,710 INFO    HandlerThread:208197 [system_monitor.py:start():194] Starting system monitor
+2024-09-01 13:10:40,711 INFO    SystemMonitor:208197 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-09-01 13:10:40,711 INFO    HandlerThread:208197 [system_monitor.py:probe():214] Collecting system info
+2024-09-01 13:10:40,714 INFO    SystemMonitor:208197 [interfaces.py:start():188] Started cpu monitoring
+2024-09-01 13:10:40,716 INFO    SystemMonitor:208197 [interfaces.py:start():188] Started disk monitoring
+2024-09-01 13:10:40,720 INFO    SystemMonitor:208197 [interfaces.py:start():188] Started gpu monitoring
+2024-09-01 13:10:40,722 INFO    SystemMonitor:208197 [interfaces.py:start():188] Started memory monitoring
+2024-09-01 13:10:40,723 INFO    SystemMonitor:208197 [interfaces.py:start():188] Started network monitoring
+2024-09-01 13:10:40,740 DEBUG   HandlerThread:208197 [system_info.py:probe():150] Probing system
+2024-09-01 13:10:40,743 DEBUG   HandlerThread:208197 [system_info.py:_probe_git():135] Probing git
+2024-09-01 13:10:40,751 DEBUG   HandlerThread:208197 [system_info.py:_probe_git():143] Probing git done
+2024-09-01 13:10:40,751 DEBUG   HandlerThread:208197 [system_info.py:probe():198] Probing system done
+2024-09-01 13:10:40,751 DEBUG   HandlerThread:208197 [system_monitor.py:probe():223] {'os': 'Linux-5.4.0-177-generic-x86_64-with-glibc2.31', 'python': '3.10.10', 'heartbeatAt': '2024-09-01T05:10:40.740555', 'startedAt': '2024-09-01T05:10:34.688477', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/ubuntu/myproject/wcr_neural_kan/main_pl.py', 'codePathLocal': 'main_pl.py', 'codePath': 'main_pl.py', 'git': {'remote': 'https://github.com/yl602019618/wcr_neural.git', 'commit': '0fa8d1652fe055eb7fa093c95a8e9635528512b3'}, 'email': '18888799166@163.com', 'root': '/home/ubuntu/myproject/wcr_neural_kan', 'host': 'ml-ubuntu20-04-desktop-v1-0-108gb-25m', 'username': 'ubuntu', 'executable': '/opt/miniconda3/bin/python', 'cpu_count': 22, 'cpu_count_logical': 22, 'cpu_freq': {'current': 2794.699999999999, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2794.7, 'min': 0.0, 'max': 0.0}, {'current': 2794.7, 'min': 0.0, 'max': 0.0}, {'current': 2794.7, 'min': 0.0, 'max': 0.0}, {'current': 2794.7, 'min': 0.0, 'max': 0.0}, {'current': 2794.7, 'min': 0.0, 'max': 0.0}, {'current': 2794.7, 'min': 0.0, 'max': 0.0}, {'current': 2794.7, 'min': 0.0, 'max': 0.0}, {'current': 2794.7, 'min': 0.0, 'max': 0.0}, {'current': 2794.7, 'min': 0.0, 'max': 0.0}, {'current': 2794.7, 'min': 0.0, 'max': 0.0}, {'current': 2794.7, 'min': 0.0, 'max': 0.0}, {'current': 2794.7, 'min': 0.0, 'max': 0.0}, {'current': 2794.7, 'min': 0.0, 'max': 0.0}, {'current': 2794.7, 'min': 0.0, 'max': 0.0}, {'current': 2794.7, 'min': 0.0, 'max': 0.0}, {'current': 2794.7, 'min': 0.0, 'max': 0.0}, {'current': 2794.7, 'min': 0.0, 'max': 0.0}, {'current': 2794.7, 'min': 0.0, 'max': 0.0}, {'current': 2794.7, 'min': 0.0, 'max': 0.0}, {'current': 2794.7, 'min': 0.0, 'max': 0.0}, {'current': 2794.7, 'min': 0.0, 'max': 0.0}, {'current': 2794.7, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 96.73210144042969, 'used': 72.06729125976562}}, 'gpu': 'NVIDIA GeForce RTX 4090', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4090', 'memory_total': 25757220864}, {'name': 'NVIDIA GeForce RTX 4090', 'memory_total': 25757220864}], 'memory': {'total': 106.20393753051758}}
+2024-09-01 13:10:40,751 INFO    HandlerThread:208197 [system_monitor.py:probe():224] Finished collecting system info
+2024-09-01 13:10:40,751 INFO    HandlerThread:208197 [system_monitor.py:probe():227] Publishing system info
+2024-09-01 13:10:40,751 DEBUG   HandlerThread:208197 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-09-01 13:10:41,571 DEBUG   HandlerThread:208197 [system_info.py:_save_conda():222] Saving conda packages done
+2024-09-01 13:10:41,572 INFO    HandlerThread:208197 [system_monitor.py:probe():229] Finished publishing system info
+2024-09-01 13:10:41,576 DEBUG   SenderThread:208197 [sender.py:send():378] send: files
+2024-09-01 13:10:41,576 INFO    SenderThread:208197 [sender.py:_save_file():1389] saving file wandb-metadata.json with policy now
+2024-09-01 13:10:41,674 INFO    Thread-12 :208197 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20240901_131034-mudmddpg/files/wandb-metadata.json
+2024-09-01 13:10:41,675 INFO    Thread-12 :208197 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20240901_131034-mudmddpg/files/conda-environment.yaml
+2024-09-01 13:10:41,685 DEBUG   HandlerThread:208197 [handler.py:handle_request():158] handle_request: python_packages
+2024-09-01 13:10:41,686 DEBUG   HandlerThread:208197 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-01 13:10:41,687 DEBUG   SenderThread:208197 [sender.py:send_request():405] send_request: python_packages
+2024-09-01 13:10:41,688 DEBUG   SenderThread:208197 [sender.py:send_request():405] send_request: stop_status
+2024-09-01 13:10:42,318 DEBUG   SenderThread:208197 [sender.py:send():378] send: telemetry
+2024-09-01 13:10:42,318 DEBUG   SenderThread:208197 [sender.py:send():378] send: telemetry
+2024-09-01 13:10:42,334 DEBUG   SenderThread:208197 [sender.py:send():378] send: telemetry
+2024-09-01 13:10:42,672 INFO    Thread-12 :208197 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20240901_131034-mudmddpg/files/requirements.txt
+2024-09-01 13:10:42,743 DEBUG   SenderThread:208197 [sender.py:send():378] send: config
+2024-09-01 13:10:42,797 INFO    wandb-upload_0:208197 [upload_job.py:push():130] Uploaded file /tmp/tmp6dzakgwrwandb/urggwcaj-wandb-metadata.json
+2024-09-01 13:10:43,673 INFO    Thread-12 :208197 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20240901_131034-mudmddpg/files/output.log
+2024-09-01 13:10:45,007 DEBUG   HandlerThread:208197 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-01 13:10:45,008 DEBUG   SenderThread:208197 [sender.py:send():378] send: files
+2024-09-01 13:10:45,009 INFO    SenderThread:208197 [sender.py:_save_file():1389] saving file media/images/data_distribution_dim0_0_bf39acb962d1304e68c4.png with policy now
+2024-09-01 13:10:45,010 DEBUG   SenderThread:208197 [sender.py:send():378] send: history
+2024-09-01 13:10:45,011 DEBUG   SenderThread:208197 [sender.py:send_request():405] send_request: summary_record
+2024-09-01 13:10:45,011 INFO    SenderThread:208197 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-09-01 13:10:45,143 DEBUG   HandlerThread:208197 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-01 13:10:45,146 DEBUG   SenderThread:208197 [sender.py:send():378] send: files
+2024-09-01 13:10:45,146 INFO    SenderThread:208197 [sender.py:_save_file():1389] saving file media/images/data_distribution_dim1_1_0072f8a5dc8e97d36f64.png with policy now
+2024-09-01 13:10:45,147 DEBUG   SenderThread:208197 [sender.py:send():378] send: history
+2024-09-01 13:10:45,147 DEBUG   SenderThread:208197 [sender.py:send_request():405] send_request: summary_record
+2024-09-01 13:10:45,149 INFO    SenderThread:208197 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-09-01 13:10:45,572 INFO    wandb-upload_0:208197 [upload_job.py:push():130] Uploaded file /tmp/tmp6dzakgwrwandb/9zvwxpzl-media/images/data_distribution_dim0_0_bf39acb962d1304e68c4.png
+2024-09-01 13:10:45,674 INFO    Thread-12 :208197 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20240901_131034-mudmddpg/files/output.log
+2024-09-01 13:10:45,675 INFO    Thread-12 :208197 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20240901_131034-mudmddpg/files/media/images/data_distribution_dim0_0_bf39acb962d1304e68c4.png
+2024-09-01 13:10:45,675 INFO    Thread-12 :208197 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20240901_131034-mudmddpg/files/wandb-summary.json
+2024-09-01 13:10:45,676 INFO    Thread-12 :208197 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20240901_131034-mudmddpg/files/media/images/data_distribution_dim1_1_0072f8a5dc8e97d36f64.png
+2024-09-01 13:10:45,676 INFO    Thread-12 :208197 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20240901_131034-mudmddpg/files/media
+2024-09-01 13:10:45,677 INFO    Thread-12 :208197 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20240901_131034-mudmddpg/files/media/images
+2024-09-01 13:10:46,166 INFO    wandb-upload_1:208197 [upload_job.py:push():130] Uploaded file /tmp/tmp6dzakgwrwandb/kusud6xn-media/images/data_distribution_dim1_1_0072f8a5dc8e97d36f64.png
+2024-09-01 13:10:46,202 DEBUG   HandlerThread:208197 [handler.py:handle_request():158] handle_request: status_report
+2024-09-01 13:10:46,302 INFO    wandb-upload_0:208197 [upload_job.py:push():130] Uploaded file /tmp/tmp6dzakgwrwandb/pkuimevt-media/images/data_distribution_dim0_0_bf39acb962d1304e68c4.png
+2024-09-01 13:10:46,777 INFO    wandb-upload_1:208197 [upload_job.py:push():130] Uploaded file /tmp/tmp6dzakgwrwandb/6dmpa0rf-media/images/data_distribution_dim1_1_0072f8a5dc8e97d36f64.png
+2024-09-01 13:10:47,675 INFO    Thread-12 :208197 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20240901_131034-mudmddpg/files/output.log
+2024-09-01 13:10:48,615 DEBUG   SenderThread:208197 [sender.py:send():378] send: telemetry
+2024-09-01 13:10:48,615 DEBUG   SenderThread:208197 [sender.py:send():378] send: metric
+2024-09-01 13:10:48,615 DEBUG   SenderThread:208197 [sender.py:send():378] send: telemetry
+2024-09-01 13:10:48,962 DEBUG   HandlerThread:208197 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-01 13:10:48,965 DEBUG   SenderThread:208197 [sender.py:send():378] send: history
+2024-09-01 13:10:48,965 DEBUG   SenderThread:208197 [sender.py:send_request():405] send_request: summary_record
+2024-09-01 13:10:48,967 INFO    SenderThread:208197 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-09-01 13:10:49,171 DEBUG   HandlerThread:208197 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-01 13:10:49,173 DEBUG   SenderThread:208197 [sender.py:send():378] send: history
+2024-09-01 13:10:49,173 DEBUG   SenderThread:208197 [sender.py:send_request():405] send_request: summary_record
+2024-09-01 13:10:49,175 INFO    SenderThread:208197 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-09-01 13:10:49,384 DEBUG   HandlerThread:208197 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-01 13:10:49,386 DEBUG   SenderThread:208197 [sender.py:send():378] send: history
+2024-09-01 13:10:49,386 DEBUG   SenderThread:208197 [sender.py:send_request():405] send_request: summary_record
+2024-09-01 13:10:49,388 INFO    SenderThread:208197 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-09-01 13:10:49,590 DEBUG   HandlerThread:208197 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-01 13:10:49,592 DEBUG   SenderThread:208197 [sender.py:send():378] send: history
+2024-09-01 13:10:49,592 DEBUG   SenderThread:208197 [sender.py:send_request():405] send_request: summary_record
+2024-09-01 13:10:49,593 INFO    SenderThread:208197 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-09-01 13:10:49,676 INFO    Thread-12 :208197 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20240901_131034-mudmddpg/files/output.log
+2024-09-01 13:10:49,677 INFO    Thread-12 :208197 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20240901_131034-mudmddpg/files/wandb-summary.json

@@ -1,0 +1,14 @@
+
+cfg_nn:{'dim': 3, 'widthk': 30, 'depthk': 2, 'grid': 1, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.4, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'KAN', 'width': 100, 'depth': 5}
+Traceback (most recent call last):
+  File "/home/ubuntu/myproject/wcr_neural_kan/main_pl.py", line 125, in <module>
+    main(config_file)
+  File "/home/ubuntu/myproject/wcr_neural_kan/main_pl.py", line 50, in main
+    data = dataset.get_data(plot_hist=True) # t, sample_num ,dim
+  File "/home/ubuntu/myproject/wcr_neural_kan/data/GenerateData_fun.py", line 59, in get_data
+    data[i + 1, :, :] = self.subSDE(self.time_instants[i], self.time_instants[i + 1], data[i, :, :])
+  File "/home/ubuntu/myproject/wcr_neural_kan/data/GenerateData_fun.py", line 50, in subSDE
+    y = y + self.drift_fun(y) * self.dt + torch.einsum('bij,bjk->bi',self.diffusion_fun(y),torch.randn(x.shape[0],x.shape[1],1).cuda())* torch.sqrt(torch.tensor(self.dt).cuda())
+  File "/home/ubuntu/myproject/wcr_neural_kan/utils/functions.py", line 22, in drift_lor
+    x0=x[:,:,0].unsqueeze(-1)
+IndexError: too many indices for tensor of dimension 2

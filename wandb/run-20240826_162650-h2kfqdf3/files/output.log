@@ -1,0 +1,65 @@
+
+cfg_nn:{'dim': 2, 'widthk': 50, 'depthk': 1, 'grid': 2, 'activation': 'GeLU', 'lr': 0.015, 'gamma': 0.4, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'KAN', 'width': 100, 'depth': 5}
+data:  torch.Size([11, 30000, 2]) tensor(5.3608, device='cuda:0') tensor(-3.3100, device='cuda:0')
+'sampleTestFunc_all' took 0.027706 s
+The model directory exists. Overwrite? True
+Sanity Checking DataLoader 0:   0%|                                                                                                          | 0/1 [00:00<?, ?it/s]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 20.2 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+20.2 K    Trainable params
+0         Non-trainable params
+20.2 K    Total params
+
+
+Epoch 9: 100%|████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  4.18it/s, v_num=qdf3, loss_step=1.660, loss_epoch=1.950]
+
+Epoch 19: 100%|█| 1/1 [00:00<00:00,  4.19it/s, v_num=qdf3, loss_step=0.549, loss_epoch=0.600, val_residual=1.240, drift_error=1.930, diffusion_error=0.0732, val_lo
+
+Epoch 29: 100%|█| 1/1 [00:00<00:00,  4.18it/s, v_num=qdf3, loss_step=0.290, loss_epoch=0.304, val_residual=0.455, drift_error=0.658, diffusion_error=0.0282, val_lo
+
+Epoch 39: 100%|█| 1/1 [00:00<00:00,  4.18it/s, v_num=qdf3, loss_step=0.140, loss_epoch=0.149, val_residual=0.267, drift_error=0.306, diffusion_error=0.0465, val_lo
+
+Epoch 49: 100%|█| 1/1 [00:00<00:00,  4.18it/s, v_num=qdf3, loss_step=0.0857, loss_epoch=0.0856, val_residual=0.130, drift_error=0.115, diffusion_error=0.0817, val_
+
+Epoch 59: 100%|█| 1/1 [00:00<00:00,  4.18it/s, v_num=qdf3, loss_step=0.0346, loss_epoch=0.0409, val_residual=0.0724, drift_error=0.169, diffusion_error=0.108, val_
+
+
+Epoch 69: 100%|█| 1/1 [00:00<00:00,  4.19it/s, v_num=qdf3, loss_step=0.0366, loss_epoch=0.0344, val_residual=0.0363, drift_error=0.0476, diffusion_error=0.212, val
+
+
+Epoch 79: 100%|█| 1/1 [00:00<00:00,  4.18it/s, v_num=qdf3, loss_step=0.0339, loss_epoch=0.0349, val_residual=0.0341, drift_error=0.0231, diffusion_error=0.243, val
+
+
+Epoch 89: 100%|█| 1/1 [00:00<00:00,  4.19it/s, v_num=qdf3, loss_step=0.0299, loss_epoch=0.0338, val_residual=0.0308, drift_error=0.0189, diffusion_error=0.241, val
+
+Epoch 99: 100%|█| 1/1 [00:00<00:00,  4.13it/s, v_num=qdf3, loss_step=0.0318, loss_epoch=0.0289, val_residual=0.030, drift_error=0.0279, diffusion_error=0.223, val_
+
+
+Epoch 109: 100%|█| 1/1 [00:00<00:00,  4.19it/s, v_num=qdf3, loss_step=0.0285, loss_epoch=0.0287, val_residual=0.0286, drift_error=0.0252, diffusion_error=0.229, va
+
+
+Epoch 119: 100%|█| 1/1 [00:00<00:00,  4.19it/s, v_num=qdf3, loss_step=0.0299, loss_epoch=0.0302, val_residual=0.0281, drift_error=0.0213, diffusion_error=0.240, va
+
+Epoch 129: 100%|█| 1/1 [00:00<00:00,  4.19it/s, v_num=qdf3, loss_step=0.0297, loss_epoch=0.0309, val_residual=0.0279, drift_error=0.0262, diffusion_error=0.240, va
+
+Epoch 139: 100%|█| 1/1 [00:00<00:00,  4.19it/s, v_num=qdf3, loss_step=0.0303, loss_epoch=0.0282, val_residual=0.0279, drift_error=0.0251, diffusion_error=0.242, va
+
+Epoch 149: 100%|█| 1/1 [00:00<00:00,  4.18it/s, v_num=qdf3, loss_step=0.0306, loss_epoch=0.0275, val_residual=0.0277, drift_error=0.0266, diffusion_error=0.245, va
+
+Epoch 159: 100%|█| 1/1 [00:00<00:00,  4.19it/s, v_num=qdf3, loss_step=0.028, loss_epoch=0.0279, val_residual=0.028, drift_error=0.0224, diffusion_error=0.249, val_
+
+Epoch 169: 100%|█| 1/1 [00:00<00:00,  4.19it/s, v_num=qdf3, loss_step=0.0285, loss_epoch=0.0303, val_residual=0.0288, drift_error=0.0272, diffusion_error=0.242, va
+
+Epoch 179: 100%|█| 1/1 [00:00<00:00,  4.19it/s, v_num=qdf3, loss_step=0.0271, loss_epoch=0.0291, val_residual=0.0277, drift_error=0.0295, diffusion_error=0.244, va
+
+Epoch 189: 100%|█| 1/1 [00:00<00:00,  4.19it/s, v_num=qdf3, loss_step=0.0289, loss_epoch=0.0293, val_residual=0.0277, drift_error=0.0334, diffusion_error=0.242, va
+Validation DataLoader 0:   0%|                                                                                                               | 0/1 [00:00<?, ?it/s]

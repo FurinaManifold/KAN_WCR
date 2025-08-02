@@ -1,0 +1,31 @@
+
+cfg_nn:{'dim': 2, 'widthk': 60, 'depthk': 1, 'grid': 5, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'DNN', 'width': 100, 'depth': 5}
+data:  torch.Size([11, 50000, 2]) tensor(4.2498, device='cuda:0') tensor(-4.2126, device='cuda:0')
+'sampleTestFunc_all' took 0.027234 s
+Sanity Checking DataLoader 0:   0%|                                                                                                                               | 0/1 [00:00<?, ?it/s]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 21.2 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+21.2 K    Trainable params
+0         Non-trainable params
+21.2 K    Total params
+Epoch 9: 100%|█████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 13.33it/s, v_num=tcex, loss_step=3.670, loss_epoch=3.290]
+
+Epoch 19: 100%|██████████████| 1/1 [00:00<00:00, 13.36it/s, v_num=tcex, loss_step=1.660, loss_epoch=1.720, val_residual=3.080, drift_error=1.020, diffusion_error=0.198, val_loss=1.210]
+
+Epoch 29: 100%|██████████████| 1/1 [00:00<00:00, 13.36it/s, v_num=tcex, loss_step=1.030, loss_epoch=0.949, val_residual=1.570, drift_error=1.010, diffusion_error=0.719, val_loss=1.730]
+
+Epoch 39: 100%|██████████████| 1/1 [00:00<00:00, 13.38it/s, v_num=tcex, loss_step=0.517, loss_epoch=0.596, val_residual=0.913, drift_error=0.937, diffusion_error=0.542, val_loss=1.480]
+
+Epoch 49: 100%|██████████████| 1/1 [00:00<00:00, 13.20it/s, v_num=tcex, loss_step=1.180, loss_epoch=0.829, val_residual=0.502, drift_error=0.815, diffusion_error=0.352, val_loss=1.170]
+
+Epoch 59: 100%|██████████████| 1/1 [00:00<00:00, 13.38it/s, v_num=tcex, loss_step=0.458, loss_epoch=0.477, val_residual=0.466, drift_error=0.846, diffusion_error=0.279, val_loss=1.130]
+Validation DataLoader 0:   0%|                                                                                                                                    | 0/1 [00:00<?, ?it/s]

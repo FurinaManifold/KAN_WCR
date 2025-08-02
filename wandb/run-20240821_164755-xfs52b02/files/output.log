@@ -1,0 +1,154 @@
+data:  torch.Size([11, 20000, 1]) tensor(3.5925, device='cuda:0') tensor(-3.8911, device='cuda:0')
+'sampleTestFunc_all' took 0.027400 s
+The model directory exists. Overwrite? True
+Sanity Checking DataLoader 0: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.08it/s]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 65.6 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+65.6 K    Trainable params
+0         Non-trainable params
+65.6 K    Total params
+
+
+
+
+Epoch 39: 100%|██████████████| 1/1 [00:00<00:00,  4.62it/s, v_num=2b02, loss_step=0.461, loss_epoch=0.459, val_residual=0.598, drift_error=0.976, diffusion_error=0.000, val_loss=0.976]
+
+
+
+Epoch 69: 100%|██████████████| 1/1 [00:00<00:00,  4.63it/s, v_num=2b02, loss_step=0.178, loss_epoch=0.208, val_residual=0.242, drift_error=0.987, diffusion_error=0.000, val_loss=0.987]
+
+
+
+
+Epoch 109: 100%|███████████| 1/1 [00:00<00:00,  4.63it/s, v_num=2b02, loss_step=0.0844, loss_epoch=0.0742, val_residual=0.121, drift_error=0.591, diffusion_error=0.000, val_loss=0.591]
+
+
+
+
+
+
+
+Epoch 169: 100%|██████████| 1/1 [00:00<00:00,  4.61it/s, v_num=2b02, loss_step=0.0341, loss_epoch=0.0247, val_residual=0.0498, drift_error=0.202, diffusion_error=0.000, val_loss=0.202]
+
+
+
+Epoch 199: 100%|██████████| 1/1 [00:00<00:00,  4.62it/s, v_num=2b02, loss_step=0.0198, loss_epoch=0.0203, val_residual=0.0203, drift_error=0.158, diffusion_error=0.000, val_loss=0.158]
+
+
+
+
+Epoch 239: 100%|██████████| 1/1 [00:00<00:00,  4.63it/s, v_num=2b02, loss_step=0.0187, loss_epoch=0.0186, val_residual=0.0174, drift_error=0.143, diffusion_error=0.000, val_loss=0.143]
+
+
+
+Epoch 269: 100%|██████████| 1/1 [00:00<00:00,  4.62it/s, v_num=2b02, loss_step=0.0201, loss_epoch=0.0234, val_residual=0.0203, drift_error=0.137, diffusion_error=0.000, val_loss=0.137]
+
+
+
+
+
+
+
+
+Epoch 329: 100%|██████████| 1/1 [00:00<00:00,  4.62it/s, v_num=2b02, loss_step=0.0214, loss_epoch=0.0152, val_residual=0.0177, drift_error=0.138, diffusion_error=0.000, val_loss=0.138]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 479: 100%|██████████| 1/1 [00:00<00:00,  4.64it/s, v_num=2b02, loss_step=0.0138, loss_epoch=0.0134, val_residual=0.0148, drift_error=0.140, diffusion_error=0.000, val_loss=0.140]
+
+
+
+
+
+Epoch 519: 100%|██████████| 1/1 [00:00<00:00,  4.63it/s, v_num=2b02, loss_step=0.0149, loss_epoch=0.0141, val_residual=0.0145, drift_error=0.141, diffusion_error=0.000, val_loss=0.141]
+
+
+
+Epoch 549: 100%|██████████| 1/1 [00:00<00:00,  4.62it/s, v_num=2b02, loss_step=0.0128, loss_epoch=0.0135, val_residual=0.0144, drift_error=0.142, diffusion_error=0.000, val_loss=0.142]
+
+
+
+
+Epoch 589: 100%|██████████| 1/1 [00:00<00:00,  4.63it/s, v_num=2b02, loss_step=0.0139, loss_epoch=0.0126, val_residual=0.0143, drift_error=0.143, diffusion_error=0.000, val_loss=0.143]
+
+
+
+
+
+
+
+Epoch 649: 100%|██████████| 1/1 [00:00<00:00,  4.62it/s, v_num=2b02, loss_step=0.0136, loss_epoch=0.0121, val_residual=0.0153, drift_error=0.149, diffusion_error=0.000, val_loss=0.149]
+
+
+
+
+Epoch 689: 100%|███████████| 1/1 [00:00<00:00,  4.63it/s, v_num=2b02, loss_step=0.013, loss_epoch=0.0128, val_residual=0.0136, drift_error=0.156, diffusion_error=0.000, val_loss=0.156]
+
+
+
+Epoch 719: 100%|███████████| 1/1 [00:00<00:00,  4.63it/s, v_num=2b02, loss_step=0.0122, loss_epoch=0.013, val_residual=0.0136, drift_error=0.157, diffusion_error=0.000, val_loss=0.157]
+
+
+
+
+Epoch 759: 100%|██████████| 1/1 [00:00<00:00,  4.64it/s, v_num=2b02, loss_step=0.0129, loss_epoch=0.0123, val_residual=0.0139, drift_error=0.162, diffusion_error=0.000, val_loss=0.162]
+
+
+
+
+
+
+
+Epoch 819: 100%|██████████| 1/1 [00:00<00:00,  4.61it/s, v_num=2b02, loss_step=0.0123, loss_epoch=0.0125, val_residual=0.0132, drift_error=0.172, diffusion_error=0.000, val_loss=0.172]
+
+
+
+
+Epoch 859: 100%|██████████| 1/1 [00:00<00:00,  4.63it/s, v_num=2b02, loss_step=0.0123, loss_epoch=0.0118, val_residual=0.0132, drift_error=0.172, diffusion_error=0.000, val_loss=0.172]
+
+
+
+Epoch 889: 100%|██████████| 1/1 [00:00<00:00,  4.63it/s, v_num=2b02, loss_step=0.0119, loss_epoch=0.0117, val_residual=0.0131, drift_error=0.176, diffusion_error=0.000, val_loss=0.176]
+
+
+
+
+
+
+
+
+
+
+Epoch 969: 100%|██████████| 1/1 [00:00<00:00,  4.63it/s, v_num=2b02, loss_step=0.0127, loss_epoch=0.0118, val_residual=0.0129, drift_error=0.181, diffusion_error=0.000, val_loss=0.181]
+
+
+
+
+Epoch 999: 100%|██████████| 1/1 [00:00<00:00,  1.59it/s, v_num=2b02, loss_step=0.0117, loss_epoch=0.0117, val_residual=0.0133, drift_error=0.185, diffusion_error=0.000, val_loss=0.185]
+`Trainer.fit` stopped: `max_epochs=1000` reached.

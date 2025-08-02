@@ -1,0 +1,23 @@
+2024-10-18 16:30:59,445 INFO    StreamThr :12286 [internal.py:wandb_internal():85] W&B internal server running at pid: 12286, started at: 2024-10-18 16:30:59.444265
+2024-10-18 16:30:59,450 DEBUG   HandlerThread:12286 [handler.py:handle_request():158] handle_request: status
+2024-10-18 16:30:59,452 INFO    WriterThread:12286 [datastore.py:open_for_write():87] open: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20241018_163059-wibewcjm/run-wibewcjm.wandb
+2024-10-18 16:30:59,453 DEBUG   SenderThread:12286 [sender.py:send():378] send: header
+2024-10-18 16:30:59,453 DEBUG   SenderThread:12286 [sender.py:send():378] send: run
+2024-10-18 16:31:04,447 DEBUG   HandlerThread:12286 [handler.py:handle_request():158] handle_request: keepalive
+2024-10-18 16:31:05,218 INFO    SenderThread:12286 [dir_watcher.py:__init__():211] watching files in: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20241018_163059-wibewcjm/files
+2024-10-18 16:31:05,218 INFO    SenderThread:12286 [sender.py:_start_run_threads():1123] run started: wibewcjm with start time 1729240259.443119
+2024-10-18 16:31:05,218 DEBUG   HandlerThread:12286 [handler.py:handle_request():158] handle_request: status_report
+2024-10-18 16:31:05,236 DEBUG   HandlerThread:12286 [handler.py:handle_request():158] handle_request: check_version
+2024-10-18 16:31:05,237 DEBUG   SenderThread:12286 [sender.py:send_request():405] send_request: check_version
+2024-10-18 16:31:06,688 DEBUG   HandlerThread:12286 [handler.py:handle_request():158] handle_request: shutdown
+2024-10-18 16:31:06,688 INFO    HandlerThread:12286 [handler.py:finish():882] shutting down handler
+2024-10-18 16:31:07,153 INFO    SenderThread:12286 [sender.py:finish():1545] shutting down sender
+2024-10-18 16:31:07,153 INFO    SenderThread:12286 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-10-18 16:31:07,218 INFO    SenderThread:12286 [dir_watcher.py:finish():388] scan: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20241018_163059-wibewcjm/files
+2024-10-18 16:31:07,219 INFO    SenderThread:12286 [dir_watcher.py:finish():402] scan save: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20241018_163059-wibewcjm/files/config.yaml config.yaml
+2024-10-18 16:31:07,219 INFO    SenderThread:12286 [file_pusher.py:finish():169] shutting down file pusher
+2024-10-18 16:31:07,219 INFO    SenderThread:12286 [file_pusher.py:join():175] waiting for file pusher
+2024-10-18 16:31:07,237 INFO    WriterThread:12286 [datastore.py:close():296] close: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20241018_163059-wibewcjm/run-wibewcjm.wandb
+2024-10-18 16:31:09,049 INFO    wandb-upload_0:12286 [upload_job.py:push():130] Uploaded file /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20241018_163059-wibewcjm/files/config.yaml
+2024-10-18 16:31:09,723 INFO    SenderThread:12286 [file_stream.py:finish():601] file stream finish called
+2024-10-18 16:31:10,739 INFO    SenderThread:12286 [file_stream.py:finish():605] file stream finish is done

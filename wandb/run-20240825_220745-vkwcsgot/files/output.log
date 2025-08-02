@@ -1,0 +1,126 @@
+
+cfg_nn:{'dim': 1, 'widthk': 80, 'depthk': 1, 'grid': 2, 'activation': 'GeLU', 'lr': 0.018, 'gamma': 0.4, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'KAN', 'width': 100, 'depth': 5}
+data:  torch.Size([11, 20000, 1]) tensor(4.1400, device='cuda:0') tensor(-4.0541, device='cuda:0')
+'sampleTestFunc_all' took 0.034773 s
+The model directory exists. Overwrite? True
+Epoch 0:   0%|          | 0/1 [00:00<?, ?it/s]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 47.1 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+47.1 K    Trainable params
+0         Non-trainable params
+47.1 K    Total params
+Epoch 9: 100%|██████████| 1/1 [00:00<00:00,  4.90it/s, v_num=sgot, loss_step=7.090, loss_epoch=7.850]
+
+
+
+
+Epoch 49: 100%|██████████| 1/1 [00:00<00:00,  4.90it/s, v_num=sgot, loss_step=7.160, loss_epoch=7.100, val_residual=6.820, drift_error=1.110, diffusion_error=1.000, val_loss=2.110]
+
+
+
+
+Epoch 89: 100%|██████████| 1/1 [00:00<00:00,  4.91it/s, v_num=sgot, loss_step=5.380, loss_epoch=4.820, val_residual=5.370, drift_error=1.590, diffusion_error=1.000, val_loss=2.590]
+
+
+Epoch 107:   0%|          | 0/1 [00:00<?, ?it/s, v_num=sgot, loss_step=4.590, loss_epoch=4.590, val_residual=4.680, drift_error=1.850, diffusion_error=1.000, val_loss=2.850]
+
+
+
+Epoch 139: 100%|██████████| 1/1 [00:00<00:00,  4.90it/s, v_num=sgot, loss_step=3.840, loss_epoch=3.730, val_residual=3.920, drift_error=1.760, diffusion_error=1.000, val_loss=2.760]
+
+
+
+
+Epoch 179: 100%|██████████| 1/1 [00:00<00:00,  4.90it/s, v_num=sgot, loss_step=3.670, loss_epoch=3.390, val_residual=3.310, drift_error=2.130, diffusion_error=1.000, val_loss=3.130]
+
+
+
+
+Epoch 219: 100%|██████████| 1/1 [00:00<00:00,  4.89it/s, v_num=sgot, loss_step=3.120, loss_epoch=3.020, val_residual=3.190, drift_error=2.250, diffusion_error=1.000, val_loss=3.250]
+
+Validation DataLoader 0:   0%|          | 0/1 [00:00<?, ?it/s]
+
+
+
+Epoch 259: 100%|██████████| 1/1 [00:00<00:00,  4.90it/s, v_num=sgot, loss_step=3.090, loss_epoch=2.940, val_residual=3.110, drift_error=2.330, diffusion_error=1.000, val_loss=3.330]
+
+
+
+
+Epoch 299: 100%|██████████| 1/1 [00:00<00:00,  4.87it/s, v_num=sgot, loss_step=3.080, loss_epoch=2.820, val_residual=3.030, drift_error=2.470, diffusion_error=1.000, val_loss=3.470]
+
+
+
+
+
+Epoch 349: 100%|██████████| 1/1 [00:00<00:00,  4.90it/s, v_num=sgot, loss_step=2.950, loss_epoch=3.110, val_residual=2.980, drift_error=2.690, diffusion_error=1.000, val_loss=3.690]
+
+
+
+
+Epoch 389: 100%|██████████| 1/1 [00:00<00:00,  4.90it/s, v_num=sgot, loss_step=3.000, loss_epoch=2.860, val_residual=2.950, drift_error=2.840, diffusion_error=1.000, val_loss=3.840]
+
+
+
+
+
+
+
+
+
+Epoch 469: 100%|██████████| 1/1 [00:00<00:00,  4.90it/s, v_num=sgot, loss_step=2.920, loss_epoch=2.900, val_residual=2.880, drift_error=3.200, diffusion_error=1.000, val_loss=4.200]
+
+
+
+
+
+
+
+
+
+Epoch 549: 100%|██████████| 1/1 [00:00<00:00,  4.88it/s, v_num=sgot, loss_step=2.720, loss_epoch=2.830, val_residual=2.840, drift_error=3.480, diffusion_error=1.000, val_loss=4.480]
+
+
+
+
+
+
+
+
+
+
+Epoch 639: 100%|██████████| 1/1 [00:00<00:00,  4.90it/s, v_num=sgot, loss_step=2.730, loss_epoch=2.780, val_residual=2.820, drift_error=3.780, diffusion_error=1.000, val_loss=4.780]
+
+
+
+
+Epoch 679: 100%|██████████| 1/1 [00:00<00:00,  4.90it/s, v_num=sgot, loss_step=2.620, loss_epoch=2.770, val_residual=2.810, drift_error=3.830, diffusion_error=1.000, val_loss=4.830]
+
+
+
+
+
+Epoch 729: 100%|██████████| 1/1 [00:00<00:00,  4.90it/s, v_num=sgot, loss_step=2.790, loss_epoch=2.660, val_residual=2.810, drift_error=3.920, diffusion_error=1.000, val_loss=4.920]
+
+
+
+Epoch 759: 100%|██████████| 1/1 [00:00<00:00,  4.89it/s, v_num=sgot, loss_step=2.780, loss_epoch=2.780, val_residual=2.810, drift_error=3.960, diffusion_error=1.000, val_loss=4.960]
+
+
+
+
+
+Epoch 809: 100%|██████████| 1/1 [00:00<00:00,  4.89it/s, v_num=sgot, loss_step=2.750, loss_epoch=2.670, val_residual=2.790, drift_error=4.080, diffusion_error=1.000, val_loss=5.080]
+
+
+
+Epoch 839: 100%|██████████| 1/1 [00:00<00:00,  4.90it/s, v_num=sgot, loss_step=2.670, loss_epoch=2.740, val_residual=2.780, drift_error=4.080, diffusion_error=1.000, val_loss=5.080]

@@ -1,0 +1,67 @@
+seed: 42
+
+Project:
+  name: '2d_gen_KAN2_2_30'
+  checkpoint: False
+  save_top_k: 1
+  erase: True
+  devices: 1
+  accelerator: 'gpu'
+  PATH: /home/ubuntu/myproject/wcr_neural_kan/save_files
+  save_dir: 2d
+  
+
+
+data:
+  dt: 0.001
+  sample: 50000 
+  plotsample: 10000
+  sigma_init: 0.3
+  intervalradius: 1.0
+  dim: 2
+  nt: 11
+  T: 1
+  plotT: 2
+  plot_path: /home/ubuntu/myproject/wcr_neural_kan/result2D
+  model: 2dcross
+  pltxlim: 3
+  frequency: 10
+
+train:
+  checkepoch: 10
+  sigma_init: 0.3
+  known_diffusion: True
+  plotstep: []
+  testfunction: gauss
+  gauss_number: 300
+  bump_number: 1000
+  sampling: SDE
+  LMM: LMM_3
+  sgd_ratio: 0.5
+  epochs: 1000
+  mean_samp_way: SDE_dist
+  var_samp_way: dist
+  error_type: uniform2d
+  plot_type: 2d
+  samp_coef: 
+    lhs_ratio: 0.7
+    variance_min: 0.3
+    variance_max: 0.7
+
+ 
+  
+
+NN:
+  dim: 2
+  widthk: 30
+  depthk: 2
+  grid: 2
+  activation: GeLU
+  lr: 0.01
+  gamma: 0.5
+  step_size: 200
+  weight_decay: 0.00001
+  iter: 2000
+  mode: KAN
+  width: 100
+  depth: 5

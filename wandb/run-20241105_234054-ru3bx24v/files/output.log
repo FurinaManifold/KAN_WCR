@@ -1,0 +1,140 @@
+
+cfg_nn:{'dim': 2, 'widthk': 30, 'depthk': 2, 'grid': 2, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'KAN', 'width': 100, 'depth': 5}
+data:  torch.Size([11, 50000, 2]) tensor(2.3121, device='cuda:0') tensor(-2.3242, device='cuda:0')
+'sampleTestFunc_all' took 0.018444 s
+Epoch 1:   0%|          | 0/1 [00:00<?, ?it/s, v_num=x24v, loss_step=2.200, loss_epoch=2.200]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 7.1 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+7.1 K     Trainable params
+0         Non-trainable params
+7.1 K     Total params
+
+
+
+
+
+Epoch 49: 100%|██████████| 1/1 [00:00<00:00,  4.32it/s, v_num=x24v, loss_step=0.257, loss_epoch=0.280, val_residual=0.425, drift_error=0.368, diffusion_error=0.000, val_loss=0.368]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 339: 100%|██████████| 1/1 [00:00<00:00,  4.34it/s, v_num=x24v, loss_step=0.0566, loss_epoch=0.0528, val_residual=0.0515, drift_error=0.126, diffusion_error=0.000, val_loss=0.126]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 479: 100%|██████████| 1/1 [00:00<00:00,  4.35it/s, v_num=x24v, loss_step=0.051, loss_epoch=0.0549, val_residual=0.0486, drift_error=0.146, diffusion_error=0.000, val_loss=0.146]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 629: 100%|██████████| 1/1 [00:00<00:00,  4.33it/s, v_num=x24v, loss_step=0.0567, loss_epoch=0.0513, val_residual=0.0475, drift_error=0.142, diffusion_error=0.000, val_loss=0.142]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 819: 100%|██████████| 1/1 [00:00<00:00,  4.34it/s, v_num=x24v, loss_step=0.0506, loss_epoch=0.0558, val_residual=0.0473, drift_error=0.151, diffusion_error=0.000, val_loss=0.151]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 959: 100%|██████████| 1/1 [00:00<00:00,  4.35it/s, v_num=x24v, loss_step=0.0534, loss_epoch=0.0494, val_residual=0.047, drift_error=0.159, diffusion_error=0.000, val_loss=0.159]
+
+
+
+
+Epoch 999: 100%|██████████| 1/1 [00:00<00:00,  4.34it/s, v_num=x24v, loss_step=0.0529, loss_epoch=0.0487, val_residual=0.0476, drift_error=0.161, diffusion_error=0.000, val_loss=0.161]

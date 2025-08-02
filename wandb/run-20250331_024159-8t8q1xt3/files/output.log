@@ -1,0 +1,44 @@
+
+cfg_nn:{'dim': 2, 'widthk': 50, 'depthk': 1, 'grid': 3, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'DNN0', 'depth': 5, 'width': 100}
+data:  torch.Size([6, 50000, 2]) tensor(4.9139, device='cuda:0') tensor(-6.1257, device='cuda:0')
+'sampleTestFunc_all' took 0.015883 s
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 10.6 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+10.6 K    Trainable params
+0         Non-trainable params
+10.6 K    Total params
+0.042     Total estimated model params size (MB)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 989: 100%|█| 1/1 [00:00<00:00, 24.46it/s, v_num=1xt3, loss_step=0.00469, diffusion0_step=0.988, diffusion1_st
+Validation DataLoader 0:   0%|                                                               | 0/1 [00:00<?, ?it/s]
+
+save model done

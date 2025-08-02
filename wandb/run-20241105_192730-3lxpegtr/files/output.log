@@ -1,0 +1,67 @@
+cfg_nn:{'dim': 1, 'widthk': 50, 'depthk': 1, 'grid': 3, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'DNN', 'depth': 5, 'width': 100}
+data:  torch.Size([11, 20000, 1]) tensor(2.1591, device='cuda:0') tensor(-2.2868, device='cuda:0')
+'sampleTestFunc_all' took 0.017957 s
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 10.4 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+10.4 K    Trainable params
+0         Non-trainable params
+10.4 K    Total params
+0.042     Total estimated model params size (MB)
+
+
+Epoch 349: 100%|██████████| 1/1 [00:00<00:00, 66.38it/s, v_num=egtr, loss_step=0.0729, loss_epoch=0.0706, val_residual=0.0707, drift_error=0.0704, diffusion_error=0.000, val_loss=0.0704]
+
+Epoch 569: 100%|██████████| 1/1 [00:00<00:00, 68.39it/s, v_num=egtr, loss_step=0.0683, loss_epoch=0.0663, val_residual=0.0694, drift_error=0.126, diffusion_error=0.000, val_loss=0.126]
+
+
+
+
+Epoch 994: 100%|██████████| 1/1 [00:00<00:00, 63.97it/s, v_num=egtr, loss_step=0.0671, loss_epoch=0.0671, val_residual=0.0688, drift_error=0.251, diffusion_error=0.000, val_loss=0.251]
+Traceback (most recent call last):
+  File "/home/ubuntu/myproject/wcr_neural_kan/main_pl.py", line 130, in <module>
+    main(config_file)
+  File "/home/ubuntu/myproject/wcr_neural_kan/main_pl.py", line 119, in main
+    trainer.fit(model, train_loader, val_loader)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 544, in fit
+    call._call_and_handle_interrupt(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/trainer/call.py", line 44, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 580, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 987, in _run
+    results = self._run_stage()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1033, in _run_stage
+    self.fit_loop.run()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/loops/fit_loop.py", line 205, in run
+    self.advance()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/loops/fit_loop.py", line 363, in advance
+    self.epoch_loop.run(self._data_fetcher)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/loops/training_epoch_loop.py", line 141, in run
+    self.on_advance_end(data_fetcher)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/loops/training_epoch_loop.py", line 295, in on_advance_end
+    self.val_loop.run()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/loops/utilities.py", line 182, in _decorator
+    return loop_run(self, *args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/loops/evaluation_loop.py", line 135, in run
+    self._evaluation_step(batch, batch_idx, dataloader_idx, dataloader_iter)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/loops/evaluation_loop.py", line 396, in _evaluation_step
+    output = call._call_strategy_hook(trainer, hook_name, *step_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/trainer/call.py", line 309, in _call_strategy_hook
+    output = fn(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/pytorch_lightning/strategies/strategy.py", line 412, in validation_step
+    return self.lightning_module.validation_step(*args, **kwargs)
+  File "/home/ubuntu/myproject/wcr_neural_kan/model/model.py", line 358, in validation_step
+    self.model.plot_error()
+  File "/home/ubuntu/myproject/wcr_neural_kan/model/model.py", line 303, in plot_error
+    cfg_data = cfg_data,
+Epoch 999: 100%|██████████| 1/1 [00:00<00:00, 62.44it/s, v_num=egtr, loss_step=0.0671, loss_epoch=0.0691, val_residual=0.0688, drift_error=0.251, diffusion_error=0.000, val_loss=0.251]
+Validation DataLoader 0:   0%|          | 0/1 [00:00<?, ?it/s]

@@ -70,8 +70,11 @@ def sampleTestFunc_all(data, samp_number, mean_samp_way, var_samp_way, samp_coef
     if mean_samp_way == 'lhs':
         
         length = samp_coef['lhs_ratio'] * (data.max() - data.min())
-        mu_list = torch.rand(samp_number, device=device) * length - length / 2 + (data.max() + data.min()) / 2
-        mu_list_all = mu_list.unsqueeze(1).repeat(1,t_number-2,1)
+        n_t = t_number-2 
+        mu_list = torch.ones(samp_number,n_t,data.shape[2]).cuda() * (- length / 2 + (data.max() + data.min()) / 2)
+        mu_list_all = mu_list + torch.randn_like(mu_list)*length
+        # mu_list = torch.rand(samp_number, device=device) * length 
+        # mu_list_all = mu_list.unsqueeze(1).repeat(1,t_number-2,1)
 
     if mean_samp_way == 'SDE_dist':
 
@@ -91,9 +94,10 @@ def sampleTestFunc_all(data, samp_number, mean_samp_way, var_samp_way, samp_coef
             mu_list[:,i,:] = svgd_update(data[i,:,:], grad_log_p, stepsize=0.1, num_iter=500)[:samp_number,:]
     
     if var_samp_way == 'constant':
-        variance = samp_coef['variance_max']*torch.ones(t_number-2)
+        variance = samp_coef['variance_max']*torch.ones(samp_number).cuda()
     elif var_samp_way == 'dist':
-        mu_dist = 1/torch.norm(mu_list_all[:,5,:],p=2,dim = -1)**2
+        mu_dist = 1/torch.norm(mu_list_all[:,n_t // 2,:],p=2,dim = -1)**2
+        # mu_dist = 1/torch.norm(mu_list_all[:,(n_t+1) // 2,:],p=2,dim = -1)**2
         mu_dist_min = torch.min(mu_dist)
         mu_dist_max = torch.max(mu_dist)
         #mu_dist_norm = (mu_dist_max-mu_dist)/(mu_dist_max-mu_dist_min) # samp nt-2 dim

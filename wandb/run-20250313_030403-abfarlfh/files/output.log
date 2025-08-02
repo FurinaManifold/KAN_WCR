@@ -1,0 +1,8 @@
+
+cfg_nn:{'dim': 2, 'widthk': 50, 'depthk': 1, 'grid': 3, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'DNN', 'width': 100, 'depth': 5}
+Traceback (most recent call last):
+  File "/home/ubuntu/myproject/wcr_neural_kan/main_pl.py", line 136, in <module>
+    main(args.config_file)
+  File "/home/ubuntu/myproject/wcr_neural_kan/main_pl.py", line 47, in main
+    t = torch.linspace(cfg_data['start'],cfg_data['T'],cfg_data['nt']).cuda()# 生成数据的时间轴
+KeyError: 'start'

@@ -1,0 +1,10 @@
+
+cfg_nn:{'dim': 2, 'widthk': 50, 'depthk': 1, 'grid': 2, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'DNN', 'width': 100, 'depth': 5}
+Traceback (most recent call last):
+  File "/home/ubuntu/myproject/wcr_neural_kan/main_pl.py", line 128, in <module>
+    main(config_file)
+  File "/home/ubuntu/myproject/wcr_neural_kan/main_pl.py", line 53, in main
+    data = dataset.get_data(plot2d_hist=True,logname="2ddata_plot")
+  File "/home/ubuntu/myproject/wcr_neural_kan/data/GenerateData_fun.py", line 94, in get_data
+    hist, x_edges, y_edges = np.histogram2d(xx, yy, bins=(x_bins, y_bins),cbar_kws={'label': 'Value','ticks': [0, 25, 50, 75, 100],'format': '%.0f'})
+TypeError: histogram2d() got an unexpected keyword argument 'cbar_kws'

@@ -1,0 +1,40 @@
+
+cfg_nn:{'dim': 1, 'widthk': 60, 'depthk': 1, 'grid': 5, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'DNN', 'width': 100, 'depth': 5}
+data:  torch.Size([11, 50000, 1]) tensor(4.1679, device='cuda:0') tensor(-4.0021, device='cuda:0')
+'sampleTestFunc_all' took 0.027361 s
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 10.4 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+10.4 K    Trainable params
+0         Non-trainable params
+10.4 K    Total params
+0.042     Total estimated model params size (MB)
+
+
+
+Epoch 139: 100%|██████████| 1/1 [00:00<00:00, 30.58it/s, v_num=wifo, loss_step=0.0523, loss_epoch=0.0499, val_residual=0.0665, drift_error=0.409, diffusion_error=0.000, val_loss=0.409]
+
+Epoch 259: 100%|███████████| 1/1 [00:00<00:00, 30.43it/s, v_num=wifo, loss_step=0.0308, loss_epoch=0.0303, val_residual=0.031, drift_error=0.339, diffusion_error=0.000, val_loss=0.339]
+
+
+
+Epoch 539: 100%|██████████| 1/1 [00:00<00:00, 30.39it/s, v_num=wifo, loss_step=0.0224, loss_epoch=0.0224, val_residual=0.0242, drift_error=0.286, diffusion_error=0.000, val_loss=0.286]
+
+
+
+
+
+
+
+Epoch 799: 100%|████████████| 1/1 [00:00<00:00, 30.39it/s, v_num=wifo, loss_step=0.018, loss_epoch=0.018, val_residual=0.0209, drift_error=0.239, diffusion_error=0.000, val_loss=0.239]
+Validation DataLoader 0:   0%|                                                                                                                                    | 0/1 [00:00<?, ?it/s]
+
+`Trainer.fit` stopped: `max_epochs=1000` reached.

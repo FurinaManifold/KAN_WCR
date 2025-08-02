@@ -1,0 +1,93 @@
+
+cfg_nn:{'dim': 1, 'widthk': 50, 'depthk': 1, 'grid': 3, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'KAN', 'depth': 5, 'width': 100}
+data:  torch.Size([11, 20000, 1]) tensor(1.5657, device='cuda:0') tensor(-1.5135, device='cuda:0')
+'sampleTestFunc_all' took 0.018753 s
+The model directory exists. Overwrite? True
+Sanity Checking DataLoader 0:   0%|          | 0/1 [00:00<?, ?it/s]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 20.8 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+20.8 K    Trainable params
+0         Non-trainable params
+20.8 K    Total params
+
+Epoch 29: 100%|██████████| 1/1 [00:00<00:00,  7.64it/s, v_num=56zy, loss_step=1.710, loss_epoch=1.820, val_residual=1.920, drift_error=0.860, diffusion_error=0.000, val_loss=0.860]
+
+
+
+
+
+
+
+
+Epoch 159: 100%|██████████| 1/1 [00:00<00:00,  7.62it/s, v_num=56zy, loss_step=0.0928, loss_epoch=0.0995, val_residual=0.0984, drift_error=0.0369, diffusion_error=0.000, val_loss=0.0369]
+
+Epoch 189: 100%|██████████| 1/1 [00:00<00:00,  7.61it/s, v_num=56zy, loss_step=0.088, loss_epoch=0.088, val_residual=0.0887, drift_error=0.0271, diffusion_error=0.000, val_loss=0.0271]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 499: 100%|██████████| 1/1 [00:00<00:00,  7.61it/s, v_num=56zy, loss_step=0.0745, loss_epoch=0.0788, val_residual=0.0762, drift_error=0.0267, diffusion_error=0.000, val_loss=0.0267]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 899: 100%|██████████| 1/1 [00:00<00:00,  7.58it/s, v_num=56zy, loss_step=0.0795, loss_epoch=0.078, val_residual=0.0752, drift_error=0.0249, diffusion_error=0.000, val_loss=0.0249]
+
+
+
+
+
+
+Epoch 999: 100%|██████████| 1/1 [00:00<00:00,  7.62it/s, v_num=56zy, loss_step=0.0723, loss_epoch=0.0769, val_residual=0.075, drift_error=0.0242, diffusion_error=0.000, val_loss=0.0242]
+Validation DataLoader 0:   0%|          | 0/1 [00:00<?, ?it/s]
+
+`Trainer.fit` stopped: `max_epochs=1000` reached.

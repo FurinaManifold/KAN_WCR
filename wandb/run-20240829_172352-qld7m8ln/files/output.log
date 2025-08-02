@@ -1,0 +1,71 @@
+
+cfg_nn:{'dim': 3, 'widthk': 12, 'depthk': 4, 'grid': 1, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.4, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'KAN', 'width': 100, 'depth': 5}
+data:  torch.Size([11, 30000, 3]) tensor(3.4056, device='cuda:0') tensor(-3.7514, device='cuda:0')
+'sampleTestFunc_all' took 0.029590 s
+The model directory exists. Overwrite? True
+Training: |                                                                                                                                                       | 0/? [00:00<?, ?it/s]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 1.3 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+1.3 K     Trainable params
+0         Non-trainable params
+1.3 K     Total params
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 509: 100%|█████████| 1/1 [00:00<00:00, 11.06it/s, v_num=m8ln, loss_step=0.00981, loss_epoch=0.0102, val_residual=0.0105, drift_error=0.546, diffusion_error=0.000, val_loss=0.546]
+
+
+
+Epoch 589: 100%|██████████| 1/1 [00:00<00:00, 11.04it/s, v_num=m8ln, loss_step=0.0103, loss_epoch=0.0103, val_residual=0.0104, drift_error=0.533, diffusion_error=0.000, val_loss=0.533]
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 879: 100%|█████████| 1/1 [00:00<00:00, 11.04it/s, v_num=m8ln, loss_step=0.0106, loss_epoch=0.00985, val_residual=0.0103, drift_error=0.513, diffusion_error=0.000, val_loss=0.513]
+
+
+
+
+
+Epoch 981:   0%|                | 0/1 [00:00<?, ?it/s, v_num=m8ln, loss_step=0.00991, loss_epoch=0.00991, val_residual=0.0102, drift_error=0.509, diffusion_error=0.000, val_loss=0.509]
+
+Epoch 999: 100%|████████████| 1/1 [00:00<00:00,  6.79it/s, v_num=m8ln, loss_step=0.010, loss_epoch=0.010, val_residual=0.0102, drift_error=0.509, diffusion_error=0.000, val_loss=0.509]

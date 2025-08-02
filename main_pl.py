@@ -9,8 +9,7 @@ import torch
 import shutil
 import warnings
 import wandb
-wandb_logger = WandbLogger()
-wandb.init(project='WCR_real2d_zx_KAN')
+import time
 #wandb.init(mode = 'disabled')
 import numpy as np
 from data.GenerateData_fun import DataSet
@@ -22,32 +21,38 @@ from model.model import Model_pl
 import torch.utils.data as tud
 from utils.getconfig import getcfg
 import torch
+import gc
 from torch.utils.data import TensorDataset
 
 def main(config_file):
     torch.set_float32_matmul_precision("medium")
     with open(config_file, 'r') as stream:
         config = yaml.load(stream, yaml.FullLoader)
-    wandb_logger.experiment.config.update(config)
     cfg_train = config['train']
     cfg_data = config['data']
     cfg_nn = config['NN']
-    print(f'cfg_nn:{cfg_nn}')
     c_proj = config['Project']
+    wandb_logger = WandbLogger()
+    wandb.init(project='WCR_integrated4',name = c_proj['name'])
+    wandb_logger.experiment.config.update(config,'allow_val_change=True')
+    print(f'cfg_nn:{cfg_nn}')
     set_seed(config['seed'])
     #device = config['device']
-
+    
     # get definition of sde
     drift,diffusion = model_select(cfg_data['model'],cfg_data['frequency'])
 
     # generate dataset   
     dt = cfg_data['dt'] # 生成数据的dt
-    t = torch.linspace(0,cfg_data['T'],cfg_data['nt']).cuda()# 生成数据的时间轴
+    t = torch.linspace(cfg_data['start'],cfg_data['T'],cfg_data['nt']).cuda()# 生成数据的时间轴
     dim = cfg_data['dim'] #问题维数
     samples = cfg_data['sample'] #生成轨道数量
     dataset = DataSet(t, dt=dt, samples_num=samples, dim=dim, drift_fun=drift, diffusion_fun=diffusion,
                       initialization=torch.normal(mean=0., std=cfg_train['sigma_init'], size=(samples, dim)))
-    data = dataset.get_data(plot_hist=True) # t, sample_num ,dim
+    if dim == 1:
+        data = dataset.get_data(plot_hist=True) # t, sample_num ,dim
+    elif dim == 2:
+        data = dataset.get_data(plot2d_hist=True,logname="2ddata_plot")
     #np.save('data_2d.npy',data.detach().cpu().numpy())
     print("data: ", data.shape, data.max(), data.min())
     
@@ -71,8 +76,10 @@ def main(config_file):
                      net_diffusion = net_diffusion,  
                      cfg_train = cfg_train, 
                      cfg_nn = cfg_nn, 
+                     cfg_data = cfg_data,
                      device = data.device,
-                     seed = config['seed'])
+                     seed = config['seed'],
+                     projname = c_proj['name'])
 
 
     # define callback
@@ -88,10 +95,10 @@ def main(config_file):
                                 save_top_k = c_proj['save_top_k'],
                                 filename="model-{epoch:03d}-{val_loss:.4f}",
                             )
-    if os.path.exists(save_file):
-        print(f"The model directory exists. Overwrite? {c_proj['erase']}")
-        if c_proj['erase'] == True:
-            shutil.rmtree(save_file)
+    # if os.path.exists(save_file):
+    #     print(f"The model directory exists. Overwrite? {c_proj['erase']}")
+    #     if c_proj['erase'] == True:
+    #         shutil.rmtree(save_file)
     max_epochs = cfg_train["epochs"] 
     lr_monitor = LearningRateMonitor(logging_interval='step')
     
@@ -113,13 +120,22 @@ def main(config_file):
                             callbacks = [checkpoint_callback,lr_monitor],
                             strategy = 'deepspeed',gradient_clip_val=0.8)
     trainer.fit(model, train_loader, val_loader)
-    # if c_proj['save'] == True:
-    #     save_path = os.path.join(c_proj['save_path'], 'model.pt')
-    #     torch.save(model, save_path)
-    #     print('save model done')
+    save_path_drift = os.path.join('./modelckpts', f"{c_proj['name']}_drift.ckpt")
+    torch.save(model.model.net_drift, save_path_drift)
+    if cfg_train['known_diffusion']==False:
+        save_path_diffusion = os.path.join('./modelckpts', f"{c_proj['name']}_diffusion.ckpt")
+        torch.save(model.model.net_diffusion, save_path_diffusion)
+    print('save model done')
     # model.model.plot_error()
+    wandb.finish()
     
 if __name__ == '__main__':
     warnings.filterwarnings("ignore")
-    config_file = getcfg()
-    main(config_file)
+    parser = argparse.ArgumentParser('Training of the Architectures', add_help=True)
+    parser.add_argument('-c','--config_file', type=str)
+    args = parser.parse_args()
+    main(args.config_file)
+    # cwd = './configs/KAN2D_gen'
+    # for file in os.listdir(cwd):
+    #     print(f"Now handling {file}\n")
+    #     main(os.path.join(cwd,file))

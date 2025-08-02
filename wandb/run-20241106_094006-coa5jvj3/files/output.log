@@ -1,0 +1,179 @@
+
+cfg_nn:{'dim': 2, 'widthk': 50, 'depthk': 1, 'grid': 3, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'KAN', 'width': 100, 'depth': 5}
+data:  torch.Size([11, 50000, 2]) tensor(2.3121, device='cuda:0') tensor(-2.3242, device='cuda:0')
+'sampleTestFunc_all' took 0.077796 s
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 21.6 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+21.6 K    Trainable params
+0         Non-trainable params
+21.6 K    Total params
+0.086     Total estimated model params size (MB)
+Epoch 9: 100%|██████████| 1/1 [00:00<00:00,  3.48it/s, v_num=jvj3, loss_step=0.932, loss_epoch=0.851]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 109: 100%|██████████| 1/1 [00:00<00:00,  3.48it/s, v_num=jvj3, loss_step=0.0623, loss_epoch=0.0622, val_residual=0.058, drift_error=0.149, diffusion_error=0.000, val_loss=0.149]
+
+
+
+
+
+
+
+
+
+
+
+Epoch 189: 100%|██████████| 1/1 [00:00<00:00,  3.48it/s, v_num=jvj3, loss_step=0.0578, loss_epoch=0.0551, val_residual=0.0506, drift_error=0.0728, diffusion_error=0.000, val_loss=0.0728]
+
+
+
+
+
+
+
+
+
+
+
+Epoch 269: 100%|██████████| 1/1 [00:00<00:00,  3.48it/s, v_num=jvj3, loss_step=0.0487, loss_epoch=0.0561, val_residual=0.0502, drift_error=0.0776, diffusion_error=0.000, val_loss=0.0776]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 369: 100%|██████████| 1/1 [00:00<00:00,  3.48it/s, v_num=jvj3, loss_step=0.0498, loss_epoch=0.0496, val_residual=0.0486, drift_error=0.0811, diffusion_error=0.000, val_loss=0.0811]
+
+
+
+
+
+
+
+
+
+
+
+Epoch 449: 100%|██████████| 1/1 [00:00<00:00,  3.48it/s, v_num=jvj3, loss_step=0.0509, loss_epoch=0.0478, val_residual=0.047, drift_error=0.0847, diffusion_error=0.000, val_loss=0.0847]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 549: 100%|██████████| 1/1 [00:00<00:00,  3.47it/s, v_num=jvj3, loss_step=0.0518, loss_epoch=0.0519, val_residual=0.0478, drift_error=0.0898, diffusion_error=0.000, val_loss=0.0898]
+
+
+
+
+
+
+
+
+
+
+
+Epoch 629: 100%|██████████| 1/1 [00:00<00:00,  3.47it/s, v_num=jvj3, loss_step=0.0544, loss_epoch=0.0489, val_residual=0.0464, drift_error=0.0892, diffusion_error=0.000, val_loss=0.0892]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 999: 100%|██████████| 1/1 [00:00<00:00,  2.42it/s, v_num=jvj3, loss_step=0.0518, loss_epoch=0.0518, val_residual=0.0464, drift_error=0.0998, diffusion_error=0.000, val_loss=0.0998]
+`Trainer.fit` stopped: `max_epochs=1000` reached.
+Traceback (most recent call last):
+  File "/home/ubuntu/myproject/wcr_neural_kan/main_pl.py", line 140, in <module>
+    main(os.path.join(cwd,file))
+  File "/home/ubuntu/myproject/wcr_neural_kan/main_pl.py", line 122, in main
+    torch.save(model.netdrift, save_path_drift)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1709, in __getattr__
+    raise AttributeError(f"'{type(self).__name__}' object has no attribute '{name}'")
+AttributeError: 'Model_pl' object has no attribute 'netdrift'

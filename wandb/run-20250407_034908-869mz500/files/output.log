@@ -1,0 +1,26 @@
+cfg_nn:{'dim': 1, 'widthk': 50, 'depthk': 1, 'grid': 3, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'DNN0', 'depth': 5, 'width': 100}
+data:  torch.Size([11, 20000, 1]) tensor(1.4882, device='cuda:0') tensor(-1.4522, device='cuda:0')
+torch.Size([500, 9, 1])
+'sampleTestFunc_all' took 0.001358 s
+Traceback (most recent call last):
+  File "/home/ubuntu/myproject/wcr_neural_kan/main_pl.py", line 136, in <module>
+    main(args.config_file)
+  File "/home/ubuntu/myproject/wcr_neural_kan/main_pl.py", line 70, in main
+    model = Model_pl(t = t,
+  File "/home/ubuntu/myproject/wcr_neural_kan/model/model.py", line 322, in __init__
+    self.model = Model( t = t,
+  File "/home/ubuntu/myproject/wcr_neural_kan/model/model.py", line 77, in __init__
+    self.sample_gaussian()
+  File "/home/ubuntu/myproject/wcr_neural_kan/model/model.py", line 125, in sample_gaussian
+    self.sampleTestFunc()
+  File "/home/ubuntu/myproject/wcr_neural_kan/model/model.py", line 142, in sampleTestFunc
+    self.testn_0 = testn(TX[:-2], diff_order=0) #gauss,t-2,sample
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ubuntu/myproject/wcr_neural_kan/model/test_fun.py", line 49, in forward
+    self.g0 = self.gaussZero(x).to(self.device)
+  File "/home/ubuntu/myproject/wcr_neural_kan/model/test_fun.py", line 27, in gaussZero
+    -0.5 * (x[:, :, d].unsqueeze(0) - self.mu[:, :, :, d]) ** 2 / self.sigma ** 2)
+RuntimeError: The size of tensor a (500) must match the size of tensor b (9) at non-singleton dimension 0

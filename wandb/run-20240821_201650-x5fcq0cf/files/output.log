@@ -1,0 +1,113 @@
+
+cfg_nn:{'dim': 1, 'widthk': 60, 'depthk': 1, 'grid': 5, 'activation': 'GeLU', 'lr': 0.015, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'KAN', 'width': 100, 'depth': 5}
+data:  torch.Size([11, 20000, 1]) tensor(3.6977, device='cuda:0') tensor(-3.7967, device='cuda:0')
+'sampleTestFunc_all' took 0.029326 s
+The model directory exists. Overwrite? True
+Epoch 1: 100%|█████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 15.92it/s, v_num=q0cf, loss_step=6.700, loss_epoch=6.700]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 37.2 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+37.2 K    Trainable params
+0         Non-trainable params
+37.2 K    Total params
+
+
+Epoch 29: 100%|██████████████| 1/1 [00:00<00:00,  6.10it/s, v_num=q0cf, loss_step=1.030, loss_epoch=1.240, val_residual=2.170, drift_error=1.170, diffusion_error=0.000, val_loss=1.170]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 389: 100%|██████████| 1/1 [00:00<00:00,  6.10it/s, v_num=q0cf, loss_step=0.0214, loss_epoch=0.0231, val_residual=0.0237, drift_error=0.162, diffusion_error=0.000, val_loss=0.162]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 779: 100%|██████████| 1/1 [00:00<00:00,  6.08it/s, v_num=q0cf, loss_step=0.0209, loss_epoch=0.0191, val_residual=0.0202, drift_error=0.173, diffusion_error=0.000, val_loss=0.173]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 999: 100%|██████████| 1/1 [00:00<00:00,  1.67it/s, v_num=q0cf, loss_step=0.0192, loss_epoch=0.0192, val_residual=0.0194, drift_error=0.177, diffusion_error=0.000, val_loss=0.177]
+`Trainer.fit` stopped: `max_epochs=1000` reached.

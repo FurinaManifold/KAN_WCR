@@ -21,14 +21,32 @@ def net_select(cfg):
         case 'DNN':
             net_drift = DNN(inputsize=dim, width=width, depth=depth, outputsize=dim, params=params_net, activation=activation)
             net_diffusion = DNN_diffusion(inputsize=dim, width=width, depth=depth, outputsize=dim, params=params_net, activation=activation)
+        case 'DNN0':
+            net_drift = DNN(inputsize=dim, width=width, depth=depth, outputsize=dim, params=params_net, activation=activation)
+            net_diffusion = constant_output(outdim = dim)
         case 'KAN':
             net_drift = DNN_kanlayer(inputsize=dim, width=widthk, depth=depthk, outputsize=dim, params=params_net,grid=grid, activation=activation)
-            net_diffusion = DNN_diffusion_kan(inputsize=dim, width=12, depth=4, outputsize=dim, params=params_net,grid=2, activation=activation)
+            net_diffusion = DNN_kanlayer(inputsize=dim, width=12, depth=4, outputsize=dim, params=params_net,grid=2, activation=activation)
         case 'KAN0':
-            net_drift = DNN_kanlayer0(inputsize=dim, width=widthk, depth=depthk, outputsize=dim, params=params_net,grid=grid, activation=activation)
-            net_diffusion = DNN_diffusion_kan(inputsize=dim, width=widthk, depth=depthk, outputsize=dim, params=params_net,grid=grid, activation=activation)
+            net_drift = DNN_kanlayer(inputsize=dim, width=widthk, depth=depthk, outputsize=dim, params=params_net,grid=grid, activation=activation)
+            net_diffusion = constant_output(outdim = dim)
     return net_drift, net_diffusion
 
+class constant_output(nn.Module):
+    def __init__(self,outdim):
+        super().__init__()
+        self.params = nn.Parameter(torch.zeros(outdim))
+
+    def forward(self, x: torch.Tensor):
+        if x.dim() == 3:
+            n, m, k = x.size()
+            output = self.params.repeat(n, m, 1)
+        elif x.dim() == 2:
+            n, m = x.size()
+            output = self.params.repeat(n, 1)
+        elif x.dim() == 1:
+            output = self.params
+        return output
 class DNN_kanlayer(nn.Module):
     def __init__(self, inputsize: int, width: int, depth: int, outputsize: int, params: dict,grid:int, activation="Tanh"):
         super().__init__()

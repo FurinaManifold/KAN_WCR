@@ -1,0 +1,50 @@
+
+cfg_nn:{'dim': 2, 'widthk': 60, 'depthk': 1, 'grid': 2, 'activation': 'GeLU', 'lr': 0.018, 'gamma': 0.4, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'KAN', 'width': 100, 'depth': 5}
+data:  torch.Size([11, 30000, 2]) tensor(5.3608, device='cuda:0') tensor(-3.3100, device='cuda:0')
+'sampleTestFunc_all' took 0.027639 s
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 28.2 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+28.2 K    Trainable params
+0         Non-trainable params
+28.2 K    Total params
+0.113     Total estimated model params size (MB)
+
+Epoch 9: 100%|█████████████████████| 1/1 [00:00<00:00,  3.76it/s, v_num=5fbp, loss_step=1.270, loss_epoch=1.580]
+
+
+Epoch 19: 100%|█| 1/1 [00:00<00:00,  3.76it/s, v_num=5fbp, loss_step=0.318, loss_epoch=0.375, val_residual=1.070
+
+Epoch 29: 100%|█| 1/1 [00:00<00:00,  3.76it/s, v_num=5fbp, loss_step=0.0998, loss_epoch=0.117, val_residual=0.281, drift_e
+
+Epoch 39: 100%|█| 1/1 [00:00<00:00,  3.76it/s, v_num=5fbp, loss_step=0.0471, loss_epoch=0.0444, val_residual=0.0939, drift
+
+
+Epoch 49: 100%|█| 1/1 [00:00<00:00,  3.76it/s, v_num=5fbp, loss_step=0.0358, loss_epoch=0.0345, val_residual=0.044, drift_
+
+Epoch 59: 100%|█| 1/1 [00:00<00:00,  3.76it/s, v_num=5fbp, loss_step=0.0319, loss_epoch=0.0359, val_residual=0.0333, drift
+
+
+Epoch 69: 100%|█| 1/1 [00:00<00:00,  3.76it/s, v_num=5fbp, loss_step=0.0311, loss_epoch=0.0301, val_residual=0.0326, drift
+
+Epoch 79: 100%|█| 1/1 [00:00<00:00,  3.76it/s, v_num=5fbp, loss_step=0.0334, loss_epoch=0.0316, val_residual=0.0305, drift
+
+
+Epoch 89: 100%|█| 1/1 [00:00<00:00,  3.76it/s, v_num=5fbp, loss_step=0.0307, loss_epoch=0.034, val_residual=0.0295, drift_
+
+Epoch 99: 100%|█| 1/1 [00:00<00:00,  3.75it/s, v_num=5fbp, loss_step=0.0316, loss_epoch=0.0288, val_residual=0.0299, drift
+
+
+Epoch 109: 100%|█| 1/1 [00:00<00:00,  3.76it/s, v_num=5fbp, loss_step=0.0295, loss_epoch=0.0291, val_residual=0.0292, drif
+
+
+Epoch 119: 100%|█| 1/1 [00:00<00:00,  3.76it/s, v_num=5fbp, loss_step=0.031, loss_epoch=0.031, val_residual=0.0281, drift_
+Validation DataLoader 0:   0%|                                                                      | 0/1 [00:00<?, ?it/s]

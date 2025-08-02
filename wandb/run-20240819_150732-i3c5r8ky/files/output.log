@@ -1,0 +1,12 @@
+
+data:  torch.Size([11, 50000, 2]) tensor(4.1799, device='cuda:0') tensor(-4.4643, device='cuda:0')
+Traceback (most recent call last):
+  File "/home/ubuntu/myproject/wcr_neural_kan/main_pl.py", line 125, in <module>
+    main(config_file)
+  File "/home/ubuntu/myproject/wcr_neural_kan/main_pl.py", line 65, in main
+    model = Model_pl(t = t,
+  File "/home/ubuntu/myproject/wcr_neural_kan/model/model.py", line 306, in __init__
+    self.model = Model( t = t,
+  File "/home/ubuntu/myproject/wcr_neural_kan/model/model.py", line 55, in __init__
+    self.net_diffusion = net_diffusion.to(device)
+AttributeError: 'function' object has no attribute 'to'

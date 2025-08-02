@@ -1,0 +1,256 @@
+
+cfg_nn:{'dim': 2, 'widthk': 60, 'depthk': 1, 'grid': 2, 'activation': 'GeLU', 'lr': 0.018, 'gamma': 0.4, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'KAN', 'width': 100, 'depth': 5}
+data:  torch.Size([11, 30000, 2]) tensor(5.3608, device='cuda:0') tensor(-3.3100, device='cuda:0')
+'sampleTestFunc_all' took 0.027724 s
+The model directory exists. Overwrite? True
+Sanity Checking DataLoader 0:   0%|                                                                                                 | 0/1 [00:00<?, ?it/s]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 28.2 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+28.2 K    Trainable params
+0         Non-trainable params
+28.2 K    Total params
+
+
+Epoch 9: 100%|███████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=1.270, loss_epoch=1.580]
+
+
+Epoch 19: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.318, loss_epoch=0.375, val_residual=1.070, drift_error=1.040, diffusion_error=0.073
+
+
+Epoch 29: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0998, loss_epoch=0.117, val_residual=0.281, drift_error=0.426, diffusion_error=0.02
+
+
+Epoch 39: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0471, loss_epoch=0.0444, val_residual=0.0939, drift_error=0.0798, diffusion_error=0
+
+
+Epoch 49: 100%|█| 1/1 [00:00<00:00,  3.76it/s, v_num=u5lv, loss_step=0.0358, loss_epoch=0.0345, val_residual=0.044, drift_error=0.0582, diffusion_error=0.
+
+
+Epoch 59: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0319, loss_epoch=0.0359, val_residual=0.0333, drift_error=0.0852, diffusion_error=0
+
+Epoch 69: 100%|█| 1/1 [00:00<00:00,  3.76it/s, v_num=u5lv, loss_step=0.0311, loss_epoch=0.0301, val_residual=0.0326, drift_error=0.0521, diffusion_error=0
+
+Epoch 79: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0334, loss_epoch=0.0316, val_residual=0.0305, drift_error=0.0458, diffusion_error=0
+
+Epoch 89: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0307, loss_epoch=0.034, val_residual=0.0295, drift_error=0.0408, diffusion_error=0.
+
+Epoch 99: 100%|█| 1/1 [00:00<00:00,  3.73it/s, v_num=u5lv, loss_step=0.0316, loss_epoch=0.0288, val_residual=0.0299, drift_error=0.038, diffusion_error=0.
+
+Epoch 109: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0295, loss_epoch=0.0291, val_residual=0.0292, drift_error=0.0279, diffusion_error=
+
+Epoch 119: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.031, loss_epoch=0.031, val_residual=0.0281, drift_error=0.0301, diffusion_error=0.
+
+Epoch 129: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0299, loss_epoch=0.0305, val_residual=0.0281, drift_error=0.0319, diffusion_error=
+
+Epoch 139: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0306, loss_epoch=0.0297, val_residual=0.0283, drift_error=0.0339, diffusion_error=
+
+
+Epoch 149: 100%|█| 1/1 [00:00<00:00,  3.76it/s, v_num=u5lv, loss_step=0.0319, loss_epoch=0.0282, val_residual=0.0286, drift_error=0.0285, diffusion_error=0.250, val_loss=0.278
+
+Epoch 159: 100%|█| 1/1 [00:00<00:00,  3.76it/s, v_num=u5lv, loss_step=0.0285, loss_epoch=0.0275, val_residual=0.0276, drift_error=0.0233, diffusion_error=0.246, val_loss=0.269
+
+Epoch 169: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0288, loss_epoch=0.0292, val_residual=0.0283, drift_error=0.0276, diffusion_error=0.239, val_loss=0.267
+
+Epoch 179: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0275, loss_epoch=0.0291, val_residual=0.0273, drift_error=0.0266, diffusion_error=0.240, val_loss=0.267
+
+Epoch 189: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.029, loss_epoch=0.0289, val_residual=0.0281, drift_error=0.0312, diffusion_error=0.234, val_loss=0.266]
+
+Epoch 199: 100%|█| 1/1 [00:00<00:00,  3.76it/s, v_num=u5lv, loss_step=0.0303, loss_epoch=0.0284, val_residual=0.0276, drift_error=0.0277, diffusion_error=0.240, val_loss=0.268
+
+Epoch 209: 100%|██| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.028, loss_epoch=0.028, val_residual=0.0271, drift_error=0.0264, diffusion_error=0.238, val_loss=0.264]
+
+Epoch 219: 100%|█| 1/1 [00:00<00:00,  3.76it/s, v_num=u5lv, loss_step=0.0311, loss_epoch=0.030, val_residual=0.0274, drift_error=0.0335, diffusion_error=0.242, val_loss=0.276]
+
+Epoch 229: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0285, loss_epoch=0.0296, val_residual=0.0266, drift_error=0.0301, diffusion_error=0.239, val_loss=0.269
+
+Epoch 239: 100%|█| 1/1 [00:00<00:00,  3.76it/s, v_num=u5lv, loss_step=0.0271, loss_epoch=0.0272, val_residual=0.0282, drift_error=0.0302, diffusion_error=0.229, val_loss=0.259
+
+Epoch 249: 100%|█| 1/1 [00:00<00:00,  3.76it/s, v_num=u5lv, loss_step=0.0292, loss_epoch=0.0299, val_residual=0.0266, drift_error=0.0294, diffusion_error=0.239, val_loss=0.269
+
+
+Epoch 259: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0274, loss_epoch=0.0306, val_residual=0.0269, drift_error=0.0316, diffusion_error=0.239, val_loss=0.270
+
+
+Epoch 269: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0264, loss_epoch=0.0289, val_residual=0.0272, drift_error=0.0286, diffusion_error=0.238, val_loss=0.267
+
+Epoch 279: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0275, loss_epoch=0.0281, val_residual=0.0265, drift_error=0.0315, diffusion_error=0.241, val_loss=0.273
+
+
+Epoch 289: 100%|██| 1/1 [00:00<00:00,  3.76it/s, v_num=u5lv, loss_step=0.0269, loss_epoch=0.028, val_residual=0.0266, drift_error=0.032, diffusion_error=0.241, val_loss=0.273]
+
+
+Epoch 299: 100%|█| 1/1 [00:00<00:00,  3.76it/s, v_num=u5lv, loss_step=0.0288, loss_epoch=0.0283, val_residual=0.0265, drift_error=0.0291, diffusion_error=0.241, val_loss=0.270
+
+Epoch 309: 100%|█| 1/1 [00:00<00:00,  3.75it/s, v_num=u5lv, loss_step=0.0281, loss_epoch=0.0282, val_residual=0.0264, drift_error=0.0329, diffusion_error=0.240, val_loss=0.273
+
+Epoch 319: 100%|█| 1/1 [00:00<00:00,  3.76it/s, v_num=u5lv, loss_step=0.0296, loss_epoch=0.0277, val_residual=0.0263, drift_error=0.0321, diffusion_error=0.248, val_loss=0.280
+
+Epoch 329: 100%|█| 1/1 [00:00<00:00,  3.76it/s, v_num=u5lv, loss_step=0.0267, loss_epoch=0.0289, val_residual=0.0262, drift_error=0.0324, diffusion_error=0.242, val_loss=0.275
+
+Epoch 339: 100%|█| 1/1 [00:00<00:00,  3.76it/s, v_num=u5lv, loss_step=0.0261, loss_epoch=0.0276, val_residual=0.0265, drift_error=0.0351, diffusion_error=0.242, val_loss=0.278
+
+Epoch 349: 100%|█| 1/1 [00:00<00:00,  3.76it/s, v_num=u5lv, loss_step=0.0288, loss_epoch=0.0281, val_residual=0.0261, drift_error=0.0344, diffusion_error=0.240, val_loss=0.275
+
+Epoch 359: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0279, loss_epoch=0.029, val_residual=0.0266, drift_error=0.0347, diffusion_error=0.236, val_loss=0.271]
+
+Epoch 369: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0271, loss_epoch=0.0286, val_residual=0.0266, drift_error=0.0328, diffusion_error=0.238, val_loss=0.271
+
+Epoch 379: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0296, loss_epoch=0.0264, val_residual=0.0266, drift_error=0.0352, diffusion_error=0.234, val_loss=0.269
+
+Epoch 389: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0288, loss_epoch=0.0301, val_residual=0.027, drift_error=0.0356, diffusion_error=0.238, val_loss=0.274]
+
+
+Epoch 399: 100%|█| 1/1 [00:00<00:00,  3.76it/s, v_num=u5lv, loss_step=0.0282, loss_epoch=0.0295, val_residual=0.0259, drift_error=0.0343, diffusion_error=0.242, val_loss=0.276
+
+
+Epoch 409: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0257, loss_epoch=0.0275, val_residual=0.0266, drift_error=0.0334, diffusion_error=0.234, val_loss=0.268
+
+Epoch 419: 100%|█| 1/1 [00:00<00:00,  3.76it/s, v_num=u5lv, loss_step=0.0286, loss_epoch=0.0281, val_residual=0.0258, drift_error=0.0335, diffusion_error=0.242, val_loss=0.276
+
+Epoch 429: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0263, loss_epoch=0.027, val_residual=0.0256, drift_error=0.0345, diffusion_error=0.244, val_loss=0.278]
+
+Epoch 439: 100%|█| 1/1 [00:00<00:00,  3.76it/s, v_num=u5lv, loss_step=0.0252, loss_epoch=0.0258, val_residual=0.0257, drift_error=0.0346, diffusion_error=0.238, val_loss=0.273
+
+Epoch 449: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0273, loss_epoch=0.0256, val_residual=0.0256, drift_error=0.0361, diffusion_error=0.240, val_loss=0.276
+
+Epoch 459: 100%|█| 1/1 [00:00<00:00,  3.73it/s, v_num=u5lv, loss_step=0.0266, loss_epoch=0.0299, val_residual=0.0255, drift_error=0.0374, diffusion_error=0.247, val_loss=0.284
+
+
+Epoch 469: 100%|█| 1/1 [00:00<00:00,  3.76it/s, v_num=u5lv, loss_step=0.0256, loss_epoch=0.0274, val_residual=0.0255, drift_error=0.0376, diffusion_error=0.243, val_loss=0.281
+
+Epoch 479: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0284, loss_epoch=0.0278, val_residual=0.0257, drift_error=0.0393, diffusion_error=0.238, val_loss=0.278
+
+Epoch 489: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0255, loss_epoch=0.0295, val_residual=0.0254, drift_error=0.0386, diffusion_error=0.247, val_loss=0.285
+
+
+Epoch 499: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0273, loss_epoch=0.0282, val_residual=0.0256, drift_error=0.0395, diffusion_error=0.242, val_loss=0.282
+
+Epoch 509: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0279, loss_epoch=0.0276, val_residual=0.0254, drift_error=0.0415, diffusion_error=0.240, val_loss=0.282
+
+Epoch 519: 100%|█| 1/1 [00:00<00:00,  3.76it/s, v_num=u5lv, loss_step=0.0299, loss_epoch=0.0257, val_residual=0.0253, drift_error=0.0411, diffusion_error=0.249, val_loss=0.290
+
+
+Epoch 529: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0279, loss_epoch=0.0259, val_residual=0.0252, drift_error=0.0413, diffusion_error=0.247, val_loss=0.289
+
+Epoch 539: 100%|█| 1/1 [00:00<00:00,  3.76it/s, v_num=u5lv, loss_step=0.0283, loss_epoch=0.0275, val_residual=0.0256, drift_error=0.0418, diffusion_error=0.243, val_loss=0.285
+
+Epoch 549: 100%|█| 1/1 [00:00<00:00,  3.76it/s, v_num=u5lv, loss_step=0.0266, loss_epoch=0.0266, val_residual=0.0251, drift_error=0.0408, diffusion_error=0.246, val_loss=0.287
+
+
+Epoch 559: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0265, loss_epoch=0.0266, val_residual=0.0253, drift_error=0.0417, diffusion_error=0.245, val_loss=0.286
+
+Epoch 569: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0264, loss_epoch=0.0264, val_residual=0.0251, drift_error=0.0426, diffusion_error=0.249, val_loss=0.291
+
+Epoch 579: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0265, loss_epoch=0.0254, val_residual=0.0249, drift_error=0.0415, diffusion_error=0.253, val_loss=0.294
+
+Epoch 589: 100%|█| 1/1 [00:00<00:00,  3.76it/s, v_num=u5lv, loss_step=0.0272, loss_epoch=0.0258, val_residual=0.0249, drift_error=0.0435, diffusion_error=0.249, val_loss=0.292
+
+
+Epoch 599: 100%|█| 1/1 [00:00<00:00,  3.76it/s, v_num=u5lv, loss_step=0.0265, loss_epoch=0.0266, val_residual=0.0252, drift_error=0.0458, diffusion_error=0.254, val_loss=0.299
+
+Epoch 609: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0257, loss_epoch=0.0258, val_residual=0.0248, drift_error=0.0435, diffusion_error=0.249, val_loss=0.293
+
+Epoch 619: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0249, loss_epoch=0.0255, val_residual=0.0247, drift_error=0.0435, diffusion_error=0.249, val_loss=0.293
+
+Epoch 629: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0251, loss_epoch=0.0264, val_residual=0.0246, drift_error=0.0445, diffusion_error=0.251, val_loss=0.296
+
+Epoch 639: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.027, loss_epoch=0.0272, val_residual=0.0247, drift_error=0.0444, diffusion_error=0.250, val_loss=0.295]
+
+Epoch 649: 100%|█| 1/1 [00:00<00:00,  3.76it/s, v_num=u5lv, loss_step=0.0249, loss_epoch=0.027, val_residual=0.0245, drift_error=0.0444, diffusion_error=0.251, val_loss=0.296]
+
+Epoch 659: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0262, loss_epoch=0.0273, val_residual=0.0245, drift_error=0.0447, diffusion_error=0.251, val_loss=0.295
+
+
+Epoch 669: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0272, loss_epoch=0.026, val_residual=0.0247, drift_error=0.0442, diffusion_error=0.250, val_loss=0.295]
+
+
+Epoch 679: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0267, loss_epoch=0.0248, val_residual=0.0244, drift_error=0.0451, diffusion_error=0.253, val_loss=0.298
+
+
+Epoch 689: 100%|█| 1/1 [00:00<00:00,  3.76it/s, v_num=u5lv, loss_step=0.0249, loss_epoch=0.025, val_residual=0.0245, drift_error=0.0446, diffusion_error=0.251, val_loss=0.296]
+
+Epoch 699: 100%|█| 1/1 [00:00<00:00,  3.76it/s, v_num=u5lv, loss_step=0.0268, loss_epoch=0.0267, val_residual=0.0244, drift_error=0.0437, diffusion_error=0.253, val_loss=0.297
+
+Epoch 709: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0256, loss_epoch=0.0253, val_residual=0.0246, drift_error=0.0445, diffusion_error=0.253, val_loss=0.298
+
+Epoch 719: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0265, loss_epoch=0.0266, val_residual=0.0244, drift_error=0.0454, diffusion_error=0.258, val_loss=0.304
+
+Epoch 729: 100%|█| 1/1 [00:00<00:00,  3.76it/s, v_num=u5lv, loss_step=0.0273, loss_epoch=0.0272, val_residual=0.0243, drift_error=0.0439, diffusion_error=0.256, val_loss=0.300
+
+Epoch 739: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0241, loss_epoch=0.0282, val_residual=0.0243, drift_error=0.0464, diffusion_error=0.255, val_loss=0.302
+
+
+Epoch 749: 100%|█| 1/1 [00:00<00:00,  3.76it/s, v_num=u5lv, loss_step=0.0263, loss_epoch=0.0282, val_residual=0.0244, drift_error=0.0463, diffusion_error=0.253, val_loss=0.299
+
+
+Epoch 759: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.028, loss_epoch=0.0255, val_residual=0.0243, drift_error=0.0441, diffusion_error=0.255, val_loss=0.299]
+
+Epoch 769: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0268, loss_epoch=0.027, val_residual=0.0242, drift_error=0.0451, diffusion_error=0.256, val_loss=0.302]
+
+
+Epoch 779: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0257, loss_epoch=0.0265, val_residual=0.0243, drift_error=0.0469, diffusion_error=0.255, val_loss=0.302
+
+
+Epoch 789: 100%|█| 1/1 [00:00<00:00,  3.76it/s, v_num=u5lv, loss_step=0.0256, loss_epoch=0.0262, val_residual=0.024, drift_error=0.0463, diffusion_error=0.257, val_loss=0.304]
+
+
+Epoch 799: 100%|█| 1/1 [00:00<00:00,  3.76it/s, v_num=u5lv, loss_step=0.0263, loss_epoch=0.0261, val_residual=0.024, drift_error=0.0465, diffusion_error=0.258, val_loss=0.304]
+
+Epoch 809: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0255, loss_epoch=0.0263, val_residual=0.024, drift_error=0.0469, diffusion_error=0.260, val_loss=0.307]
+
+Epoch 819: 100%|██| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0258, loss_epoch=0.0268, val_residual=0.024, drift_error=0.047, diffusion_error=0.258, val_loss=0.305]
+
+Epoch 829: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0251, loss_epoch=0.027, val_residual=0.0239, drift_error=0.0473, diffusion_error=0.259, val_loss=0.307]
+
+Epoch 839: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0246, loss_epoch=0.0279, val_residual=0.0239, drift_error=0.047, diffusion_error=0.260, val_loss=0.307]
+
+Epoch 849: 100%|█| 1/1 [00:00<00:00,  3.76it/s, v_num=u5lv, loss_step=0.0253, loss_epoch=0.0242, val_residual=0.0239, drift_error=0.0475, diffusion_error=0.258, val_loss=0.306
+
+Epoch 859: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0251, loss_epoch=0.0245, val_residual=0.0239, drift_error=0.0467, diffusion_error=0.260, val_loss=0.306
+
+Epoch 869: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0263, loss_epoch=0.0253, val_residual=0.0239, drift_error=0.047, diffusion_error=0.259, val_loss=0.306]
+
+Epoch 879: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0257, loss_epoch=0.0254, val_residual=0.0239, drift_error=0.0473, diffusion_error=0.259, val_loss=0.306
+
+
+Epoch 889: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0241, loss_epoch=0.024, val_residual=0.0238, drift_error=0.0467, diffusion_error=0.258, val_loss=0.305]
+
+
+Epoch 899: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0262, loss_epoch=0.0262, val_residual=0.0239, drift_error=0.0477, diffusion_error=0.259, val_loss=0.306
+
+
+Epoch 909: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0254, loss_epoch=0.0266, val_residual=0.0238, drift_error=0.0482, diffusion_error=0.260, val_loss=0.308
+
+
+Epoch 919: 100%|█| 1/1 [00:00<00:00,  3.76it/s, v_num=u5lv, loss_step=0.026, loss_epoch=0.0246, val_residual=0.0239, drift_error=0.0489, diffusion_error=0.258, val_loss=0.307]
+
+
+Epoch 929: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0247, loss_epoch=0.0249, val_residual=0.0238, drift_error=0.0483, diffusion_error=0.259, val_loss=0.307
+
+Epoch 939: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0258, loss_epoch=0.0259, val_residual=0.0238, drift_error=0.0485, diffusion_error=0.260, val_loss=0.308
+
+Epoch 949: 100%|█| 1/1 [00:00<00:00,  3.76it/s, v_num=u5lv, loss_step=0.0274, loss_epoch=0.0234, val_residual=0.0238, drift_error=0.0476, diffusion_error=0.258, val_loss=0.306
+
+Epoch 959: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0251, loss_epoch=0.0274, val_residual=0.0238, drift_error=0.0474, diffusion_error=0.261, val_loss=0.308
+
+Epoch 969: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0251, loss_epoch=0.0243, val_residual=0.0238, drift_error=0.0468, diffusion_error=0.261, val_loss=0.308
+
+Epoch 979: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0234, loss_epoch=0.0267, val_residual=0.0238, drift_error=0.0464, diffusion_error=0.260, val_loss=0.306
+
+
+Epoch 989: 100%|█| 1/1 [00:00<00:00,  3.77it/s, v_num=u5lv, loss_step=0.0257, loss_epoch=0.0254, val_residual=0.0237, drift_error=0.0479, diffusion_error=0.262, val_loss=0.310
+
+
+Epoch 999: 100%|█| 1/1 [00:00<00:00,  3.76it/s, v_num=u5lv, loss_step=0.0259, loss_epoch=0.0252, val_residual=0.0237, drift_error=0.0469, diffusion_error=0.261, val_loss=0.308
+
+Validation DataLoader 0:   0%|                                                                                                                           | 0/1 [00:00<?, ?it/s]
+`Trainer.fit` stopped: `max_epochs=1000` reached.

@@ -1,0 +1,55 @@
+data:  torch.Size([11, 20000, 1]) tensor(3.5925, device='cuda:0') tensor(-3.8911, device='cuda:0')
+'sampleTestFunc_all' took 0.027361 s
+Epoch 0:   0%|                                                                                                                                                    | 0/1 [00:00<?, ?it/s]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 33.6 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+33.6 K    Trainable params
+0         Non-trainable params
+33.6 K    Total params
+
+
+
+
+
+
+
+
+Epoch 69: 100%|███████████| 1/1 [00:00<00:00,  4.60it/s, v_num=jiy3, loss_step=0.0407, loss_epoch=0.046, val_residual=0.0706, drift_error=1.020, diffusion_error=0.0213, val_loss=1.040]
+
+
+
+Epoch 99: 100%|██████████| 1/1 [00:00<00:00,  4.60it/s, v_num=jiy3, loss_step=0.0218, loss_epoch=0.0194, val_residual=0.0239, drift_error=1.000, diffusion_error=0.0171, val_loss=1.020]
+
+
+
+
+Epoch 139: 100%|██████████| 1/1 [00:00<00:00,  4.61it/s, v_num=jiy3, loss_step=0.016, loss_epoch=0.0193, val_residual=0.0259, drift_error=0.991, diffusion_error=0.0199, val_loss=1.010]
+
+
+Epoch 159: 100%|██████████| 1/1 [00:00<00:00,  4.60it/s, v_num=jiy3, loss_step=0.0164, loss_epoch=0.0154, val_residual=0.018, drift_error=0.994, diffusion_error=0.0206, val_loss=1.010]
+
+
+
+
+Epoch 199: 100%|██████████| 1/1 [00:00<00:00,  4.59it/s, v_num=jiy3, loss_step=0.0161, loss_epoch=0.0137, val_residual=0.015, drift_error=0.995, diffusion_error=0.0221, val_loss=1.020]
+
+
+
+Epoch 229: 100%|█████████| 1/1 [00:00<00:00,  4.61it/s, v_num=jiy3, loss_step=0.0146, loss_epoch=0.0136, val_residual=0.0146, drift_error=1.000, diffusion_error=0.0223, val_loss=1.020]
+
+
+
+Epoch 259: 100%|███████████| 1/1 [00:00<00:00,  4.59it/s, v_num=jiy3, loss_step=0.013, loss_epoch=0.0132, val_residual=0.014, drift_error=1.010, diffusion_error=0.0223, val_loss=1.030]
+
+
+Epoch 279: 100%|██████████| 1/1 [00:00<00:00,  4.60it/s, v_num=jiy3, loss_step=0.013, loss_epoch=0.0132, val_residual=0.0139, drift_error=1.020, diffusion_error=0.0226, val_loss=1.040]
+Validation DataLoader 0:   0%|                                                                                                                                    | 0/1 [00:00<?, ?it/s]

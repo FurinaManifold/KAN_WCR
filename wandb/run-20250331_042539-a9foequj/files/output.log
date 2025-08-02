@@ -1,0 +1,112 @@
+
+cfg_nn:{'dim': 2, 'widthk': 40, 'depthk': 1, 'grid': 3, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'KAN0', 'depth': 5, 'width': 100}
+data:  torch.Size([6, 60000, 2]) tensor(4.4843, device='cuda:0') tensor(-5.9644, device='cuda:0')
+'sampleTestFunc_all' took 0.017016 s
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 14.1 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+14.1 K    Trainable params
+0         Non-trainable params
+14.1 K    Total params
+0.056     Total estimated model params size (MB)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 289: 100%|█| 1/1 [00:00<00:00,  5.79it/s, v_num=equj, loss_step=0.0106, diffusion0_step=1.020, diffusion1_ste
+
+
+
+
+
+
+
+
+Epoch 389: 100%|█| 1/1 [00:00<00:00,  5.80it/s, v_num=equj, loss_step=0.0098, diffusion0_step=1.010, diffusion1_ste
+
+
+
+
+
+
+
+
+
+
+
+Epoch 519: 100%|█| 1/1 [00:00<00:00,  5.79it/s, v_num=equj, loss_step=0.00841, diffusion0_step=1.010, diffusion1_st
+
+
+
+
+
+
+
+
+Epoch 619: 100%|█| 1/1 [00:00<00:00,  5.80it/s, v_num=equj, loss_step=0.00799, diffusion0_step=1.010, diffusion1_st
+
+
+
+
+
+
+
+
+Epoch 719: 100%|█| 1/1 [00:00<00:00,  5.80it/s, v_num=equj, loss_step=0.00792, diffusion0_step=1.010, diffusion1_st
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 994: 100%|█| 1/1 [00:00<00:00, 13.89it/s, v_num=equj, loss_step=0.00759, diffusion0_step=1.020, diffusion1_st
+Epoch 999: 100%|█| 1/1 [00:00<00:00,  3.92it/s, v_num=equj, loss_step=0.00785, diffusion0_step=1.010, diffusion1_st
+save model done

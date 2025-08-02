@@ -1,0 +1,1 @@
+{"data_distribution_dim0": {"_type": "image-file", "sha256": "13c5be47f42ee266eb2e4c35f443248469a4cd86fedf61da04d51d7b76ea74b1", "size": 8113, "path": "media/images/data_distribution_dim0_0_13c5be47f42ee266eb2e.png", "format": "png", "width": 640, "height": 480}, "_timestamp": 1727591897.5164115, "_runtime": 7.134862661361694, "_step": 0, "_wandb": {"runtime": 5}}

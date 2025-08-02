@@ -1,0 +1,19 @@
+2024-08-21 18:48:10,660 INFO    StreamThr :145774 [internal.py:wandb_internal():85] W&B internal server running at pid: 145774, started at: 2024-08-21 18:48:10.659326
+2024-08-21 18:48:10,663 DEBUG   HandlerThread:145774 [handler.py:handle_request():158] handle_request: status
+2024-08-21 18:48:10,665 INFO    WriterThread:145774 [datastore.py:open_for_write():87] open: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20240821_184810-bw4eiqap/run-bw4eiqap.wandb
+2024-08-21 18:48:10,666 DEBUG   SenderThread:145774 [sender.py:send():378] send: header
+2024-08-21 18:48:10,666 DEBUG   SenderThread:145774 [sender.py:send():378] send: run
+2024-08-21 18:48:11,561 INFO    SenderThread:145774 [dir_watcher.py:__init__():211] watching files in: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20240821_184810-bw4eiqap/files
+2024-08-21 18:48:11,561 INFO    SenderThread:145774 [sender.py:_start_run_threads():1123] run started: bw4eiqap with start time 1724237290.658456
+2024-08-21 18:48:11,665 WARNING StreamThr :145774 [internal.py:is_dead():413] Internal process exiting, parent pid 145703 disappeared
+2024-08-21 18:48:11,665 ERROR   StreamThr :145774 [internal.py:wandb_internal():151] Internal process shutdown.
+2024-08-21 18:48:11,665 INFO    HandlerThread:145774 [handler.py:finish():882] shutting down handler
+2024-08-21 18:48:11,666 INFO    WriterThread:145774 [datastore.py:close():296] close: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20240821_184810-bw4eiqap/run-bw4eiqap.wandb
+2024-08-21 18:48:12,561 INFO    SenderThread:145774 [sender.py:finish():1545] shutting down sender
+2024-08-21 18:48:12,562 INFO    SenderThread:145774 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-08-21 18:48:13,562 INFO    SenderThread:145774 [dir_watcher.py:finish():388] scan: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20240821_184810-bw4eiqap/files
+2024-08-21 18:48:13,562 INFO    SenderThread:145774 [dir_watcher.py:finish():402] scan save: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20240821_184810-bw4eiqap/files/config.yaml config.yaml
+2024-08-21 18:48:13,563 INFO    SenderThread:145774 [file_pusher.py:finish():169] shutting down file pusher
+2024-08-21 18:48:13,563 INFO    SenderThread:145774 [file_pusher.py:join():175] waiting for file pusher
+2024-08-21 18:48:14,800 INFO    wandb-upload_0:145774 [upload_job.py:push():130] Uploaded file /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20240821_184810-bw4eiqap/files/config.yaml
+2024-08-21 18:48:14,801 INFO    MainThread:145774 [internal.py:handle_exit():75] Internal process exited

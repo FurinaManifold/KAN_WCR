@@ -8,24 +8,27 @@ Project:
   devices: 1
   accelerator: 'gpu'
   PATH: /home/ubuntu/myproject/wcr_neural_kan/save_files
-  save_dir: 2d
+  save_dir: 1d
   
 
 
 data:
   dt: 0.001
-  sample: 30000 
-  dim: 2
+  sample: 20000 
+  plotsample: 5
+  dim: 1
   nt: 11
+  plotnt: 101
   T: 1
-  plot_path: /home/ubuntu/myproject/wcr_neural_kan/result3D
-  model: zx3
-  frequency: 10
+  plotT: 2
+  plot_path: /home/ubuntu/myproject/wcr_neural_kan/result1D
+  model: pdcd5
+  frequency: 8
 
 train:
   checkepoch: 10
   sigma_init: 0.3
-  known_diffusion: False
+  known_diffusion: Yes
   plotstep: [500,1000]
   testfunction: gauss
   gauss_number: 300
@@ -36,8 +39,8 @@ train:
   epochs: 1000
   mean_samp_way: SDE_dist
   var_samp_way: dist
-  error_type: uniform2d
-  plot_type: 2d
+  error_type: uniform1d
+  plot_type: 1d
   samp_coef: 
     lhs_ratio: 0.7
     variance_min: 0.3
@@ -47,10 +50,10 @@ train:
   
 
 NN:
-  dim: 2
+  dim: 1
   widthk: 50
   depthk: 1
-  grid: 2
+  grid: 3
   activation: GeLU
   lr: 0.01
   gamma: 0.5
@@ -58,5 +61,5 @@ NN:
   weight_decay: 0.00001
   iter: 2000
   mode: KAN
-  width: 100
   depth: 5
+  width: 100

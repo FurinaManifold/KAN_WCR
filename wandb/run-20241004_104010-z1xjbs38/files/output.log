@@ -1,0 +1,162 @@
+
+cfg_nn:{'dim': 2, 'widthk': 40, 'depthk': 1, 'grid': 4, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'KAN', 'width': 100, 'depth': 5}
+data:  torch.Size([11, 50000, 2]) tensor(5.7118, device='cuda:0') tensor(-5.8420, device='cuda:0')
+'sampleTestFunc_all' took 0.017580 s
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 15.8 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+15.8 K    Trainable params
+0         Non-trainable params
+15.8 K    Total params
+0.063     Total estimated model params size (MB)
+The model directory exists. Overwrite? True
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 339: 100%|██████████| 1/1 [00:00<00:00,  3.81it/s, v_num=bs38, loss_step=0.00788, loss_epoch=0.00782, val_residual=0.00846, drift_error=0.165, diffusion_error=0.000, val_loss=0.165]
+
+
+
+
+
+
+Epoch 389: 100%|██████████| 1/1 [00:00<00:00,  3.80it/s, v_num=bs38, loss_step=0.00777, loss_epoch=0.00781, val_residual=0.00793, drift_error=0.136, diffusion_error=0.000, val_loss=0.136]
+
+
+
+Epoch 419: 100%|██████████| 1/1 [00:00<00:00,  3.80it/s, v_num=bs38, loss_step=0.00734, loss_epoch=0.0072, val_residual=0.00766, drift_error=0.127, diffusion_error=0.000, val_loss=0.127]
+
+
+
+
+
+
+Epoch 469: 100%|██████████| 1/1 [00:00<00:00,  3.80it/s, v_num=bs38, loss_step=0.00709, loss_epoch=0.00743, val_residual=0.00738, drift_error=0.117, diffusion_error=0.000, val_loss=0.117]
+
+
+
+
+Epoch 499: 100%|██████████| 1/1 [00:00<00:00,  3.80it/s, v_num=bs38, loss_step=0.00718, loss_epoch=0.00686, val_residual=0.00729, drift_error=0.114, diffusion_error=0.000, val_loss=0.114]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 789: 100%|██████████| 1/1 [00:00<00:00,  3.81it/s, v_num=bs38, loss_step=0.00636, loss_epoch=0.00621, val_residual=0.00655, drift_error=0.0921, diffusion_error=0.000, val_loss=0.0921]
+
+
+
+
+
+
+Epoch 839: 100%|██████████| 1/1 [00:00<00:00,  3.80it/s, v_num=bs38, loss_step=0.00644, loss_epoch=0.00622, val_residual=0.00645, drift_error=0.0929, diffusion_error=0.000, val_loss=0.0929]
+
+
+
+
+
+
+
+
+
+
+Epoch 919: 100%|██████████| 1/1 [00:00<00:00,  3.80it/s, v_num=bs38, loss_step=0.00625, loss_epoch=0.006, val_residual=0.00637, drift_error=0.0896, diffusion_error=0.000, val_loss=0.0896]
+
+
+
+
+
+
+
+
+
+
+
+Epoch 999: 100%|██████████| 1/1 [00:00<00:00,  3.80it/s, v_num=bs38, loss_step=0.00637, loss_epoch=0.00669, val_residual=0.00632, drift_error=0.0892, diffusion_error=0.000, val_loss=0.0892]
+Validation DataLoader 0:   0%|          | 0/1 [00:00<?, ?it/s]
+
+`Trainer.fit` stopped: `max_epochs=1000` reached.

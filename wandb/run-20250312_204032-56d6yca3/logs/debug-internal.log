@@ -1,0 +1,21 @@
+2025-03-12 20:40:32,364 INFO    StreamThr :206919 [internal.py:wandb_internal():85] W&B internal server running at pid: 206919, started at: 2025-03-12 20:40:32.362959
+2025-03-12 20:40:32,373 DEBUG   HandlerThread:206919 [handler.py:handle_request():158] handle_request: status
+2025-03-12 20:40:32,376 INFO    WriterThread:206919 [datastore.py:open_for_write():87] open: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250312_204032-56d6yca3/run-56d6yca3.wandb
+2025-03-12 20:40:32,377 DEBUG   SenderThread:206919 [sender.py:send():378] send: header
+2025-03-12 20:40:32,377 DEBUG   SenderThread:206919 [sender.py:send():378] send: run
+2025-03-12 20:40:34,036 INFO    SenderThread:206919 [dir_watcher.py:__init__():211] watching files in: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250312_204032-56d6yca3/files
+2025-03-12 20:40:34,037 INFO    SenderThread:206919 [sender.py:_start_run_threads():1123] run started: 56d6yca3 with start time 1741783232.36163
+2025-03-12 20:40:34,048 DEBUG   HandlerThread:206919 [handler.py:handle_request():158] handle_request: check_version
+2025-03-12 20:40:34,049 DEBUG   SenderThread:206919 [sender.py:send_request():405] send_request: check_version
+2025-03-12 20:40:35,471 DEBUG   HandlerThread:206919 [handler.py:handle_request():158] handle_request: shutdown
+2025-03-12 20:40:35,471 INFO    HandlerThread:206919 [handler.py:finish():882] shutting down handler
+2025-03-12 20:40:36,050 INFO    WriterThread:206919 [datastore.py:close():296] close: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250312_204032-56d6yca3/run-56d6yca3.wandb
+2025-03-12 20:40:38,088 INFO    SenderThread:206919 [sender.py:finish():1545] shutting down sender
+2025-03-12 20:40:38,088 INFO    SenderThread:206919 [dir_watcher.py:finish():358] shutting down directory watcher
+2025-03-12 20:40:39,039 INFO    SenderThread:206919 [dir_watcher.py:finish():388] scan: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250312_204032-56d6yca3/files
+2025-03-12 20:40:39,039 INFO    SenderThread:206919 [dir_watcher.py:finish():402] scan save: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250312_204032-56d6yca3/files/config.yaml config.yaml
+2025-03-12 20:40:39,040 INFO    SenderThread:206919 [file_pusher.py:finish():169] shutting down file pusher
+2025-03-12 20:40:39,040 INFO    SenderThread:206919 [file_pusher.py:join():175] waiting for file pusher
+2025-03-12 20:40:41,154 INFO    wandb-upload_0:206919 [upload_job.py:push():130] Uploaded file /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250312_204032-56d6yca3/files/config.yaml
+2025-03-12 20:40:41,544 INFO    SenderThread:206919 [file_stream.py:finish():601] file stream finish called
+2025-03-12 20:40:42,558 INFO    SenderThread:206919 [file_stream.py:finish():605] file stream finish is done

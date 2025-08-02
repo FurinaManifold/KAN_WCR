@@ -1,0 +1,41 @@
+
+cfg_nn:{'dim': 1, 'widthk': 20, 'depthk': 2, 'grid': 3, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'DNN', 'width': 100, 'depth': 5}
+data:  torch.Size([11, 50000, 1]) tensor(3.9977, device='cuda:0') tensor(-4.2671, device='cuda:0')
+'sampleTestFunc_all' took 0.026642 s
+The model directory exists. Overwrite? True
+Epoch 9: 100%|██████████| 1/1 [00:00<00:00, 48.03it/s, v_num=n969, loss_step=21.00, loss_epoch=21.00]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 10.4 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+10.4 K    Trainable params
+0         Non-trainable params
+10.4 K    Total params
+
+
+
+
+
+
+
+
+Epoch 499: 100%|██████████| 1/1 [00:00<00:00, 30.31it/s, v_num=n969, loss_step=0.0543, loss_epoch=0.0615, val_residual=0.0505, drift_error=0.180, diffusion_error=0.000, val_loss=0.180]
+
+
+
+
+
+
+
+
+
+
+Epoch 999: 100%|██████████| 1/1 [00:00<00:00,  3.15it/s, v_num=n969, loss_step=0.0295, loss_epoch=0.0295, val_residual=0.0346, drift_error=0.144, diffusion_error=0.000, val_loss=0.144]
+`Trainer.fit` stopped: `max_epochs=1000` reached.

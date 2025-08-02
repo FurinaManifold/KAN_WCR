@@ -1,0 +1,30 @@
+2024-11-10 20:03:54,128 INFO    MainThread:53650 [wandb_setup.py:_flush():76] Current SDK version is 0.17.0
+2024-11-10 20:03:54,129 INFO    MainThread:53650 [wandb_setup.py:_flush():76] Configure stats pid to 53650
+2024-11-10 20:03:54,129 INFO    MainThread:53650 [wandb_setup.py:_flush():76] Loading settings from /home/ubuntu/.config/wandb/settings
+2024-11-10 20:03:54,129 INFO    MainThread:53650 [wandb_setup.py:_flush():76] Loading settings from /home/ubuntu/myproject/wcr_neural_kan/wandb/settings
+2024-11-10 20:03:54,129 INFO    MainThread:53650 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-11-10 20:03:54,129 INFO    MainThread:53650 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-11-10 20:03:54,129 INFO    MainThread:53650 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'medias.py', 'program_abspath': '/home/ubuntu/myproject/wcr_neural_kan/medias.py', 'program': '/home/ubuntu/myproject/wcr_neural_kan/medias.py'}
+2024-11-10 20:03:54,129 INFO    MainThread:53650 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-11-10 20:03:54,129 INFO    MainThread:53650 [wandb_init.py:_log_setup():520] Logging user logs to /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20241110_200354-sxg6jzjg/logs/debug.log
+2024-11-10 20:03:54,129 INFO    MainThread:53650 [wandb_init.py:_log_setup():521] Logging internal logs to /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20241110_200354-sxg6jzjg/logs/debug-internal.log
+2024-11-10 20:03:54,129 INFO    MainThread:53650 [wandb_init.py:init():560] calling init triggers
+2024-11-10 20:03:54,129 INFO    MainThread:53650 [wandb_init.py:init():567] wandb.init called with sweep_config: {}
+config: {}
+2024-11-10 20:03:54,129 INFO    MainThread:53650 [wandb_init.py:init():610] starting backend
+2024-11-10 20:03:54,130 INFO    MainThread:53650 [wandb_init.py:init():614] setting up manager
+2024-11-10 20:03:54,132 INFO    MainThread:53650 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-11-10 20:03:54,134 INFO    MainThread:53650 [wandb_init.py:init():622] backend started and connected
+2024-11-10 20:03:54,136 INFO    MainThread:53650 [wandb_init.py:init():711] updated telemetry
+2024-11-10 20:03:54,137 INFO    MainThread:53650 [wandb_init.py:init():744] communicating run to backend with 90.0 second timeout
+2024-11-10 20:03:55,507 INFO    MainThread:53650 [wandb_run.py:_on_init():2396] communicating current version
+2024-11-10 20:03:57,142 INFO    MainThread:53650 [wandb_run.py:_on_init():2405] got version response upgrade_message: "wandb version 0.18.6 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-11-10 20:03:57,143 INFO    MainThread:53650 [wandb_init.py:init():795] starting run threads in backend
+2024-11-10 20:03:58,128 INFO    MainThread:53650 [wandb_run.py:_console_start():2374] atexit reg
+2024-11-10 20:03:58,128 INFO    MainThread:53650 [wandb_run.py:_redirect():2229] redirect: wrap_raw
+2024-11-10 20:03:58,128 INFO    MainThread:53650 [wandb_run.py:_redirect():2294] Wrapping output streams.
+2024-11-10 20:03:58,128 INFO    MainThread:53650 [wandb_run.py:_redirect():2319] Redirects installed.
+2024-11-10 20:03:58,129 INFO    MainThread:53650 [wandb_init.py:init():838] run started, returning control to user process
+2024-11-10 20:03:58,131 INFO    MainThread:53650 [wandb_run.py:_config_callback():1376] config_cb None None {'seed': 42, 'Project': {'name': '2d_poly_KAN3_1_50', 'checkpoint': False, 'save_top_k': 1, 'erase': True, 'devices': 1, 'accelerator': 'gpu', 'PATH': '/home/ubuntu/myproject/wcr_neural_kan/save_files', 'save_dir': '2d'}, 'data': {'dt': 0.001, 'sample': 50000, 'plotsample': 10000, 'sigma_init': 0.3, 'intervalradius': 1.0, 'dim': 2, 'nt': 11, 'T': 1, 'plotT': 2, 'plot_path': '/home/ubuntu/myproject/wcr_neural_kan/result2D', 'model': 'pdcd', 'frequency': 10, 'pltxlim': 3}, 'train': {'checkepoch': 10, 'sigma_init': 0.3, 'known_diffusion': True, 'plotstep': [], 'testfunction': 'gauss', 'gauss_number': 300, 'bump_number': 1000, 'sampling': 'SDE', 'LMM': 'LMM_3', 'sgd_ratio': 0.5, 'epochs': 1000, 'mean_samp_way': 'SDE_dist', 'var_samp_way': 'dist', 'error_type': 'uniform2d', 'plot_type': '2d', 'samp_coef': {'lhs_ratio': 0.7, 'variance_min': 0.3, 'variance_max': 0.7}}, 'NN': {'dim': 2, 'widthk': 50, 'depthk': 1, 'grid': 3, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'KAN', 'width': 100, 'depth': 5}}
+2024-11-10 20:04:31,894 WARNING MsgRouterThr:53650 [router.py:message_loop():77] message_loop has been closed

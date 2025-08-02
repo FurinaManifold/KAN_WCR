@@ -1,0 +1,67 @@
+data:  torch.Size([11, 50000, 2]) tensor(4.3313, device='cuda:0') tensor(-4.3565, device='cuda:0')
+'sampleTestFunc_all' took 0.027595 s
+The model directory exists. Overwrite? True
+Sanity Checking DataLoader 0:   0%|                                                                                                                               | 0/1 [00:00<?, ?it/s]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 3.8 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+3.8 K     Trainable params
+0         Non-trainable params
+3.8 K     Total params
+
+Epoch 9: 100%|█████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  5.41it/s, v_num=jpjv, loss_step=0.649, loss_epoch=0.548]
+
+Epoch 19: 100%|██████████████| 1/1 [00:00<00:00,  5.43it/s, v_num=jpjv, loss_step=0.523, loss_epoch=0.567, val_residual=0.592, drift_error=1.000, diffusion_error=0.000, val_loss=1.000]
+
+Epoch 29: 100%|██████████████| 1/1 [00:00<00:00,  5.44it/s, v_num=jpjv, loss_step=0.501, loss_epoch=0.461, val_residual=0.552, drift_error=1.110, diffusion_error=0.000, val_loss=1.110]
+
+Epoch 39: 100%|██████████████| 1/1 [00:00<00:00,  5.44it/s, v_num=jpjv, loss_step=0.483, loss_epoch=0.426, val_residual=0.511, drift_error=1.100, diffusion_error=0.000, val_loss=1.100]
+
+Epoch 49: 100%|██████████████| 1/1 [00:00<00:00,  5.43it/s, v_num=jpjv, loss_step=0.395, loss_epoch=0.389, val_residual=0.451, drift_error=1.110, diffusion_error=0.000, val_loss=1.110]
+
+Epoch 59: 100%|██████████████| 1/1 [00:00<00:00,  5.44it/s, v_num=jpjv, loss_step=0.362, loss_epoch=0.377, val_residual=0.420, drift_error=1.130, diffusion_error=0.000, val_loss=1.130]
+
+Epoch 69: 100%|██████████████| 1/1 [00:00<00:00,  5.44it/s, v_num=jpjv, loss_step=0.367, loss_epoch=0.325, val_residual=0.393, drift_error=1.130, diffusion_error=0.000, val_loss=1.130]
+
+Epoch 79: 100%|██████████████| 1/1 [00:00<00:00,  5.44it/s, v_num=jpjv, loss_step=0.316, loss_epoch=0.316, val_residual=0.355, drift_error=1.120, diffusion_error=0.000, val_loss=1.120]
+
+Epoch 89: 100%|██████████████| 1/1 [00:00<00:00,  5.44it/s, v_num=jpjv, loss_step=0.246, loss_epoch=0.292, val_residual=0.317, drift_error=1.090, diffusion_error=0.000, val_loss=1.090]
+
+Epoch 99: 100%|██████████████| 1/1 [00:00<00:00,  5.44it/s, v_num=jpjv, loss_step=0.178, loss_epoch=0.207, val_residual=0.267, drift_error=0.997, diffusion_error=0.000, val_loss=0.997]
+
+Epoch 109: 100%|█████████████| 1/1 [00:00<00:00,  5.44it/s, v_num=jpjv, loss_step=0.196, loss_epoch=0.167, val_residual=0.218, drift_error=0.922, diffusion_error=0.000, val_loss=0.922]
+
+Epoch 119: 100%|█████████████| 1/1 [00:00<00:00,  5.44it/s, v_num=jpjv, loss_step=0.150, loss_epoch=0.148, val_residual=0.171, drift_error=0.874, diffusion_error=0.000, val_loss=0.874]
+
+Epoch 129: 100%|█████████████| 1/1 [00:00<00:00,  5.44it/s, v_num=jpjv, loss_step=0.128, loss_epoch=0.120, val_residual=0.140, drift_error=0.807, diffusion_error=0.000, val_loss=0.807]
+
+Epoch 139: 100%|████████████| 1/1 [00:00<00:00,  5.44it/s, v_num=jpjv, loss_step=0.0973, loss_epoch=0.127, val_residual=0.120, drift_error=0.766, diffusion_error=0.000, val_loss=0.766]
+
+Epoch 149: 100%|███████████| 1/1 [00:00<00:00,  5.43it/s, v_num=jpjv, loss_step=0.0857, loss_epoch=0.0867, val_residual=0.120, drift_error=0.749, diffusion_error=0.000, val_loss=0.749]
+
+Epoch 159: 100%|███████████| 1/1 [00:00<00:00,  5.43it/s, v_num=jpjv, loss_step=0.0956, loss_epoch=0.100, val_residual=0.0939, drift_error=0.741, diffusion_error=0.000, val_loss=0.741]
+
+Epoch 169: 100%|███████████| 1/1 [00:00<00:00,  5.44it/s, v_num=jpjv, loss_step=0.075, loss_epoch=0.0841, val_residual=0.0852, drift_error=0.781, diffusion_error=0.000, val_loss=0.781]
+
+Epoch 179: 100%|███████████| 1/1 [00:00<00:00,  5.42it/s, v_num=jpjv, loss_step=0.0715, loss_epoch=0.078, val_residual=0.0802, drift_error=0.819, diffusion_error=0.000, val_loss=0.819]
+
+Epoch 189: 100%|███████████| 1/1 [00:00<00:00,  5.43it/s, v_num=jpjv, loss_step=0.0646, loss_epoch=0.119, val_residual=0.0718, drift_error=0.849, diffusion_error=0.000, val_loss=0.849]
+
+Epoch 199: 100%|███████████| 1/1 [00:00<00:00,  5.43it/s, v_num=jpjv, loss_step=0.0683, loss_epoch=0.0844, val_residual=0.103, drift_error=0.870, diffusion_error=0.000, val_loss=0.870]
+
+Epoch 209: 100%|██████████| 1/1 [00:00<00:00,  5.43it/s, v_num=jpjv, loss_step=0.0591, loss_epoch=0.0659, val_residual=0.0832, drift_error=0.873, diffusion_error=0.000, val_loss=0.873]
+
+Epoch 219: 100%|███████████| 1/1 [00:00<00:00,  5.43it/s, v_num=jpjv, loss_step=0.0586, loss_epoch=0.055, val_residual=0.0694, drift_error=0.886, diffusion_error=0.000, val_loss=0.886]
+
+Epoch 229: 100%|██████████| 1/1 [00:00<00:00,  5.44it/s, v_num=jpjv, loss_step=0.0585, loss_epoch=0.0505, val_residual=0.0648, drift_error=0.896, diffusion_error=0.000, val_loss=0.896]
+
+Epoch 239: 100%|██████████| 1/1 [00:00<00:00,  5.42it/s, v_num=jpjv, loss_step=0.0547, loss_epoch=0.0515, val_residual=0.0597, drift_error=0.899, diffusion_error=0.000, val_loss=0.899]
+Validation DataLoader 0:   0%|                                                                                                                                    | 0/1 [00:00<?, ?it/s]

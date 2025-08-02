@@ -1,0 +1,18 @@
+cfg_nn:{'dim': 1, 'widthk': 50, 'depthk': 1, 'grid': 3, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'DNN0', 'depth': 5, 'width': 100}
+data:  torch.Size([4, 10000, 1]) tensor(2.3102, device='cuda:0') tensor(-2.2056, device='cuda:0')
+Traceback (most recent call last):
+  File "/home/ubuntu/myproject/wcr_neural_kan/main_pl.py", line 136, in <module>
+    main(args.config_file)
+  File "/home/ubuntu/myproject/wcr_neural_kan/main_pl.py", line 70, in main
+    model = Model_pl(t = t,
+  File "/home/ubuntu/myproject/wcr_neural_kan/model/model.py", line 322, in __init__
+    self.model = Model( t = t,
+  File "/home/ubuntu/myproject/wcr_neural_kan/model/model.py", line 77, in __init__
+    self.sample_gaussian()
+  File "/home/ubuntu/myproject/wcr_neural_kan/model/model.py", line 119, in sample_gaussian
+    self.mu_list_all, self.variance = sampleTestFunc_all(data = self.data,
+  File "/home/ubuntu/myproject/wcr_neural_kan/utils/utils.py", line 74, in wrapper
+    result = f(*args, **kwargs)
+  File "/home/ubuntu/myproject/wcr_neural_kan/utils/sampling.py", line 74, in sampleTestFunc_all
+    mu_list = torch.ones(samp_number,n_t,data.shape[2]) * (- length / 2 + (data.max() + data.min()) / 2)
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu!

@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/myproject/wcr_neural_kan/main_pl.py", line 18, in <module>
+    from utils.functions import model_select
+  File "/home/ubuntu/myproject/wcr_neural_kan/utils/functions.py", line 35
+    def diffusion_diagonal(eps,x)
+                                 ^
+SyntaxError: expected ':'

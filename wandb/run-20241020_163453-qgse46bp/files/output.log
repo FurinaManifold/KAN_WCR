@@ -1,0 +1,23 @@
+
+cfg_nn:{'dim': 2, 'widthk': 50, 'depthk': 1, 'grid': 2, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'DNN', 'width': 100, 'depth': 5}
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/numpy/lib/histograms.py", line 969, in histogramdd
+    N, D = sample.shape
+AttributeError: 'list' object has no attribute 'shape'
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/ubuntu/myproject/wcr_neural_kan/main_pl.py", line 128, in <module>
+    main(config_file)
+  File "/home/ubuntu/myproject/wcr_neural_kan/main_pl.py", line 53, in main
+    data = dataset.get_data(plot2d_hist=True,logname="2ddata_plot")
+  File "/home/ubuntu/myproject/wcr_neural_kan/data/GenerateData_fun.py", line 94, in get_data
+    hist, x_edges, y_edges = np.histogram2d(data[-1, :, 0], data[-1, :, 1], bins=(x_bins, y_bins))
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/numpy/lib/twodim_base.py", line 808, in histogram2d
+    hist, edges = histogramdd([x, y], bins, range, density, weights)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/numpy/lib/histograms.py", line 972, in histogramdd
+    sample = np.atleast_2d(sample).T
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/numpy/core/shape_base.py", line 121, in atleast_2d
+    ary = asanyarray(ary)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/torch/_tensor.py", line 1087, in __array__
+    return self.numpy()
+TypeError: can't convert cuda:0 device type tensor to numpy. Use Tensor.cpu() to copy the tensor to host memory first.

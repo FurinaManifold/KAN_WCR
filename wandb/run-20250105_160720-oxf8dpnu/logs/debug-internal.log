@@ -1,0 +1,522 @@
+2025-01-05 16:07:20,930 INFO    StreamThr :22576 [internal.py:wandb_internal():85] W&B internal server running at pid: 22576, started at: 2025-01-05 16:07:20.929296
+2025-01-05 16:07:20,936 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: status
+2025-01-05 16:07:20,938 INFO    WriterThread:22576 [datastore.py:open_for_write():87] open: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/run-oxf8dpnu.wandb
+2025-01-05 16:07:20,940 DEBUG   SenderThread:22576 [sender.py:send():378] send: header
+2025-01-05 16:07:20,940 DEBUG   SenderThread:22576 [sender.py:send():378] send: run
+2025-01-05 16:07:25,936 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: keepalive
+2025-01-05 16:07:27,096 INFO    SenderThread:22576 [dir_watcher.py:__init__():211] watching files in: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/files
+2025-01-05 16:07:27,096 INFO    SenderThread:22576 [sender.py:_start_run_threads():1123] run started: oxf8dpnu with start time 1736064440.928151
+2025-01-05 16:07:27,096 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: status_report
+2025-01-05 16:07:27,108 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: check_version
+2025-01-05 16:07:27,109 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: check_version
+2025-01-05 16:07:28,264 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: run_start
+2025-01-05 16:07:28,277 DEBUG   HandlerThread:22576 [system_info.py:__init__():26] System info init
+2025-01-05 16:07:28,277 DEBUG   HandlerThread:22576 [system_info.py:__init__():41] System info init done
+2025-01-05 16:07:28,277 INFO    HandlerThread:22576 [system_monitor.py:start():194] Starting system monitor
+2025-01-05 16:07:28,278 INFO    SystemMonitor:22576 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2025-01-05 16:07:28,278 INFO    HandlerThread:22576 [system_monitor.py:probe():214] Collecting system info
+2025-01-05 16:07:28,279 INFO    SystemMonitor:22576 [interfaces.py:start():188] Started cpu monitoring
+2025-01-05 16:07:28,282 INFO    SystemMonitor:22576 [interfaces.py:start():188] Started disk monitoring
+2025-01-05 16:07:28,283 INFO    SystemMonitor:22576 [interfaces.py:start():188] Started gpu monitoring
+2025-01-05 16:07:28,285 INFO    SystemMonitor:22576 [interfaces.py:start():188] Started memory monitoring
+2025-01-05 16:07:28,286 INFO    SystemMonitor:22576 [interfaces.py:start():188] Started network monitoring
+2025-01-05 16:07:28,314 DEBUG   HandlerThread:22576 [system_info.py:probe():150] Probing system
+2025-01-05 16:07:28,317 DEBUG   HandlerThread:22576 [gitlib.py:_init_repo():56] git repository is invalid
+2025-01-05 16:07:28,317 DEBUG   HandlerThread:22576 [system_info.py:probe():198] Probing system done
+2025-01-05 16:07:28,317 DEBUG   HandlerThread:22576 [system_monitor.py:probe():223] {'os': 'Linux-5.4.0-177-generic-x86_64-with-glibc2.31', 'python': '3.10.10', 'heartbeatAt': '2025-01-05T08:07:28.315007', 'startedAt': '2025-01-05T08:07:20.923090', 'docker': None, 'cuda': None, 'args': ('-c', './configs/DNN/config_2D_gen_DNN.yaml'), 'state': 'running', 'program': '/home/ubuntu/myproject/wcr_neural_kan/medias.py', 'codePathLocal': 'medias.py', 'codePath': 'medias.py', 'host': 'ml-ubuntu20-04-desktop-v1-0-108gb-25m', 'username': 'ubuntu', 'executable': '/opt/miniconda3/bin/python', 'cpu_count': 22, 'cpu_count_logical': 22, 'cpu_freq': {'current': 2800.1840000000007, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2800.184, 'min': 0.0, 'max': 0.0}, {'current': 2800.184, 'min': 0.0, 'max': 0.0}, {'current': 2800.184, 'min': 0.0, 'max': 0.0}, {'current': 2800.184, 'min': 0.0, 'max': 0.0}, {'current': 2800.184, 'min': 0.0, 'max': 0.0}, {'current': 2800.184, 'min': 0.0, 'max': 0.0}, {'current': 2800.184, 'min': 0.0, 'max': 0.0}, {'current': 2800.184, 'min': 0.0, 'max': 0.0}, {'current': 2800.184, 'min': 0.0, 'max': 0.0}, {'current': 2800.184, 'min': 0.0, 'max': 0.0}, {'current': 2800.184, 'min': 0.0, 'max': 0.0}, {'current': 2800.184, 'min': 0.0, 'max': 0.0}, {'current': 2800.184, 'min': 0.0, 'max': 0.0}, {'current': 2800.184, 'min': 0.0, 'max': 0.0}, {'current': 2800.184, 'min': 0.0, 'max': 0.0}, {'current': 2800.184, 'min': 0.0, 'max': 0.0}, {'current': 2800.184, 'min': 0.0, 'max': 0.0}, {'current': 2800.184, 'min': 0.0, 'max': 0.0}, {'current': 2800.184, 'min': 0.0, 'max': 0.0}, {'current': 2800.184, 'min': 0.0, 'max': 0.0}, {'current': 2800.184, 'min': 0.0, 'max': 0.0}, {'current': 2800.184, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 96.73210144042969, 'used': 70.8567008972168}}, 'gpu': 'NVIDIA GeForce RTX 4090', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4090', 'memory_total': 25757220864}, {'name': 'NVIDIA GeForce RTX 4090', 'memory_total': 25757220864}], 'memory': {'total': 106.20393753051758}}
+2025-01-05 16:07:28,317 INFO    HandlerThread:22576 [system_monitor.py:probe():224] Finished collecting system info
+2025-01-05 16:07:28,317 INFO    HandlerThread:22576 [system_monitor.py:probe():227] Publishing system info
+2025-01-05 16:07:28,317 DEBUG   HandlerThread:22576 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2025-01-05 16:07:29,099 INFO    Thread-12 :22576 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/files/conda-environment.yaml
+2025-01-05 16:07:29,136 DEBUG   HandlerThread:22576 [system_info.py:_save_conda():222] Saving conda packages done
+2025-01-05 16:07:29,137 INFO    HandlerThread:22576 [system_monitor.py:probe():229] Finished publishing system info
+2025-01-05 16:07:29,140 DEBUG   SenderThread:22576 [sender.py:send():378] send: files
+2025-01-05 16:07:29,141 INFO    SenderThread:22576 [sender.py:_save_file():1389] saving file wandb-metadata.json with policy now
+2025-01-05 16:07:29,249 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: python_packages
+2025-01-05 16:07:29,251 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: python_packages
+2025-01-05 16:07:29,254 DEBUG   SenderThread:22576 [sender.py:send():378] send: telemetry
+2025-01-05 16:07:29,256 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: stop_status
+2025-01-05 16:07:29,257 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: stop_status
+2025-01-05 16:07:30,097 INFO    Thread-12 :22576 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/files/wandb-metadata.json
+2025-01-05 16:07:30,097 INFO    Thread-12 :22576 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/files/requirements.txt
+2025-01-05 16:07:30,209 DEBUG   SenderThread:22576 [sender.py:send():378] send: config
+2025-01-05 16:07:30,803 INFO    wandb-upload_0:22576 [upload_job.py:push():130] Uploaded file /tmp/tmpdftoje6twandb/yyfzystk-wandb-metadata.json
+2025-01-05 16:07:32,210 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: status_report
+2025-01-05 16:07:33,759 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: partial_history
+2025-01-05 16:07:33,761 DEBUG   SenderThread:22576 [sender.py:send():378] send: files
+2025-01-05 16:07:33,761 INFO    SenderThread:22576 [sender.py:_save_file():1389] saving file media/images/Image_exact_0_e4161dce8c83df852393.png with policy now
+2025-01-05 16:07:33,763 DEBUG   SenderThread:22576 [sender.py:send():378] send: history
+2025-01-05 16:07:33,763 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: summary_record
+2025-01-05 16:07:33,766 INFO    SenderThread:22576 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2025-01-05 16:07:34,099 INFO    Thread-12 :22576 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/files/wandb-summary.json
+2025-01-05 16:07:34,099 INFO    Thread-12 :22576 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/files/media/images/Image_exact_0_e4161dce8c83df852393.png
+2025-01-05 16:07:34,100 INFO    Thread-12 :22576 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/files/media
+2025-01-05 16:07:34,100 INFO    Thread-12 :22576 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/files/media/images
+2025-01-05 16:07:34,696 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: partial_history
+2025-01-05 16:07:34,697 DEBUG   SenderThread:22576 [sender.py:send():378] send: files
+2025-01-05 16:07:34,697 INFO    SenderThread:22576 [sender.py:_save_file():1389] saving file media/images/Image_pred_1_fc744d886c13682b0cf4.png with policy now
+2025-01-05 16:07:34,698 DEBUG   SenderThread:22576 [sender.py:send():378] send: history
+2025-01-05 16:07:34,698 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: summary_record
+2025-01-05 16:07:34,699 INFO    SenderThread:22576 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2025-01-05 16:07:35,099 INFO    Thread-12 :22576 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/files/wandb-summary.json
+2025-01-05 16:07:35,100 INFO    Thread-12 :22576 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/files/media/images/Image_pred_1_fc744d886c13682b0cf4.png
+2025-01-05 16:07:35,100 INFO    Thread-12 :22576 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/files/output.log
+2025-01-05 16:07:35,101 INFO    Thread-12 :22576 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/files/media/images
+2025-01-05 16:07:35,347 INFO    wandb-upload_0:22576 [upload_job.py:push():130] Uploaded file /tmp/tmpdftoje6twandb/k10vezgp-media/images/Image_exact_0_e4161dce8c83df852393.png
+2025-01-05 16:07:36,211 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: partial_history
+2025-01-05 16:07:36,212 DEBUG   SenderThread:22576 [sender.py:send():378] send: files
+2025-01-05 16:07:36,213 INFO    SenderThread:22576 [sender.py:_save_file():1389] saving file media/images/2dgendata_plot_2_d3e7dc87b2364d0513d2.png with policy now
+2025-01-05 16:07:36,213 DEBUG   SenderThread:22576 [sender.py:send():378] send: history
+2025-01-05 16:07:36,214 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: summary_record
+2025-01-05 16:07:36,216 INFO    SenderThread:22576 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2025-01-05 16:07:36,335 INFO    wandb-upload_0:22576 [upload_job.py:push():130] Uploaded file /tmp/tmpdftoje6twandb/95cy808e-media/images/Image_exact_0_e4161dce8c83df852393.png
+2025-01-05 16:07:36,371 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: partial_history
+2025-01-05 16:07:36,386 DEBUG   SenderThread:22576 [sender.py:send():378] send: files
+2025-01-05 16:07:36,386 INFO    SenderThread:22576 [sender.py:_save_file():1389] saving file media/images/2dgendata_plot_heatmap_3_57ba7b66681ef4f4904f.png with policy now
+2025-01-05 16:07:36,386 DEBUG   SenderThread:22576 [sender.py:send():378] send: history
+2025-01-05 16:07:36,387 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: summary_record
+2025-01-05 16:07:36,387 INFO    SenderThread:22576 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2025-01-05 16:07:36,978 INFO    wandb-upload_1:22576 [upload_job.py:push():130] Uploaded file /tmp/tmpdftoje6twandb/q9i4syo2-media/images/Image_pred_1_fc744d886c13682b0cf4.png
+2025-01-05 16:07:36,984 INFO    wandb-upload_2:22576 [upload_job.py:push():130] Uploaded file /tmp/tmpdftoje6twandb/kh0d8sss-media/images/2dgendata_plot_2_d3e7dc87b2364d0513d2.png
+2025-01-05 16:07:37,101 INFO    Thread-12 :22576 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/files/wandb-summary.json
+2025-01-05 16:07:37,101 INFO    Thread-12 :22576 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/files/output.log
+2025-01-05 16:07:37,101 INFO    Thread-12 :22576 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/files/media/images/2dgendata_plot_heatmap_3_57ba7b66681ef4f4904f.png
+2025-01-05 16:07:37,102 INFO    Thread-12 :22576 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/files/media/images/2dgendata_plot_2_d3e7dc87b2364d0513d2.png
+2025-01-05 16:07:37,102 INFO    Thread-12 :22576 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/files/media/images
+2025-01-05 16:07:37,404 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: status_report
+2025-01-05 16:07:37,666 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: partial_history
+2025-01-05 16:07:37,667 DEBUG   SenderThread:22576 [sender.py:send():378] send: files
+2025-01-05 16:07:37,667 INFO    SenderThread:22576 [sender.py:_save_file():1389] saving file media/images/exactdata_distribution_dim_4_ee9656dd1c5a01c8390e.png with policy now
+2025-01-05 16:07:37,668 DEBUG   SenderThread:22576 [sender.py:send():378] send: history
+2025-01-05 16:07:37,669 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: summary_record
+2025-01-05 16:07:37,670 INFO    SenderThread:22576 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2025-01-05 16:07:37,827 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: partial_history
+2025-01-05 16:07:37,828 DEBUG   SenderThread:22576 [sender.py:send():378] send: files
+2025-01-05 16:07:37,828 INFO    SenderThread:22576 [sender.py:_save_file():1389] saving file media/images/exactdata_distribution_dim_heatmap_5_c25ef7f1f16d9d364b87.png with policy now
+2025-01-05 16:07:37,830 DEBUG   SenderThread:22576 [sender.py:send():378] send: history
+2025-01-05 16:07:37,831 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: summary_record
+2025-01-05 16:07:37,832 INFO    SenderThread:22576 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2025-01-05 16:07:38,094 INFO    wandb-upload_2:22576 [upload_job.py:push():130] Uploaded file /tmp/tmpdftoje6twandb/yias50xc-media/images/2dgendata_plot_2_d3e7dc87b2364d0513d2.png
+2025-01-05 16:07:38,102 INFO    Thread-12 :22576 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/files/wandb-summary.json
+2025-01-05 16:07:38,102 INFO    Thread-12 :22576 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/files/media/images/exactdata_distribution_dim_heatmap_5_c25ef7f1f16d9d364b87.png
+2025-01-05 16:07:38,102 INFO    Thread-12 :22576 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/files/media/images/exactdata_distribution_dim_4_ee9656dd1c5a01c8390e.png
+2025-01-05 16:07:38,103 INFO    Thread-12 :22576 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/files/media/images
+2025-01-05 16:07:38,269 INFO    wandb-upload_1:22576 [upload_job.py:push():130] Uploaded file /tmp/tmpdftoje6twandb/xk8dofkf-media/images/Image_pred_1_fc744d886c13682b0cf4.png
+2025-01-05 16:07:38,509 INFO    wandb-upload_4:22576 [upload_job.py:push():130] Uploaded file /tmp/tmpdftoje6twandb/yivtps9y-media/images/exactdata_distribution_dim_heatmap_5_c25ef7f1f16d9d364b87.png
+2025-01-05 16:07:39,102 INFO    Thread-12 :22576 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/files/output.log
+2025-01-05 16:07:39,516 INFO    wandb-upload_2:22576 [upload_job.py:push():130] Uploaded file /tmp/tmpdftoje6twandb/zqe9v0re-media/images/exactdata_distribution_dim_heatmap_5_c25ef7f1f16d9d364b87.png
+2025-01-05 16:07:42,835 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: status_report
+2025-01-05 16:07:44,252 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: stop_status
+2025-01-05 16:07:44,253 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: stop_status
+2025-01-05 16:07:48,612 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: status_report
+2025-01-05 16:07:48,670 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: partial_history
+2025-01-05 16:07:48,673 DEBUG   SenderThread:22576 [sender.py:send():378] send: history
+2025-01-05 16:07:48,673 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: summary_record
+2025-01-05 16:07:48,674 INFO    SenderThread:22576 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2025-01-05 16:07:48,676 DEBUG   SenderThread:22576 [sender.py:send():378] send: exit
+2025-01-05 16:07:48,676 INFO    SenderThread:22576 [sender.py:send_exit():585] handling exit code: 0
+2025-01-05 16:07:48,677 INFO    SenderThread:22576 [sender.py:send_exit():587] handling runtime: 20
+2025-01-05 16:07:48,677 INFO    SenderThread:22576 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2025-01-05 16:07:48,678 INFO    SenderThread:22576 [sender.py:send_exit():593] send defer
+2025-01-05 16:07:48,678 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: defer
+2025-01-05 16:07:48,678 INFO    HandlerThread:22576 [handler.py:handle_request_defer():184] handle defer: 0
+2025-01-05 16:07:48,679 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: defer
+2025-01-05 16:07:48,679 INFO    SenderThread:22576 [sender.py:send_request_defer():609] handle sender defer: 0
+2025-01-05 16:07:48,679 INFO    SenderThread:22576 [sender.py:transition_state():613] send defer: 1
+2025-01-05 16:07:48,679 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: defer
+2025-01-05 16:07:48,679 INFO    HandlerThread:22576 [handler.py:handle_request_defer():184] handle defer: 1
+2025-01-05 16:07:48,680 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: defer
+2025-01-05 16:07:48,680 INFO    SenderThread:22576 [sender.py:send_request_defer():609] handle sender defer: 1
+2025-01-05 16:07:48,680 INFO    SenderThread:22576 [sender.py:transition_state():613] send defer: 2
+2025-01-05 16:07:48,680 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: defer
+2025-01-05 16:07:48,680 INFO    HandlerThread:22576 [handler.py:handle_request_defer():184] handle defer: 2
+2025-01-05 16:07:48,680 INFO    HandlerThread:22576 [system_monitor.py:finish():203] Stopping system monitor
+2025-01-05 16:07:48,682 DEBUG   SystemMonitor:22576 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2025-01-05 16:07:48,682 DEBUG   SystemMonitor:22576 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2025-01-05 16:07:48,683 DEBUG   SystemMonitor:22576 [system_monitor.py:_start():183] Publishing last batch of metrics
+2025-01-05 16:07:48,684 INFO    HandlerThread:22576 [interfaces.py:finish():200] Joined cpu monitor
+2025-01-05 16:07:48,686 INFO    HandlerThread:22576 [interfaces.py:finish():200] Joined disk monitor
+2025-01-05 16:07:48,753 INFO    HandlerThread:22576 [interfaces.py:finish():200] Joined gpu monitor
+2025-01-05 16:07:48,754 INFO    HandlerThread:22576 [interfaces.py:finish():200] Joined memory monitor
+2025-01-05 16:07:48,754 INFO    HandlerThread:22576 [interfaces.py:finish():200] Joined network monitor
+2025-01-05 16:07:48,755 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: defer
+2025-01-05 16:07:48,755 INFO    SenderThread:22576 [sender.py:send_request_defer():609] handle sender defer: 2
+2025-01-05 16:07:48,755 INFO    SenderThread:22576 [sender.py:transition_state():613] send defer: 3
+2025-01-05 16:07:48,755 DEBUG   SenderThread:22576 [sender.py:send():378] send: stats
+2025-01-05 16:07:48,755 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: defer
+2025-01-05 16:07:48,756 INFO    HandlerThread:22576 [handler.py:handle_request_defer():184] handle defer: 3
+2025-01-05 16:07:48,756 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: defer
+2025-01-05 16:07:48,756 INFO    SenderThread:22576 [sender.py:send_request_defer():609] handle sender defer: 3
+2025-01-05 16:07:48,756 INFO    SenderThread:22576 [sender.py:transition_state():613] send defer: 4
+2025-01-05 16:07:48,756 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: defer
+2025-01-05 16:07:48,756 INFO    HandlerThread:22576 [handler.py:handle_request_defer():184] handle defer: 4
+2025-01-05 16:07:48,757 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: defer
+2025-01-05 16:07:48,757 INFO    SenderThread:22576 [sender.py:send_request_defer():609] handle sender defer: 4
+2025-01-05 16:07:48,757 INFO    SenderThread:22576 [sender.py:transition_state():613] send defer: 5
+2025-01-05 16:07:48,757 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: defer
+2025-01-05 16:07:48,758 INFO    HandlerThread:22576 [handler.py:handle_request_defer():184] handle defer: 5
+2025-01-05 16:07:48,758 DEBUG   SenderThread:22576 [sender.py:send():378] send: summary
+2025-01-05 16:07:48,759 INFO    SenderThread:22576 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2025-01-05 16:07:48,759 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: defer
+2025-01-05 16:07:48,759 INFO    SenderThread:22576 [sender.py:send_request_defer():609] handle sender defer: 5
+2025-01-05 16:07:48,760 INFO    SenderThread:22576 [sender.py:transition_state():613] send defer: 6
+2025-01-05 16:07:48,760 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: defer
+2025-01-05 16:07:48,760 INFO    HandlerThread:22576 [handler.py:handle_request_defer():184] handle defer: 6
+2025-01-05 16:07:48,760 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: defer
+2025-01-05 16:07:48,760 INFO    SenderThread:22576 [sender.py:send_request_defer():609] handle sender defer: 6
+2025-01-05 16:07:48,799 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: status_report
+2025-01-05 16:07:49,109 INFO    Thread-12 :22576 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/files/wandb-summary.json
+2025-01-05 16:07:49,173 INFO    SenderThread:22576 [sender.py:transition_state():613] send defer: 7
+2025-01-05 16:07:49,174 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: defer
+2025-01-05 16:07:49,174 INFO    HandlerThread:22576 [handler.py:handle_request_defer():184] handle defer: 7
+2025-01-05 16:07:49,175 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: defer
+2025-01-05 16:07:49,175 INFO    SenderThread:22576 [sender.py:send_request_defer():609] handle sender defer: 7
+2025-01-05 16:07:49,673 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:07:50,110 INFO    Thread-12 :22576 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/files/config.yaml
+2025-01-05 16:07:50,812 INFO    SenderThread:22576 [sender.py:transition_state():613] send defer: 8
+2025-01-05 16:07:50,812 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:07:50,815 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: defer
+2025-01-05 16:07:50,816 INFO    HandlerThread:22576 [handler.py:handle_request_defer():184] handle defer: 8
+2025-01-05 16:07:50,817 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: defer
+2025-01-05 16:07:50,817 INFO    SenderThread:22576 [sender.py:send_request_defer():609] handle sender defer: 8
+2025-01-05 16:07:50,817 INFO    SenderThread:22576 [job_builder.py:build():432] Attempting to build job artifact
+2025-01-05 16:07:50,818 INFO    SenderThread:22576 [job_builder.py:_get_source_type():576] no source found
+2025-01-05 16:07:50,818 INFO    SenderThread:22576 [sender.py:transition_state():613] send defer: 9
+2025-01-05 16:07:50,819 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: defer
+2025-01-05 16:07:50,819 INFO    HandlerThread:22576 [handler.py:handle_request_defer():184] handle defer: 9
+2025-01-05 16:07:50,819 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: defer
+2025-01-05 16:07:50,820 INFO    SenderThread:22576 [sender.py:send_request_defer():609] handle sender defer: 9
+2025-01-05 16:07:50,820 INFO    SenderThread:22576 [dir_watcher.py:finish():358] shutting down directory watcher
+2025-01-05 16:07:51,111 INFO    Thread-12 :22576 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/files/output.log
+2025-01-05 16:07:51,112 INFO    SenderThread:22576 [dir_watcher.py:finish():388] scan: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/files
+2025-01-05 16:07:51,112 INFO    SenderThread:22576 [dir_watcher.py:finish():402] scan save: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/files/config.yaml config.yaml
+2025-01-05 16:07:51,113 INFO    SenderThread:22576 [dir_watcher.py:finish():402] scan save: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/files/conda-environment.yaml conda-environment.yaml
+2025-01-05 16:07:51,113 INFO    SenderThread:22576 [dir_watcher.py:finish():402] scan save: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/files/requirements.txt requirements.txt
+2025-01-05 16:07:51,113 INFO    SenderThread:22576 [dir_watcher.py:finish():402] scan save: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/files/wandb-summary.json wandb-summary.json
+2025-01-05 16:07:51,113 INFO    SenderThread:22576 [dir_watcher.py:finish():402] scan save: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/files/output.log output.log
+2025-01-05 16:07:51,114 INFO    SenderThread:22576 [dir_watcher.py:finish():402] scan save: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/files/wandb-metadata.json wandb-metadata.json
+2025-01-05 16:07:51,114 INFO    SenderThread:22576 [dir_watcher.py:finish():402] scan save: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/files/media/images/2dgendata_plot_heatmap_3_57ba7b66681ef4f4904f.png media/images/2dgendata_plot_heatmap_3_57ba7b66681ef4f4904f.png
+2025-01-05 16:07:51,114 INFO    SenderThread:22576 [dir_watcher.py:finish():402] scan save: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/files/media/images/exactdata_distribution_dim_heatmap_5_c25ef7f1f16d9d364b87.png media/images/exactdata_distribution_dim_heatmap_5_c25ef7f1f16d9d364b87.png
+2025-01-05 16:07:51,115 INFO    SenderThread:22576 [dir_watcher.py:finish():402] scan save: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/files/media/images/2dgendata_plot_2_d3e7dc87b2364d0513d2.png media/images/2dgendata_plot_2_d3e7dc87b2364d0513d2.png
+2025-01-05 16:07:51,115 INFO    SenderThread:22576 [dir_watcher.py:finish():402] scan save: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/files/media/images/Image_exact_0_e4161dce8c83df852393.png media/images/Image_exact_0_e4161dce8c83df852393.png
+2025-01-05 16:07:51,115 INFO    SenderThread:22576 [dir_watcher.py:finish():402] scan save: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/files/media/images/Image_pred_1_fc744d886c13682b0cf4.png media/images/Image_pred_1_fc744d886c13682b0cf4.png
+2025-01-05 16:07:51,115 INFO    SenderThread:22576 [dir_watcher.py:finish():402] scan save: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/files/media/images/exactdata_distribution_dim_4_ee9656dd1c5a01c8390e.png media/images/exactdata_distribution_dim_4_ee9656dd1c5a01c8390e.png
+2025-01-05 16:07:51,115 INFO    SenderThread:22576 [sender.py:transition_state():613] send defer: 10
+2025-01-05 16:07:51,116 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: defer
+2025-01-05 16:07:51,116 INFO    HandlerThread:22576 [handler.py:handle_request_defer():184] handle defer: 10
+2025-01-05 16:07:51,122 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: defer
+2025-01-05 16:07:51,122 INFO    SenderThread:22576 [sender.py:send_request_defer():609] handle sender defer: 10
+2025-01-05 16:07:51,122 INFO    SenderThread:22576 [file_pusher.py:finish():169] shutting down file pusher
+2025-01-05 16:07:51,675 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:07:51,675 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:07:51,804 INFO    wandb-upload_1:22576 [upload_job.py:push():130] Uploaded file /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/files/conda-environment.yaml
+2025-01-05 16:07:51,874 INFO    wandb-upload_4:22576 [upload_job.py:push():130] Uploaded file /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/files/config.yaml
+2025-01-05 16:07:52,343 INFO    wandb-upload_5:22576 [upload_job.py:push():130] Uploaded file /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/files/wandb-summary.json
+2025-01-05 16:07:52,353 INFO    wandb-upload_6:22576 [upload_job.py:push():130] Uploaded file /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/files/output.log
+2025-01-05 16:07:52,677 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:07:52,677 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:07:52,884 INFO    wandb-upload_2:22576 [upload_job.py:push():130] Uploaded file /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/files/requirements.txt
+2025-01-05 16:07:53,678 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:07:53,679 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:07:54,678 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:07:54,679 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:07:55,680 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:07:55,681 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:07:56,682 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:07:56,683 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:07:57,684 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:07:57,685 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:07:58,685 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:07:58,686 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:07:58,686 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: status_report
+2025-01-05 16:07:59,685 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:07:59,686 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:00,687 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:00,688 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:01,689 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:01,690 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:02,690 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:02,692 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:03,692 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:03,693 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:03,694 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: status_report
+2025-01-05 16:08:04,693 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:04,694 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:05,694 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:05,695 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:06,695 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:06,696 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:07,697 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:07,698 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:08,698 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:08,699 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:08,699 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: status_report
+2025-01-05 16:08:09,700 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:09,701 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:10,700 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:10,701 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:11,702 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:11,703 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:12,705 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:12,705 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:13,705 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:13,706 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:13,707 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: status_report
+2025-01-05 16:08:14,707 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:14,708 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:15,709 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:15,710 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:16,710 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:16,711 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:17,712 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:17,713 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:18,713 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:18,713 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:18,714 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: status_report
+2025-01-05 16:08:19,713 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:19,714 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:20,715 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:20,716 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:21,717 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:21,718 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:22,718 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:22,718 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:23,719 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:23,720 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:23,720 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: status_report
+2025-01-05 16:08:24,719 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:24,720 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:25,722 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:25,723 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:26,724 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:26,725 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:27,725 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:27,726 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:28,725 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:28,727 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:28,727 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: status_report
+2025-01-05 16:08:29,729 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:29,730 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:30,729 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:30,730 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:31,732 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:31,733 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:32,733 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:32,734 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:33,735 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: status_report
+2025-01-05 16:08:33,736 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:33,737 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:34,736 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:34,737 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:35,739 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:35,739 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:36,740 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:36,741 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:37,740 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:37,742 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:38,742 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:38,744 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: status_report
+2025-01-05 16:08:38,744 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:39,743 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:39,744 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:40,744 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:40,746 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:41,746 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:41,747 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:42,747 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:42,748 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:43,749 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: status_report
+2025-01-05 16:08:43,750 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:43,751 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:44,752 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:44,753 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:45,754 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:45,756 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:46,756 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:46,757 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:47,763 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:47,764 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:48,764 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:48,764 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:48,765 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: status_report
+2025-01-05 16:08:49,767 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:49,768 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:50,768 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:50,769 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:51,769 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:51,770 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:52,770 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:52,772 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:53,773 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:53,774 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: status_report
+2025-01-05 16:08:53,775 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:54,773 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:54,774 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:55,776 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:55,777 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:56,777 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:56,779 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:57,778 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:57,779 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:58,780 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:58,781 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: status_report
+2025-01-05 16:08:58,782 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:08:59,781 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:08:59,782 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:00,782 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:00,783 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:01,783 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:01,784 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:02,784 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:02,785 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:03,785 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:03,787 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: status_report
+2025-01-05 16:09:03,787 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:04,787 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:04,788 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:05,789 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:05,790 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:06,789 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:06,790 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:07,792 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:07,793 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:08,792 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:08,793 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:08,794 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: status_report
+2025-01-05 16:09:09,794 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:09,795 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:10,795 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:10,797 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:11,798 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:11,799 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:12,798 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:12,800 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:13,799 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:13,800 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:13,800 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: status_report
+2025-01-05 16:09:14,799 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:14,800 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:15,802 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:15,803 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:16,804 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:16,805 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:17,805 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:17,807 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:18,808 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:18,808 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: status_report
+2025-01-05 16:09:18,809 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:19,808 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:19,809 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:20,811 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:20,811 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:21,811 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:21,812 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:22,812 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:22,813 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:23,815 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: status_report
+2025-01-05 16:09:23,816 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:23,817 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:24,817 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:24,818 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:25,818 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:25,818 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:26,818 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:26,819 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:27,821 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:27,822 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:28,824 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:28,824 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: status_report
+2025-01-05 16:09:28,825 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:29,824 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:29,825 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:30,826 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:30,827 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:31,828 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:31,829 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:32,830 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:32,831 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:33,830 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:33,831 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:33,832 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: status_report
+2025-01-05 16:09:34,832 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:34,833 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:35,833 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:35,834 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:36,834 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:36,835 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:37,837 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:37,838 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:38,838 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:38,838 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:38,839 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: status_report
+2025-01-05 16:09:39,838 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:39,839 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:40,839 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:40,840 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:41,840 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:41,841 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:42,840 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:42,842 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:43,842 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:43,843 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:43,844 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: status_report
+2025-01-05 16:09:44,843 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:44,844 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:45,844 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:45,845 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:46,845 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:46,847 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:47,847 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:47,849 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:48,244 INFO    wandb-upload_0:22576 [upload_job.py:push():130] Uploaded file /tmp/tmpdftoje6twandb/xylwp6ka-media/images/2dgendata_plot_heatmap_3_57ba7b66681ef4f4904f.png
+2025-01-05 16:09:48,483 INFO    wandb-upload_3:22576 [upload_job.py:push():130] Uploaded file /tmp/tmpdftoje6twandb/tzp8nda3-media/images/exactdata_distribution_dim_4_ee9656dd1c5a01c8390e.png
+2025-01-05 16:09:48,849 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:48,850 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: status_report
+2025-01-05 16:09:48,851 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:49,367 INFO    wandb-upload_1:22576 [upload_job.py:push():130] Uploaded file /tmp/tmpdftoje6twandb/k4q3t9uk-media/images/2dgendata_plot_heatmap_3_57ba7b66681ef4f4904f.png
+2025-01-05 16:09:49,850 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:49,851 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:50,262 INFO    wandb-upload_5:22576 [upload_job.py:push():130] Uploaded file /tmp/tmpdftoje6twandb/6ytin9eo-media/images/exactdata_distribution_dim_4_ee9656dd1c5a01c8390e.png
+2025-01-05 16:09:50,463 INFO    Thread-11 (_thread_body):22576 [sender.py:transition_state():613] send defer: 11
+2025-01-05 16:09:50,463 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: defer
+2025-01-05 16:09:50,463 INFO    HandlerThread:22576 [handler.py:handle_request_defer():184] handle defer: 11
+2025-01-05 16:09:50,465 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: defer
+2025-01-05 16:09:50,465 INFO    SenderThread:22576 [sender.py:send_request_defer():609] handle sender defer: 11
+2025-01-05 16:09:50,465 INFO    SenderThread:22576 [file_pusher.py:join():175] waiting for file pusher
+2025-01-05 16:09:50,467 INFO    SenderThread:22576 [sender.py:transition_state():613] send defer: 12
+2025-01-05 16:09:50,468 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: defer
+2025-01-05 16:09:50,468 INFO    HandlerThread:22576 [handler.py:handle_request_defer():184] handle defer: 12
+2025-01-05 16:09:50,468 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: defer
+2025-01-05 16:09:50,468 INFO    SenderThread:22576 [sender.py:send_request_defer():609] handle sender defer: 12
+2025-01-05 16:09:50,468 INFO    SenderThread:22576 [file_stream.py:finish():601] file stream finish called
+2025-01-05 16:09:50,704 INFO    SenderThread:22576 [file_stream.py:finish():605] file stream finish is done
+2025-01-05 16:09:50,704 INFO    SenderThread:22576 [sender.py:transition_state():613] send defer: 13
+2025-01-05 16:09:50,704 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: defer
+2025-01-05 16:09:50,704 INFO    HandlerThread:22576 [handler.py:handle_request_defer():184] handle defer: 13
+2025-01-05 16:09:50,705 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: defer
+2025-01-05 16:09:50,705 INFO    SenderThread:22576 [sender.py:send_request_defer():609] handle sender defer: 13
+2025-01-05 16:09:50,705 INFO    SenderThread:22576 [sender.py:transition_state():613] send defer: 14
+2025-01-05 16:09:50,706 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: defer
+2025-01-05 16:09:50,706 INFO    HandlerThread:22576 [handler.py:handle_request_defer():184] handle defer: 14
+2025-01-05 16:09:50,707 DEBUG   SenderThread:22576 [sender.py:send():378] send: final
+2025-01-05 16:09:50,707 DEBUG   SenderThread:22576 [sender.py:send():378] send: footer
+2025-01-05 16:09:50,707 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: defer
+2025-01-05 16:09:50,708 INFO    SenderThread:22576 [sender.py:send_request_defer():609] handle sender defer: 14
+2025-01-05 16:09:50,709 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:50,712 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-05 16:09:50,712 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: server_info
+2025-01-05 16:09:50,712 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: get_summary
+2025-01-05 16:09:50,713 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: sampled_history
+2025-01-05 16:09:50,713 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-05 16:09:50,713 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:50,715 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: poll_exit
+2025-01-05 16:09:50,715 DEBUG   SenderThread:22576 [sender.py:send_request():405] send_request: server_info
+2025-01-05 16:09:50,963 INFO    MainThread:22576 [wandb_run.py:_footer_history_summary_info():3994] rendering history
+2025-01-05 16:09:50,963 INFO    MainThread:22576 [wandb_run.py:_footer_history_summary_info():4026] rendering summary
+2025-01-05 16:09:50,963 INFO    MainThread:22576 [wandb_run.py:_footer_sync_info():3953] logging synced files
+2025-01-05 16:09:50,964 DEBUG   HandlerThread:22576 [handler.py:handle_request():158] handle_request: shutdown
+2025-01-05 16:09:50,964 INFO    HandlerThread:22576 [handler.py:finish():882] shutting down handler
+2025-01-05 16:09:51,715 INFO    WriterThread:22576 [datastore.py:close():296] close: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250105_160720-oxf8dpnu/run-oxf8dpnu.wandb
+2025-01-05 16:09:51,963 INFO    SenderThread:22576 [sender.py:finish():1545] shutting down sender
+2025-01-05 16:09:51,963 INFO    SenderThread:22576 [file_pusher.py:finish():169] shutting down file pusher
+2025-01-05 16:09:51,963 INFO    SenderThread:22576 [file_pusher.py:join():175] waiting for file pusher
