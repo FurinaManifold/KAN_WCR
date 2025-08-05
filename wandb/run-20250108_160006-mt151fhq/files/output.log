@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/myproject/wcr_neural_kan/medias.py", line 37, in <module>
+    drawfigures(args.config_file)
+  File "/home/ubuntu/myproject/wcr_neural_kan/medias.py", line 29, in drawfigures
+    plot_error(drift,net_drift,diffusion,net_diffusion,'cuda',config['train']['plot_type'],config['data'])
+  File "/home/ubuntu/myproject/wcr_neural_kan/utils/plot.py", line 119, in plot_error
+    plot_1d(drift_fun,drift_net,diffusion_fun,diffusion_net,device,cfg_data['intervalradius'])
+  File "/home/ubuntu/myproject/wcr_neural_kan/utils/plot.py", line 132, in plot_1d
+    maxy = math.ceil(abs(exact_drift[0].item()))
+UnboundLocalError: local variable 'exact_drift' referenced before assignment

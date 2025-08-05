@@ -1,0 +1,123 @@
+
+cfg_nn:{'dim': 1, 'widthk': 20, 'depthk': 2, 'grid': 4, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'KAN', 'depth': 5, 'width': 100}
+data:  torch.Size([11, 50000, 1]) tensor(4.0969, device='cuda:0') tensor(-4.2633, device='cuda:0')
+'sampleTestFunc_all' took 0.028787 s
+The model directory exists. Overwrite? True
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 4.0 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+4.0 K     Trainable params
+0         Non-trainable params
+4.0 K     Total params
+0.016     Total estimated model params size (MB)
+
+
+
+
+
+Epoch 69: 100%|████████████████| 1/1 [00:00<00:00,  5.24it/s, v_num=jsdd, loss_step=0.297, loss_epoch=0.326, val_residual=0.416, drift_error=0.971, diffusion_error=0.000, val_loss=0.971]
+
+
+
+
+
+
+Epoch 139: 100%|████████████| 1/1 [00:00<00:00,  5.23it/s, v_num=jsdd, loss_step=0.0427, loss_epoch=0.0333, val_residual=0.0475, drift_error=0.499, diffusion_error=0.000, val_loss=0.499]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 359: 100%|█████████████| 1/1 [00:00<00:00,  5.25it/s, v_num=jsdd, loss_step=0.014, loss_epoch=0.0142, val_residual=0.0143, drift_error=0.254, diffusion_error=0.000, val_loss=0.254]
+
+
+
+
+
+
+Epoch 429: 100%|████████████| 1/1 [00:00<00:00,  5.25it/s, v_num=jsdd, loss_step=0.0131, loss_epoch=0.0134, val_residual=0.0126, drift_error=0.240, diffusion_error=0.000, val_loss=0.240]
+
+
+
+
+
+
+Epoch 499: 100%|██████████████| 1/1 [00:00<00:00,  5.25it/s, v_num=jsdd, loss_step=0.012, loss_epoch=0.012, val_residual=0.0121, drift_error=0.240, diffusion_error=0.000, val_loss=0.240]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 999: 100%|████████████| 1/1 [00:00<00:00,  5.24it/s, v_num=jsdd, loss_step=0.0103, loss_epoch=0.0111, val_residual=0.0108, drift_error=0.235, diffusion_error=0.000, val_loss=0.235]
+
+Validation DataLoader 0:   0%|                                                                                                                                      | 0/1 [00:00<?, ?it/s]
+`Trainer.fit` stopped: `max_epochs=1000` reached.

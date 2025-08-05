@@ -1,0 +1,14 @@
+Finished drawing drift and diffusion results
+Data loaded
+Traceback (most recent call last):
+  File "/home/ubuntu/myproject/wcr_neural_kan/medias.py", line 37, in <module>
+    drawfigures(args.config_file)
+  File "/home/ubuntu/myproject/wcr_neural_kan/medias.py", line 29, in drawfigures
+    plot_error(drift,net_drift,diffusion,net_diffusion,'cuda',config['train']['plot_type'],config['data'])
+  File "/home/ubuntu/myproject/wcr_neural_kan/utils/plot.py", line 112, in plot_error
+    plot_distributioncompare(drift_fun,drift_net,diffusion_fun,diffusion_net,cfg_data)
+  File "/home/ubuntu/myproject/wcr_neural_kan/utils/plot.py", line 60, in plot_distributioncompare
+    preddata = dataset_pred.get_data(plot_hist=False,logname="2dgendata_plot", plot2d_hist=True,dottype = 'b.',pltxlim = cfg_data['pltxlim'],reset_seed = True)
+  File "/home/ubuntu/myproject/wcr_neural_kan/data/GenerateData_fun.py", line 61, in get_data
+    data[0, :, :] = self.subSDE(0, self.time_instants[0], self.initialization)  # self.initialization
+RuntimeError: The expanded size of the tensor (10000) must match the existing size (50000) at non-singleton dimension 0.  Target sizes: [10000, 2].  Tensor sizes: [50000, 2]

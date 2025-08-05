@@ -1,0 +1,37 @@
+data:  torch.Size([11, 20000, 1]) tensor(4.1246, device='cuda:0') tensor(-4.0732, device='cuda:0')
+'sampleTestFunc_all' took 0.026322 s
+The model directory exists. Overwrite? True
+Epoch 6:   0%|                                                                                                     | 0/1 [00:00<?, ?it/s, v_num=bap8, loss_step=37.20, loss_epoch=37.20]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 10.4 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+10.4 K    Trainable params
+0         Non-trainable params
+10.4 K    Total params
+
+Epoch 89: 100%|███████████| 1/1 [00:00<00:00, 68.65it/s, v_num=bap8, loss_step=0.0356, loss_epoch=0.0418, val_residual=0.0471, drift_error=0.043, diffusion_error=0.000, val_loss=0.043]
+
+Epoch 159: 100%|████████| 1/1 [00:00<00:00, 69.92it/s, v_num=bap8, loss_step=0.0379, loss_epoch=0.0427, val_residual=0.0429, drift_error=0.0425, diffusion_error=0.000, val_loss=0.0425]
+
+Epoch 319: 100%|█████████| 1/1 [00:00<00:00, 66.44it/s, v_num=bap8, loss_step=0.031, loss_epoch=0.0279, val_residual=0.0315, drift_error=0.0419, diffusion_error=0.000, val_loss=0.0419]
+
+Epoch 389: 100%|████████| 1/1 [00:00<00:00, 67.58it/s, v_num=bap8, loss_step=0.0288, loss_epoch=0.0264, val_residual=0.0301, drift_error=0.0385, diffusion_error=0.000, val_loss=0.0385]
+Validation DataLoader 0:   0%|                                                                                                                                    | 0/1 [00:00<?, ?it/s]
+
+Epoch 569: 100%|████████| 1/1 [00:00<00:00, 68.47it/s, v_num=bap8, loss_step=0.0268, loss_epoch=0.0266, val_residual=0.0287, drift_error=0.0328, diffusion_error=0.000, val_loss=0.0328]
+
+Epoch 659: 100%|████████| 1/1 [00:00<00:00, 68.94it/s, v_num=bap8, loss_step=0.0268, loss_epoch=0.0279, val_residual=0.0283, drift_error=0.0309, diffusion_error=0.000, val_loss=0.0309]
+
+
+Epoch 929: 100%|█████████| 1/1 [00:00<00:00, 69.22it/s, v_num=bap8, loss_step=0.023, loss_epoch=0.0259, val_residual=0.0275, drift_error=0.0278, diffusion_error=0.000, val_loss=0.0278]
+
+Validation DataLoader 0:   0%|                                                                                                                                    | 0/1 [00:00<?, ?it/s]
+`Trainer.fit` stopped: `max_epochs=1000` reached.

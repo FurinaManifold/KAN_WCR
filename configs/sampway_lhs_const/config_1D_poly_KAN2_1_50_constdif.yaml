@@ -1,0 +1,70 @@
+seed: 42
+
+Project:
+  name: '1d_poly_KAN2_1_50_constdif_sampway0'
+  checkpoint: False
+  save: True
+  save_top_k: 1
+  erase: True
+  devices: 1
+  accelerator: 'gpu'
+  PATH: /home/ubuntu/myproject/wcr_neural_kan/save_files
+  save_dir: 1d
+  
+
+
+data:
+  dt: 0.0001
+  sample: 10000 
+  intervalradius: 1.5
+  sigma_init: 0.3
+  plotsample: 5
+  pltxlim: 3
+  dim: 1
+  nt: 4
+  start: 0.1
+  plotnt: 101
+  T: 1
+  plotT: 2
+  plot_path: /home/ubuntu/myproject/wcr_neural_kan/result1D
+  model: pdcd
+  frequency: 8
+
+train:
+  checkepoch: 10
+  sigma_init: 0.3
+  known_diffusion: No
+  plotstep: []
+  testfunction: gauss
+  gauss_number: 500
+  bump_number: 1000
+  sampling: SDE
+  LMM: LMM_3
+  sgd_ratio: 0.5
+  epochs: 1000
+  mean_samp_way: lhs
+  var_samp_way: constant
+  error_type: uniform1d
+  plot_type: 1d
+  samp_coef: 
+    lhs_ratio: 0.5
+    variance_min: 0.3
+    variance_max: 0.7
+
+ 
+  
+
+NN:
+  dim: 1
+  widthk: 50
+  depthk: 1
+  grid: 2
+  activation: GeLU
+  lr: 0.01
+  gamma: 0.5
+  step_size: 200
+  weight_decay: 0.00001
+  iter: 2000
+  mode: KAN0
+  depth: 5
+  width: 100

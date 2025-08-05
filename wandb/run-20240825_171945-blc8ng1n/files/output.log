@@ -1,0 +1,39 @@
+
+cfg_nn:{'dim': 1, 'widthk': 80, 'depthk': 1, 'grid': 2, 'activation': 'GeLU', 'lr': 0.018, 'gamma': 0.4, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'DNN', 'width': 200, 'depth': 5}
+data:  torch.Size([11, 20000, 1]) tensor(4.1400, device='cuda:0') tensor(-4.0541, device='cuda:0')
+'sampleTestFunc_all' took 0.042149 s
+The model directory exists. Overwrite? True
+Epoch 9: 100%|██████████| 1/1 [00:00<00:00, 44.76it/s, v_num=ng1n, loss_step=25.60, loss_epoch=27.10]
+Validation DataLoader 0:   0%|          | 0/1 [00:00<?, ?it/s]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 40.8 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+40.8 K    Trainable params
+0         Non-trainable params
+40.8 K    Total params
+
+
+Epoch 109: 100%|██████████| 1/1 [00:00<00:00, 45.23it/s, v_num=ng1n, loss_step=0.0632, loss_epoch=0.0844, val_residual=0.0945, drift_error=0.428, diffusion_error=0.000, val_loss=0.428]
+
+
+
+
+Epoch 509: 100%|██████████| 1/1 [00:00<00:00, 45.04it/s, v_num=ng1n, loss_step=0.0143, loss_epoch=0.0145, val_residual=0.0144, drift_error=0.346, diffusion_error=0.000, val_loss=0.346]
+
+
+Epoch 679: 100%|██████████| 1/1 [00:00<00:00, 45.01it/s, v_num=ng1n, loss_step=0.0148, loss_epoch=0.015, val_residual=0.0141, drift_error=0.340, diffusion_error=0.000, val_loss=0.340]
+
+Epoch 879: 100%|██████████| 1/1 [00:00<00:00, 45.46it/s, v_num=ng1n, loss_step=0.0141, loss_epoch=0.0138, val_residual=0.0139, drift_error=0.336, diffusion_error=0.000, val_loss=0.336]
+
+
+
+Epoch 999: 100%|██████████| 1/1 [00:00<00:00,  2.70it/s, v_num=ng1n, loss_step=0.0138, loss_epoch=0.0138, val_residual=0.0139, drift_error=0.335, diffusion_error=0.000, val_loss=0.335]
+`Trainer.fit` stopped: `max_epochs=1000` reached.

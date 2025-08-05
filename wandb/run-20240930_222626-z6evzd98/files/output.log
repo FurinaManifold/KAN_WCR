@@ -1,0 +1,70 @@
+
+cfg_nn:{'dim': 1, 'widthk': 20, 'depthk': 2, 'grid': 5, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'KAN', 'width': 100, 'depth': 5}
+data:  torch.Size([11, 20000, 1]) tensor(3.6977, device='cuda:0') tensor(-3.7967, device='cuda:0')
+'sampleTestFunc_all' took 0.035772 s
+The model directory exists. Overwrite? True
+Epoch 3: 100%|██████████| 1/1 [00:00<00:00, 24.84it/s, v_num=zd98, loss_step=6.530, loss_epoch=6.530]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 4.4 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+4.4 K     Trainable params
+0         Non-trainable params
+4.4 K     Total params
+
+
+
+
+
+
+
+Epoch 179: 100%|██████████| 1/1 [00:00<00:00, 11.63it/s, v_num=zd98, loss_step=0.0477, loss_epoch=0.0444, val_residual=0.0447, drift_error=0.204, diffusion_error=0.000, val_loss=0.204]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 789: 100%|██████████| 1/1 [00:00<00:00, 11.62it/s, v_num=zd98, loss_step=0.0179, loss_epoch=0.0166, val_residual=0.0174, drift_error=0.130, diffusion_error=0.000, val_loss=0.130]
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 999: 100%|██████████| 1/1 [00:00<00:00,  1.71it/s, v_num=zd98, loss_step=0.0171, loss_epoch=0.0171, val_residual=0.0172, drift_error=0.129, diffusion_error=0.000, val_loss=0.129]
+`Trainer.fit` stopped: `max_epochs=1000` reached.

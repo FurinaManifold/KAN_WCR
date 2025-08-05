@@ -1,0 +1,156 @@
+{
+    "os": "Linux-5.4.0-177-generic-x86_64-with-glibc2.31",
+    "python": "3.10.10",
+    "heartbeatAt": "2024-10-01T03:33:48.780596",
+    "startedAt": "2024-10-01T03:33:46.414057",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/ubuntu/myproject/wcr_neural_kan/main_pl.py",
+    "codePathLocal": "main_pl.py",
+    "codePath": "main_pl.py",
+    "host": "ml-ubuntu20-04-desktop-v1-0-108gb-25m",
+    "username": "ubuntu",
+    "executable": "/opt/miniconda3/bin/python",
+    "cpu_count": 22,
+    "cpu_count_logical": 22,
+    "cpu_freq": {
+        "current": 2794.7169999999987,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2794.717,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2794.717,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2794.717,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2794.717,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2794.717,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2794.717,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2794.717,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2794.717,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2794.717,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2794.717,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2794.717,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2794.717,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2794.717,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2794.717,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2794.717,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2794.717,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2794.717,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2794.717,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2794.717,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2794.717,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2794.717,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2794.717,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 96.73210144042969,
+            "used": 73.23617553710938
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpu_count": 2,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_total": 25757220864
+        },
+        {
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_total": 25757220864
+        }
+    ],
+    "memory": {
+        "total": 106.20393753051758
+    }
+}

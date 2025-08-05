@@ -1,0 +1,142 @@
+
+cfg_nn:{'dim': 2, 'widthk': 30, 'depthk': 2, 'grid': 2, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'KAN', 'width': 100, 'depth': 5}
+data:  torch.Size([11, 50000, 2]) tensor(2.2876, device='cuda:0') tensor(-2.3161, device='cuda:0')
+'sampleTestFunc_all' took 0.015982 s
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 7.1 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+7.1 K     Trainable params
+0         Non-trainable params
+7.1 K     Total params
+0.029     Total estimated model params size (MB)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 129: 100%|████████████████████████████████████| 1/1 [00:00<00:00,  4.34it/s, v_num=4cka, loss_step=0.0245, loss_epoch=0.0224, val_residual=0.0277, drift_error=0.246, diffusion_error=0.000, val_loss=0.246]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 269: 100%|█████████████████████████████████| 1/1 [00:00<00:00,  4.34it/s, v_num=4cka, loss_step=0.00723, loss_epoch=0.00654, val_residual=0.00681, drift_error=0.102, diffusion_error=0.000, val_loss=0.102]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 849: 100%|█████████████████████████████████| 1/1 [00:00<00:00,  4.34it/s, v_num=4cka, loss_step=0.00585, loss_epoch=0.00568, val_residual=0.00571, drift_error=0.060, diffusion_error=0.000, val_loss=0.060]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 998:   0%|                                       | 0/1 [00:00<?, ?it/s, v_num=4cka, loss_step=0.00579, loss_epoch=0.00579, val_residual=0.00572, drift_error=0.0614, diffusion_error=0.000, val_loss=0.0614]
+
+Epoch 999: 100%|███████████████████████████████| 1/1 [00:00<00:00,  2.98it/s, v_num=4cka, loss_step=0.00585, loss_epoch=0.00585, val_residual=0.00571, drift_error=0.0624, diffusion_error=0.000, val_loss=0.0624]

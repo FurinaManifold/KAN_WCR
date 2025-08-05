@@ -1,0 +1,19 @@
+Finished drawing drift and diffusion results
+Data loaded
+Finished drawing distributions
+Traceback (most recent call last):
+  File "/home/ubuntu/myproject/wcr_neural_kan/medias.py", line 37, in <module>
+    drawfigures(args.config_file)
+  File "/home/ubuntu/myproject/wcr_neural_kan/medias.py", line 29, in drawfigures
+    plot_error(drift,net_drift,diffusion,net_diffusion,'cuda',config['train']['plot_type'],config['data'])
+  File "/home/ubuntu/myproject/wcr_neural_kan/utils/plot.py", line 112, in plot_error
+    plot_distributioncompare(drift_fun,drift_net,diffusion_fun,diffusion_net,cfg_data)
+  File "/home/ubuntu/myproject/wcr_neural_kan/utils/plot.py", line 64, in plot_distributioncompare
+    WD = ot.emd2([],[],distm.cpu().numpy())
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/ot/lp/__init__.py", line 483, in emd2
+    a, b, M = list_to_array(a, b, M)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/ot/utils.py", line 61, in list_to_array
+    lst_not_empty = [a for a in lst if len(a) > 0 and not isinstance(a, list)]
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/ot/utils.py", line 61, in <listcomp>
+    lst_not_empty = [a for a in lst if len(a) > 0 and not isinstance(a, list)]
+TypeError: len() of unsized object

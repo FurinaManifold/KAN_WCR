@@ -1,0 +1,27 @@
+2024-10-01 16:44:01,310 INFO    StreamThr :11102 [internal.py:wandb_internal():85] W&B internal server running at pid: 11102, started at: 2024-10-01 16:44:01.309823
+2024-10-01 16:44:01,316 DEBUG   HandlerThread:11102 [handler.py:handle_request():158] handle_request: status
+2024-10-01 16:44:01,318 INFO    WriterThread:11102 [datastore.py:open_for_write():87] open: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20241001_164401-6u8zuaq9/run-6u8zuaq9.wandb
+2024-10-01 16:44:01,319 DEBUG   SenderThread:11102 [sender.py:send():378] send: header
+2024-10-01 16:44:01,319 DEBUG   SenderThread:11102 [sender.py:send():378] send: run
+2024-10-01 16:44:02,651 INFO    SenderThread:11102 [dir_watcher.py:__init__():211] watching files in: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20241001_164401-6u8zuaq9/files
+2024-10-01 16:44:02,651 INFO    SenderThread:11102 [sender.py:_start_run_threads():1123] run started: 6u8zuaq9 with start time 1727772241.308908
+2024-10-01 16:44:02,670 DEBUG   HandlerThread:11102 [handler.py:handle_request():158] handle_request: check_version
+2024-10-01 16:44:02,670 DEBUG   SenderThread:11102 [sender.py:send_request():405] send_request: check_version
+2024-10-01 16:44:04,718 DEBUG   HandlerThread:11102 [handler.py:handle_request():158] handle_request: run_start
+2024-10-01 16:44:04,731 DEBUG   HandlerThread:11102 [system_info.py:__init__():26] System info init
+2024-10-01 16:44:04,731 DEBUG   HandlerThread:11102 [system_info.py:__init__():41] System info init done
+2024-10-01 16:44:04,731 INFO    HandlerThread:11102 [system_monitor.py:start():194] Starting system monitor
+2024-10-01 16:44:04,731 INFO    SystemMonitor:11102 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-10-01 16:44:04,732 INFO    HandlerThread:11102 [system_monitor.py:probe():214] Collecting system info
+2024-10-01 16:44:04,733 INFO    SystemMonitor:11102 [interfaces.py:start():188] Started cpu monitoring
+2024-10-01 16:44:04,735 INFO    SystemMonitor:11102 [interfaces.py:start():188] Started disk monitoring
+2024-10-01 16:44:04,737 INFO    SystemMonitor:11102 [interfaces.py:start():188] Started gpu monitoring
+2024-10-01 16:44:04,738 INFO    SystemMonitor:11102 [interfaces.py:start():188] Started memory monitoring
+2024-10-01 16:44:04,740 INFO    SystemMonitor:11102 [interfaces.py:start():188] Started network monitoring
+2024-10-01 16:44:04,759 DEBUG   HandlerThread:11102 [system_info.py:probe():150] Probing system
+2024-10-01 16:44:04,762 DEBUG   HandlerThread:11102 [gitlib.py:_init_repo():56] git repository is invalid
+2024-10-01 16:44:04,762 DEBUG   HandlerThread:11102 [system_info.py:probe():198] Probing system done
+2024-10-01 16:44:04,762 DEBUG   HandlerThread:11102 [system_monitor.py:probe():223] {'os': 'Linux-5.4.0-177-generic-x86_64-with-glibc2.31', 'python': '3.10.10', 'heartbeatAt': '2024-10-01T08:44:04.759361', 'startedAt': '2024-10-01T08:44:01.301829', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/ubuntu/myproject/wcr_neural_kan/main_pl.py', 'codePathLocal': 'main_pl.py', 'codePath': 'main_pl.py', 'host': 'ml-ubuntu20-04-desktop-v1-0-108gb-25m', 'username': 'ubuntu', 'executable': '/opt/miniconda3/bin/python', 'cpu_count': 22, 'cpu_count_logical': 22, 'cpu_freq': {'current': 2794.7169999999987, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2794.717, 'min': 0.0, 'max': 0.0}, {'current': 2794.717, 'min': 0.0, 'max': 0.0}, {'current': 2794.717, 'min': 0.0, 'max': 0.0}, {'current': 2794.717, 'min': 0.0, 'max': 0.0}, {'current': 2794.717, 'min': 0.0, 'max': 0.0}, {'current': 2794.717, 'min': 0.0, 'max': 0.0}, {'current': 2794.717, 'min': 0.0, 'max': 0.0}, {'current': 2794.717, 'min': 0.0, 'max': 0.0}, {'current': 2794.717, 'min': 0.0, 'max': 0.0}, {'current': 2794.717, 'min': 0.0, 'max': 0.0}, {'current': 2794.717, 'min': 0.0, 'max': 0.0}, {'current': 2794.717, 'min': 0.0, 'max': 0.0}, {'current': 2794.717, 'min': 0.0, 'max': 0.0}, {'current': 2794.717, 'min': 0.0, 'max': 0.0}, {'current': 2794.717, 'min': 0.0, 'max': 0.0}, {'current': 2794.717, 'min': 0.0, 'max': 0.0}, {'current': 2794.717, 'min': 0.0, 'max': 0.0}, {'current': 2794.717, 'min': 0.0, 'max': 0.0}, {'current': 2794.717, 'min': 0.0, 'max': 0.0}, {'current': 2794.717, 'min': 0.0, 'max': 0.0}, {'current': 2794.717, 'min': 0.0, 'max': 0.0}, {'current': 2794.717, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 96.73210144042969, 'used': 73.27713775634766}}, 'gpu': 'NVIDIA GeForce RTX 4090', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4090', 'memory_total': 25757220864}, {'name': 'NVIDIA GeForce RTX 4090', 'memory_total': 25757220864}], 'memory': {'total': 106.20393753051758}}
+2024-10-01 16:44:04,762 INFO    HandlerThread:11102 [system_monitor.py:probe():224] Finished collecting system info
+2024-10-01 16:44:04,762 INFO    HandlerThread:11102 [system_monitor.py:probe():227] Publishing system info
+2024-10-01 16:44:04,762 DEBUG   HandlerThread:11102 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment

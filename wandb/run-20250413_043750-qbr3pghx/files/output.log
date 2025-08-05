@@ -1,0 +1,71 @@
+cfg_nn:{'dim': 1, 'widthk': 30, 'depthk': 2, 'grid': 2, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'KAN0', 'depth': 5, 'width': 100}
+data:  torch.Size([11, 20000, 1]) tensor(1.4965, device='cuda:0') tensor(-1.4652, device='cuda:0')
+'sampleTestFunc_all' took 0.031762 s
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 6.7 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+6.7 K     Trainable params
+0         Non-trainable params
+6.7 K     Total params
+0.027     Total estimated model params size (MB)
+
+
+
+
+
+Epoch 129: 100%|█| 1/1 [00:00<00:00, 10.56it/s, v_num=pghx, loss_step=0.753, diffusion_step=0.804, loss_epoch=0.766, diff
+
+
+
+
+
+
+
+
+Epoch 309: 100%|█| 1/1 [00:00<00:00, 10.55it/s, v_num=pghx, loss_step=0.0236, diffusion_step=0.999, loss_epoch=0.0241, di
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 639: 100%|█| 1/1 [00:00<00:00, 10.53it/s, v_num=pghx, loss_step=0.0241, diffusion_step=1.000, loss_epoch=0.0218, di
+
+
+
+
+
+
+Epoch 779: 100%|█| 1/1 [00:00<00:00, 10.55it/s, v_num=pghx, loss_step=0.0231, diffusion_step=1.000, loss_epoch=0.0224, di
+
+
+
+
+
+
+Epoch 919: 100%|█| 1/1 [00:00<00:00, 10.56it/s, v_num=pghx, loss_step=0.0222, diffusion_step=1.000, loss_epoch=0.0215, di
+
+
+
+
+Epoch 998:   0%| | 0/1 [00:00<?, ?it/s, v_num=pghx, loss_step=0.0219, diffusion_step=1.000, loss_epoch=0.0219, diffusion_
+Epoch 999: 100%|█| 1/1 [00:00<00:00,  6.82it/s, v_num=pghx, loss_step=0.0232, diffusion_step=1.000, loss_epoch=0.0232, di
+save model done

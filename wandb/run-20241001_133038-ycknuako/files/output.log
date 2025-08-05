@@ -1,0 +1,60 @@
+
+cfg_nn:{'dim': 1, 'widthk': 20, 'depthk': 2, 'grid': 3, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'KAN', 'width': 100, 'depth': 5}
+data:  torch.Size([11, 20000, 1]) tensor(3.5925, device='cuda:0') tensor(-3.8911, device='cuda:0')
+'sampleTestFunc_all' took 0.036317 s
+The model directory exists. Overwrite? True
+Epoch 5: 100%|██████████| 1/1 [00:00<00:00, 14.24it/s, v_num=uako, loss_step=0.867, loss_epoch=0.867]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 3.5 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+3.5 K     Trainable params
+0         Non-trainable params
+3.5 K     Total params
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 809: 100%|██████████| 1/1 [00:00<00:00, 14.34it/s, v_num=uako, loss_step=0.0166, loss_epoch=0.0166, val_residual=0.0173, drift_error=0.218, diffusion_error=0.000, val_loss=0.218]
+
+
+
+Epoch 919: 100%|██████████| 1/1 [00:00<00:00, 14.32it/s, v_num=uako, loss_step=0.0156, loss_epoch=0.0165, val_residual=0.0172, drift_error=0.221, diffusion_error=0.000, val_loss=0.221]
+
+
+Epoch 999: 100%|██████████| 1/1 [00:00<00:00, 14.22it/s, v_num=uako, loss_step=0.0161, loss_epoch=0.0151, val_residual=0.0171, drift_error=0.224, diffusion_error=0.000, val_loss=0.224]
+
+Validation DataLoader 0:   0%|          | 0/1 [00:00<?, ?it/s]
+`Trainer.fit` stopped: `max_epochs=1000` reached.

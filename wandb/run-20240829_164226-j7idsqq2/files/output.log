@@ -1,0 +1,120 @@
+
+cfg_nn:{'dim': 3, 'widthk': 40, 'depthk': 2, 'grid': 2, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.4, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'KAN', 'width': 100, 'depth': 5}
+data:  torch.Size([11, 30000, 3]) tensor(3.4056, device='cuda:0') tensor(-3.7514, device='cuda:0')
+'sampleTestFunc_all' took 0.029447 s
+The model directory exists. Overwrite? True
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 12.9 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+12.9 K    Trainable params
+0         Non-trainable params
+12.9 K    Total params
+0.052     Total estimated model params size (MB)
+
+
+Epoch 39: 100%|███████████| 1/1 [00:00<00:00,  5.42it/s, v_num=sqq2, loss_step=0.0314, loss_epoch=0.0339, val_residual=0.0772, drift_error=0.646, diffusion_error=0.000, val_loss=0.646]
+
+
+
+
+
+Epoch 99: 100%|███████████| 1/1 [00:00<00:00,  5.40it/s, v_num=sqq2, loss_step=0.0112, loss_epoch=0.0104, val_residual=0.0117, drift_error=0.398, diffusion_error=0.000, val_loss=0.398]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 529: 100%|███████| 1/1 [00:00<00:00,  5.42it/s, v_num=sqq2, loss_step=0.00883, loss_epoch=0.00895, val_residual=0.00966, drift_error=0.329, diffusion_error=0.000, val_loss=0.329]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 949: 100%|███████| 1/1 [00:00<00:00,  5.42it/s, v_num=sqq2, loss_step=0.00931, loss_epoch=0.00924, val_residual=0.00958, drift_error=0.320, diffusion_error=0.000, val_loss=0.320]
+
+
+
+
+Epoch 999: 100%|████████| 1/1 [00:00<00:00,  5.42it/s, v_num=sqq2, loss_step=0.0094, loss_epoch=0.00895, val_residual=0.00959, drift_error=0.320, diffusion_error=0.000, val_loss=0.320]
+Validation DataLoader 0:   0%|                                                                                                                                    | 0/1 [00:00<?, ?it/s]
+
+`Trainer.fit` stopped: `max_epochs=1000` reached.

@@ -1,0 +1,83 @@
+cfg_nn:{'dim': 1, 'widthk': 50, 'depthk': 1, 'grid': 3, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'KAN', 'depth': 5, 'width': 100}
+data:  torch.Size([11, 20000, 1]) tensor(1.5222, device='cuda:0') tensor(-1.4679, device='cuda:0')
+'sampleTestFunc_all' took 0.019554 s
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 31.2 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+31.2 K    Trainable params
+0         Non-trainable params
+31.2 K    Total params
+0.125     Total estimated model params size (MB)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 639: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  8.38it/s, v_num=n9om, loss_step=0.0323, loss_epoch=0.031, val_residual=0.0329, drift_error=0.369, diffusion_error=0.0231, val_loss=0.392]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 999: 100%|█████████████████████████████████████████| 1/1 [00:00<00:00,  5.60it/s, v_num=n9om, loss_step=0.0312, loss_epoch=0.0312, val_residual=0.0321, drift_error=0.311, diffusion_error=0.0186, val_loss=0.330]
+save model done
+`Trainer.fit` stopped: `max_epochs=1000` reached.

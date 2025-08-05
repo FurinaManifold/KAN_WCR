@@ -1,0 +1,525 @@
+data:  torch.Size([11, 50000, 2]) tensor(4.3313, device='cuda:0') tensor(-4.3565, device='cuda:0')
+'sampleTestFunc_all' took 0.026494 s
+Sanity Checking DataLoader 0:   0%|          | 0/1 [00:00<?, ?it/s]Xsize= torch.Size([50, 50])
+Ysize= torch.Size([50, 50])
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.0474,  0.0156]], device='cuda:0')
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 21.2 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+21.2 K    Trainable params
+0         Non-trainable params
+21.2 K    Total params
+0.085     Total estimated model params size (MB)
+Epoch 9: 100%|██████████| 1/1 [00:00<00:00, 13.42it/s, v_num=zXsize= torch.Size([50, 50])epoch=0.806]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.1072, -0.0348]], device='cuda:0')
+Epoch 19: 100%|██████████| 1/1 [00:00<00:00, 13.43it/s, v_num=Xsize= torch.Size([50, 50])_epoch=0.625, val_residual=0.706, drift_error=0.997, diffusion_error=0.0285, val_loss=1.030]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.0428, -0.0709]], device='cuda:0')
+Epoch 29: 100%|██████████| 1/1 [00:00<00:00, 13.40it/s, v_num=Xsize= torch.Size([50, 50])_epoch=0.499, val_residual=0.588, drift_error=0.999, diffusion_error=0.00247, val_loss=1.000]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.0484, -0.0635]], device='cuda:0')
+Epoch 39: 100%|██████████| 1/1 [00:00<00:00, 13.33it/s, v_num=Xsize= torch.Size([50, 50])_epoch=0.529, val_residual=0.586, drift_error=1.000, diffusion_error=0.000787, val_loss=1.000]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.0673, -0.0548]], device='cuda:0')
+Epoch 49: 100%|██████████| 1/1 [00:00<00:00, 13.33it/s, v_num=Xsize= torch.Size([50, 50])_epoch=0.506, val_residual=0.580, drift_error=1.000, diffusion_error=0.00214, val_loss=1.000]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.0665, -0.0995]], device='cuda:0')
+Epoch 59: 100%|██████████| 1/1 [00:00<00:00, 13.37it/s, v_num=Xsize= torch.Size([50, 50])_epoch=0.505, val_residual=0.568, drift_error=1.000, diffusion_error=0.00356, val_loss=1.010]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.0608, -0.1365]], device='cuda:0')
+Epoch 69: 100%|██████████| 1/1 [00:00<00:00, 13.41it/s, v_num=Xsize= torch.Size([50, 50])_epoch=0.415, val_residual=0.530, drift_error=1.000, diffusion_error=0.0205, val_loss=1.020]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.1472, -0.0956]], device='cuda:0')
+Epoch 79: 100%|██████████| 1/1 [00:00<00:00, 13.37it/s, v_num=Xsize= torch.Size([50, 50])_epoch=0.338, val_residual=0.359, drift_error=0.998, diffusion_error=0.176, val_loss=1.170]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.1649, -0.0412]], device='cuda:0')
+Epoch 89: 100%|██████████| 1/1 [00:00<00:00, 13.38it/s, v_num=Xsize= torch.Size([50, 50])_epoch=0.232, val_residual=0.287, drift_error=1.000, diffusion_error=0.269, val_loss=1.270]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.1465,  0.0096]], device='cuda:0')
+Epoch 99: 100%|██████████| 1/1 [00:00<00:00, 13.37it/s, v_num=Xsize= torch.Size([50, 50])_epoch=0.192, val_residual=0.224, drift_error=1.000, diffusion_error=0.498, val_loss=1.500]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.0985,  0.0515]], device='cuda:0')
+Epoch 109: 100%|██████████| 1/1 [00:00<00:00, 13.35it/s, v_num=z5xw, loss_step=0.130, loss_epoch=0.139, val_residual=0.193, drift_error=1.000, diffusion_error=0.615, val_loss=1.620]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[0.0126, 0.0555]], device='cuda:0')
+Epoch 119: 100%|██████████| 1/1 [00:00<00:00, 13.44it/s, v_numXsize= torch.Size([50, 50])s_epoch=0.0994, val_residual=0.128, drift_error=0.996, diffusion_error=0.519, val_loss=1.510]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[0.0223, 0.0449]], device='cuda:0')
+Epoch 129: 100%|██████████| 1/1 [00:00<00:00, 13.43it/s, v_numXsize= torch.Size([50, 50])ss_epoch=0.0838, val_residual=0.0922, drift_error=0.996, diffusion_error=0.570, val_loss=1.570]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[ 0.0323, -0.0153]], device='cuda:0')
+Epoch 139: 100%|██████████| 1/1 [00:00<00:00, 13.38it/s, v_numXsize= torch.Size([50, 50])s_epoch=0.0894, val_residual=0.0811, drift_error=0.996, diffusion_error=0.603, val_loss=1.600]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.0081, -0.0554]], device='cuda:0')
+Epoch 149: 100%|██████████| 1/1 [00:00<00:00, 13.24it/s, v_numXsize= torch.Size([50, 50])ss_epoch=0.0769, val_residual=0.0931, drift_error=0.994, diffusion_error=0.639, val_loss=1.630]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.1613,  0.0212]], device='cuda:0')
+Epoch 159: 100%|██████████| 1/1 [00:00<00:00, 13.35it/s, v_numXsize= torch.Size([50, 50])ss_epoch=0.050, val_residual=0.0757, drift_error=0.995, diffusion_error=0.616, val_loss=1.610]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.2578,  0.0325]], device='cuda:0')
+Epoch 169: 100%|██████████| 1/1 [00:00<00:00, 13.38it/s, v_numXsize= torch.Size([50, 50])ss_epoch=0.0434, val_residual=0.0494, drift_error=0.995, diffusion_error=0.658, val_loss=1.650]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.4128,  0.0816]], device='cuda:0')
+Epoch 179: 100%|██████████| 1/1 [00:00<00:00, 13.32it/s, v_numXsize= torch.Size([50, 50])ss_epoch=0.0473, val_residual=0.0458, drift_error=0.996, diffusion_error=0.750, val_loss=1.750]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.5627,  0.0633]], device='cuda:0')
+Epoch 189: 100%|██████████| 1/1 [00:00<00:00, 13.28it/s, v_numXsize= torch.Size([50, 50])ss_epoch=0.0458, val_residual=0.0345, drift_error=1.000, diffusion_error=0.777, val_loss=1.780]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.6069, -0.0620]], device='cuda:0')
+Epoch 199: 100%|██████████| 1/1 [00:00<00:00, 13.30it/s, v_numXsize= torch.Size([50, 50])ss_epoch=0.0307, val_residual=0.0377, drift_error=1.000, diffusion_error=0.728, val_loss=1.730]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.8095, -0.2401]], device='cuda:0')
+Epoch 209: 100%|██████████| 1/1 [00:00<00:00, 13.38it/s, v_numXsize= torch.Size([50, 50])ss_epoch=0.0251, val_residual=0.0307, drift_error=0.999, diffusion_error=0.762, val_loss=1.760]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.8533, -0.4032]], device='cuda:0')
+Epoch 219: 100%|██████████| 1/1 [00:00<00:00, 13.36it/s, v_numXsize= torch.Size([50, 50])ss_epoch=0.0234, val_residual=0.0259, drift_error=1.000, diffusion_error=0.785, val_loss=1.790]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.8860, -0.5071]], device='cuda:0')
+Epoch 229: 100%|██████████| 1/1 [00:00<00:00, 13.36it/s, v_numXsize= torch.Size([50, 50])s_epoch=0.0221, val_residual=0.0239, drift_error=1.010, diffusion_error=0.803, val_loss=1.810]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.0451, -0.8054]], device='cuda:0')
+Epoch 239: 100%|██████████| 1/1 [00:00<00:00, 13.27it/s, v_numXsize= torch.Size([50, 50])ss_epoch=0.0217, val_residual=0.0235, drift_error=1.000, diffusion_error=0.826, val_loss=1.830]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.2058, -0.9737]], device='cuda:0')
+Epoch 249: 100%|██████████| 1/1 [00:00<00:00, 13.30it/s, v_numXsize= torch.Size([50, 50])ss_epoch=0.0194, val_residual=0.0215, drift_error=1.000, diffusion_error=0.821, val_loss=1.820]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.1603, -1.0061]], device='cuda:0')
+Epoch 259: 100%|██████████| 1/1 [00:00<00:00, 13.34it/s, v_numXsize= torch.Size([50, 50])ss_epoch=0.0178, val_residual=0.0197, drift_error=1.000, diffusion_error=0.816, val_loss=1.820]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.2885, -1.1388]], device='cuda:0')
+Epoch 269: 100%|██████████| 1/1 [00:00<00:00, 13.38it/s, v_numXsize= torch.Size([50, 50])ss_epoch=0.0175, val_residual=0.0183, drift_error=1.000, diffusion_error=0.838, val_loss=1.840]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.2772, -1.3337]], device='cuda:0')
+Epoch 279: 100%|██████████| 1/1 [00:00<00:00, 13.35it/s, v_numXsize= torch.Size([50, 50])ss_epoch=0.0168, val_residual=0.0184, drift_error=0.998, diffusion_error=0.825, val_loss=1.820]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.3195, -1.4979]], device='cuda:0')
+Epoch 289: 100%|██████████| 1/1 [00:00<00:00, 13.33it/s, v_numXsize= torch.Size([50, 50])ss_epoch=0.0143, val_residual=0.0164, drift_error=0.998, diffusion_error=0.844, val_loss=1.840]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.3893, -1.5863]], device='cuda:0')
+Epoch 299: 100%|██████████| 1/1 [00:00<00:00, 13.32it/s, v_numXsize= torch.Size([50, 50])ss_epoch=0.0154, val_residual=0.0148, drift_error=1.000, diffusion_error=0.843, val_loss=1.840]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.4256, -1.5421]], device='cuda:0')
+Epoch 309: 100%|██████████| 1/1 [00:00<00:00, 13.35it/s, v_numXsize= torch.Size([50, 50])ss_epoch=0.013, val_residual=0.0152, drift_error=1.000, diffusion_error=0.851, val_loss=1.850]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.3725, -1.6087]], device='cuda:0')
+Epoch 319: 100%|██████████| 1/1 [00:00<00:00, 13.35it/s, v_numXsize= torch.Size([50, 50])ss_epoch=0.0138, val_residual=0.0218, drift_error=1.000, diffusion_error=0.833, val_loss=1.840]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.3515, -1.4411]], device='cuda:0')
+Epoch 329: 100%|██████████| 1/1 [00:00<00:00, 13.36it/s, v_numXsize= torch.Size([50, 50])ss_epoch=0.0152, val_residual=0.0148, drift_error=1.000, diffusion_error=0.843, val_loss=1.840]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.2668, -1.4949]], device='cuda:0')
+Epoch 339: 100%|██████████| 1/1 [00:00<00:00, 13.34it/s, v_numXsize= torch.Size([50, 50])ss_epoch=0.0133, val_residual=0.0255, drift_error=0.997, diffusion_error=0.821, val_loss=1.820]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.3768, -1.5949]], device='cuda:0')
+Epoch 349: 100%|██████████| 1/1 [00:00<00:00, 13.32it/s, v_numXsize= torch.Size([50, 50])ss_epoch=0.013, val_residual=0.0157, drift_error=0.995, diffusion_error=0.827, val_loss=1.820]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.2893, -1.3175]], device='cuda:0')
+Epoch 359: 100%|██████████| 1/1 [00:00<00:00, 12.70it/s, v_numXsize= torch.Size([50, 50])ss_epoch=0.0118, val_residual=0.0137, drift_error=0.993, diffusion_error=0.827, val_loss=1.820]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.3973, -1.4150]], device='cuda:0')
+Epoch 369: 100%|██████████| 1/1 [00:00<00:00, 13.35it/s, v_numXsize= torch.Size([50, 50])s_epoch=0.0127, val_residual=0.013, drift_error=0.993, diffusion_error=0.822, val_loss=1.810]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.5104, -1.3260]], device='cuda:0')
+Epoch 379: 100%|██████████| 1/1 [00:00<00:00, 13.34it/s, v_numXsize= torch.Size([50, 50])ss_epoch=0.0115, val_residual=0.0124, drift_error=0.997, diffusion_error=0.831, val_loss=1.830]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.5456, -1.2169]], device='cuda:0')
+Epoch 389: 100%|██████████| 1/1 [00:00<00:00, 13.33it/s, v_numXsize= torch.Size([50, 50])ss_epoch=0.0137, val_residual=0.0118, drift_error=0.996, diffusion_error=0.838, val_loss=1.830]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.6211, -1.3398]], device='cuda:0')
+Epoch 399: 100%|██████████| 1/1 [00:00<00:00, 13.28it/s, v_numXsize= torch.Size([50, 50])ss_epoch=0.0163, val_residual=0.0111, drift_error=0.999, diffusion_error=0.837, val_loss=1.840]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.6231, -1.2742]], device='cuda:0')
+Epoch 409: 100%|██████████| 1/1 [00:00<00:00, 13.35it/s, v_numXsize= torch.Size([50, 50])ss_epoch=0.0117, val_residual=0.025, drift_error=0.993, diffusion_error=0.820, val_loss=1.810]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.5146, -1.2052]], device='cuda:0')
+Epoch 419: 100%|██████████| 1/1 [00:00<00:00, 13.36it/s, v_numXsize= torch.Size([50, 50])ss_epoch=0.0103, val_residual=0.0132, drift_error=0.988, diffusion_error=0.819, val_loss=1.810]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.5502, -1.0861]], device='cuda:0')
+Epoch 429: 100%|██████████| 1/1 [00:00<00:00, 13.38it/s, v_numXsize= torch.Size([50, 50])ss_epoch=0.00989, val_residual=0.0108, drift_error=0.990, diffusion_error=0.811, val_loss=1.800]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.5957, -1.0746]], device='cuda:0')
+Epoch 439: 100%|██████████| 1/1 [00:00<00:00, 13.36it/s, v_numXsize= torch.Size([50, 50])s_epoch=0.010, val_residual=0.00989, drift_error=0.993, diffusion_error=0.817, val_loss=1.810]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.5748, -1.0637]], device='cuda:0')
+Epoch 449: 100%|██████████| 1/1 [00:00<00:00, 13.30it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00945, val_residual=0.0101, drift_error=0.994, diffusion_error=0.819, val_loss=1.810]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.6005, -1.0862]], device='cuda:0')
+Epoch 459: 100%|██████████| 1/1 [00:00<00:00, 13.37it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00937, val_residual=0.00927, drift_error=0.996, diffusion_error=0.824, val_loss=1.820]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.5897, -1.0564]], device='cuda:0')
+Epoch 469: 100%|██████████| 1/1 [00:00<00:00, 13.33it/s, v_numXsize= torch.Size([50, 50])ss_epoch=0.00947, val_residual=0.00895, drift_error=0.997, diffusion_error=0.825, val_loss=1.820]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.5574, -1.0840]], device='cuda:0')
+Epoch 479: 100%|██████████| 1/1 [00:00<00:00, 13.36it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00973, val_residual=0.00934, drift_error=0.998, diffusion_error=0.831, val_loss=1.830]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.4741, -0.9476]], device='cuda:0')
+Epoch 489: 100%|██████████| 1/1 [00:00<00:00, 13.33it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00875, val_residual=0.00919, drift_error=0.998, diffusion_error=0.825, val_loss=1.820]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.5326, -0.9288]], device='cuda:0')
+Epoch 499: 100%|██████████| 1/1 [00:00<00:00, 13.27it/s, v_numXsize= torch.Size([50, 50])ss_epoch=0.00833, val_residual=0.00887, drift_error=1.000, diffusion_error=0.825, val_loss=1.830]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.5585, -1.0442]], device='cuda:0')
+Epoch 509: 100%|██████████| 1/1 [00:00<00:00, 13.33it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00805, val_residual=0.00853, drift_error=1.000, diffusion_error=0.823, val_loss=1.820]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.3677, -0.9131]], device='cuda:0')
+Epoch 519: 100%|██████████| 1/1 [00:00<00:00, 13.38it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00868, val_residual=0.0083, drift_error=0.998, diffusion_error=0.819, val_loss=1.820]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.4114, -0.9452]], device='cuda:0')
+Epoch 529: 100%|██████████| 1/1 [00:00<00:00, 13.36it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00808, val_residual=0.00858, drift_error=1.000, diffusion_error=0.817, val_loss=1.820]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.4193, -0.9936]], device='cuda:0')
+Epoch 539: 100%|██████████| 1/1 [00:00<00:00, 13.38it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00839, val_residual=0.00848, drift_error=1.000, diffusion_error=0.813, val_loss=1.810]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.4049, -0.9822]], device='cuda:0')
+Epoch 549: 100%|██████████| 1/1 [00:00<00:00, 13.32it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.0084, val_residual=0.00794, drift_error=1.000, diffusion_error=0.811, val_loss=1.810]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.2287, -0.9096]], device='cuda:0')
+Epoch 559: 100%|██████████| 1/1 [00:00<00:00, 13.34it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00822, val_residual=0.00812, drift_error=0.998, diffusion_error=0.811, val_loss=1.810]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.3203, -0.9308]], device='cuda:0')
+Epoch 569: 100%|██████████| 1/1 [00:00<00:00, 13.35it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00825, val_residual=0.00772, drift_error=1.000, diffusion_error=0.804, val_loss=1.810]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.3550, -1.0211]], device='cuda:0')
+Epoch 579: 100%|██████████| 1/1 [00:00<00:00, 13.33it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00767, val_residual=0.00846, drift_error=1.000, diffusion_error=0.804, val_loss=1.810]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.2481, -0.8770]], device='cuda:0')
+Epoch 589: 100%|██████████| 1/1 [00:00<00:00, 13.38it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00832, val_residual=0.00768, drift_error=1.000, diffusion_error=0.797, val_loss=1.800]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.2683, -0.8675]], device='cuda:0')
+Epoch 599: 100%|██████████| 1/1 [00:00<00:00, 13.33it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00749, val_residual=0.00798, drift_error=1.000, diffusion_error=0.795, val_loss=1.800]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.2118, -0.9256]], device='cuda:0')
+Epoch 609: 100%|██████████| 1/1 [00:00<00:00, 13.37it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00707, val_residual=0.00969, drift_error=1.000, diffusion_error=0.796, val_loss=1.800]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.2085, -0.9054]], device='cuda:0')
+Epoch 619: 100%|██████████| 1/1 [00:00<00:00, 13.38it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00703, val_residual=0.00748, drift_error=1.000, diffusion_error=0.791, val_loss=1.800]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.2398, -0.8440]], device='cuda:0')
+Epoch 629: 100%|██████████| 1/1 [00:00<00:00, 13.35it/s, v_num=z5xw, loss_step=0.00697, loss_epoch=0.00728, val_residual=0.0071, drift_error=1.010, diffusion_error=0.790, val_loss=1.800]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.1736, -0.8694]], device='cuda:0')
+Epoch 639: 100%|██████████| 1/1 [00:00<00:00, 13.35it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00697, val_residual=0.00731, drift_error=1.000, diffusion_error=0.789, val_loss=1.790]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.1475, -0.8929]], device='cuda:0')
+Epoch 649: 100%|██████████| 1/1 [00:00<00:00, 13.34it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00702, val_residual=0.007, drift_error=1.000, diffusion_error=0.790, val_loss=1.790]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.1348, -0.8761]], device='cuda:0')
+Epoch 659: 100%|██████████| 1/1 [00:00<00:00, 13.31it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00737, val_residual=0.00714, drift_error=1.010, diffusion_error=0.790, val_loss=1.800]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.1056, -0.8215]], device='cuda:0')
+Epoch 669: 100%|██████████| 1/1 [00:00<00:00, 13.36it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00673, val_residual=0.00702, drift_error=1.010, diffusion_error=0.786, val_loss=1.790]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.1394, -0.8679]], device='cuda:0')
+Epoch 679: 100%|██████████| 1/1 [00:00<00:00, 13.36it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00699, val_residual=0.00695, drift_error=1.010, diffusion_error=0.785, val_loss=1.790]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.1059, -0.8953]], device='cuda:0')
+Epoch 689: 100%|██████████| 1/1 [00:00<00:00, 13.28it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.0066, val_residual=0.00683, drift_error=1.010, diffusion_error=0.782, val_loss=1.790]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.1057, -0.8605]], device='cuda:0')
+Epoch 699: 100%|██████████| 1/1 [00:00<00:00, 13.33it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00688, val_residual=0.00681, drift_error=1.010, diffusion_error=0.782, val_loss=1.790]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.0871, -0.9684]], device='cuda:0')
+Epoch 709: 100%|██████████| 1/1 [00:00<00:00, 13.35it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00702, val_residual=0.00704, drift_error=1.010, diffusion_error=0.783, val_loss=1.790]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.0674, -0.8223]], device='cuda:0')
+Epoch 719: 100%|██████████| 1/1 [00:00<00:00, 13.39it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00658, val_residual=0.00675, drift_error=1.010, diffusion_error=0.779, val_loss=1.790]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.9919, -0.8823]], device='cuda:0')
+Epoch 729: 100%|██████████| 1/1 [00:00<00:00, 13.23it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00688, val_residual=0.00674, drift_error=1.010, diffusion_error=0.780, val_loss=1.790]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.0015, -0.8952]], device='cuda:0')
+Epoch 739: 100%|██████████| 1/1 [00:00<00:00, 13.31it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00698, val_residual=0.00671, drift_error=1.010, diffusion_error=0.777, val_loss=1.790]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.0547, -0.8427]], device='cuda:0')
+Epoch 749: 100%|██████████| 1/1 [00:00<00:00, 13.30it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00646, val_residual=0.00675, drift_error=1.010, diffusion_error=0.774, val_loss=1.790]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.9375, -0.8884]], device='cuda:0')
+Epoch 759: 100%|██████████| 1/1 [00:00<00:00, 13.36it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00694, val_residual=0.00686, drift_error=1.010, diffusion_error=0.773, val_loss=1.780]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.9480, -0.8434]], device='cuda:0')
+Epoch 769: 100%|██████████| 1/1 [00:00<00:00, 13.35it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00692, val_residual=0.00668, drift_error=1.010, diffusion_error=0.772, val_loss=1.780]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.9644, -0.8764]], device='cuda:0')
+Epoch 779: 100%|██████████| 1/1 [00:00<00:00, 13.35it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00665, val_residual=0.00649, drift_error=1.010, diffusion_error=0.769, val_loss=1.780]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-1.0042, -0.8285]], device='cuda:0')
+Epoch 789: 100%|██████████| 1/1 [00:00<00:00, 13.37it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00685, val_residual=0.00655, drift_error=1.010, diffusion_error=0.770, val_loss=1.780]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.9857, -0.8642]], device='cuda:0')
+Epoch 799: 100%|██████████| 1/1 [00:00<00:00, 13.30it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00679, val_residual=0.00662, drift_error=1.010, diffusion_error=0.769, val_loss=1.780]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.8782, -0.9362]], device='cuda:0')
+Epoch 809: 100%|██████████| 1/1 [00:00<00:00, 13.37it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00656, val_residual=0.00673, drift_error=1.010, diffusion_error=0.769, val_loss=1.780]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.9399, -0.8926]], device='cuda:0')
+Epoch 819: 100%|██████████| 1/1 [00:00<00:00, 13.31it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00642, val_residual=0.00629, drift_error=1.010, diffusion_error=0.767, val_loss=1.780]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.8854, -0.8691]], device='cuda:0')
+Epoch 829: 100%|██████████| 1/1 [00:00<00:00, 13.33it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.0068, val_residual=0.00625, drift_error=1.010, diffusion_error=0.766, val_loss=1.780]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.8863, -0.8332]], device='cuda:0')
+Epoch 839: 100%|██████████| 1/1 [00:00<00:00, 13.37it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00632, val_residual=0.00635, drift_error=1.010, diffusion_error=0.766, val_loss=1.780]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.8593, -0.8890]], device='cuda:0')
+Epoch 849: 100%|██████████| 1/1 [00:00<00:00, 13.30it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00622, val_residual=0.00622, drift_error=1.010, diffusion_error=0.765, val_loss=1.780]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.8242, -0.9001]], device='cuda:0')
+Epoch 859: 100%|██████████| 1/1 [00:00<00:00, 13.33it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00651, val_residual=0.00624, drift_error=1.010, diffusion_error=0.763, val_loss=1.780]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.8161, -0.9328]], device='cuda:0')
+Epoch 869: 100%|██████████| 1/1 [00:00<00:00, 13.30it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00637, val_residual=0.00617, drift_error=1.010, diffusion_error=0.762, val_loss=1.780]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.8763, -0.9358]], device='cuda:0')
+
+Epoch 879: 100%|██████████| 1/1 [00:00<00:00, 13.30it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00668, val_residual=0.00632, drift_error=1.020, diffusion_error=0.761, val_loss=1.780]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.8806, -0.9637]], device='cuda:0')
+Epoch 889: 100%|██████████| 1/1 [00:00<00:00, 13.36it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00631, val_residual=0.00633, drift_error=1.020, diffusion_error=0.759, val_loss=1.780]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.8449, -0.8811]], device='cuda:0')
+Epoch 899: 100%|██████████| 1/1 [00:00<00:00, 13.30it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00595, val_residual=0.00614, drift_error=1.020, diffusion_error=0.758, val_loss=1.780]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.8571, -0.8872]], device='cuda:0')
+Epoch 909: 100%|██████████| 1/1 [00:00<00:00, 13.25it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00632, val_residual=0.00622, drift_error=1.020, diffusion_error=0.757, val_loss=1.770]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.8335, -0.9283]], device='cuda:0')
+Epoch 919: 100%|██████████| 1/1 [00:00<00:00, 13.31it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00608, val_residual=0.00612, drift_error=1.020, diffusion_error=0.755, val_loss=1.770]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.7903, -0.9056]], device='cuda:0')
+Epoch 929: 100%|██████████| 1/1 [00:00<00:00, 13.38it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00623, val_residual=0.00615, drift_error=1.020, diffusion_error=0.755, val_loss=1.770]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.7948, -0.8839]], device='cuda:0')
+Epoch 939: 100%|██████████| 1/1 [00:00<00:00, 13.35it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00654, val_residual=0.00633, drift_error=1.020, diffusion_error=0.753, val_loss=1.770]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.7937, -0.9193]], device='cuda:0')
+Epoch 949: 100%|██████████| 1/1 [00:00<00:00, 13.32it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00656, val_residual=0.00612, drift_error=1.020, diffusion_error=0.753, val_loss=1.770]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.7561, -0.9147]], device='cuda:0')
+Epoch 959: 100%|██████████| 1/1 [00:00<00:00, 13.39it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00637, val_residual=0.00603, drift_error=1.020, diffusion_error=0.751, val_loss=1.770]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.7591, -0.9032]], device='cuda:0')
+Epoch 969: 100%|██████████| 1/1 [00:00<00:00, 13.28it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00593, val_residual=0.00628, drift_error=1.020, diffusion_error=0.751, val_loss=1.770]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.7648, -0.9041]], device='cuda:0')
+Epoch 979: 100%|██████████| 1/1 [00:00<00:00, 13.38it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00602, val_residual=0.00608, drift_error=1.020, diffusion_error=0.750, val_loss=1.770]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.7809, -0.9677]], device='cuda:0')
+Epoch 989: 100%|██████████| 1/1 [00:00<00:00, 13.27it/s, v_numXsize= torch.Size([50, 50])ss_epoch=0.00611, val_residual=0.00604, drift_error=1.020, diffusion_error=0.748, val_loss=1.770]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.7694, -0.8893]], device='cuda:0')
+Epoch 999: 100%|██████████| 1/1 [00:00<00:00, 13.31it/s, v_numXsize= torch.Size([50, 50])oss_epoch=0.00585, val_residual=0.00601, drift_error=1.020, diffusion_error=0.748, val_loss=1.770]
+Ysize= torch.Size([50, 50])0%|          | 0/1 [00:00<?, ?it/s]
+datasize= torch.Size([50, 50, 2])
+tensor([[-2., -2.]], device='cuda:0')
+tensor([[-0.7269, -0.9930]], device='cuda:0')
+`Trainer.fit` stopped: `max_epochs=1000` reached.
+Epoch 999: 100%|██████████| 1/1 [00:05<00:00,  0.17it/s, v_num=z5xw, loss_step=0.00627, loss_epoch=0.00627, val_residual=0.00601, drift_error=1.020, diffusion_error=0.748, val_loss=1.760]

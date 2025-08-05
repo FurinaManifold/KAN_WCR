@@ -1,0 +1,79 @@
+
+cfg_nn:{'dim': 1, 'widthk': 30, 'depthk': 2, 'grid': 3, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'KAN', 'depth': 5, 'width': 100}
+data:  torch.Size([11, 20000, 1]) tensor(1.5222, device='cuda:0') tensor(-1.4679, device='cuda:0')
+'sampleTestFunc_all' took 0.017387 s
+Epoch 5: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 19.76it/s, v_num=oiyk, loss_step=0.930, loss_epoch=0.930]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 18.1 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+18.1 K    Trainable params
+0         Non-trainable params
+18.1 K    Total params
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 349: 100%|█████████████████████████████████████████| 1/1 [00:00<00:00,  9.16it/s, v_num=oiyk, loss_step=0.0339, loss_epoch=0.0343, val_residual=0.0365, drift_error=0.526, diffusion_error=0.0358, val_loss=0.562]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 899: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  9.16it/s, v_num=oiyk, loss_step=0.0306, loss_epoch=0.0283, val_residual=0.032, drift_error=0.296, diffusion_error=0.0175, val_loss=0.313]
+
+
+
+
+Epoch 989: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  9.18it/s, v_num=oiyk, loss_step=0.0307, loss_epoch=0.0294, val_residual=0.0318, drift_error=0.288, diffusion_error=0.017, val_loss=0.305]
+
+save model done
+`Trainer.fit` stopped: `max_epochs=1000` reached.

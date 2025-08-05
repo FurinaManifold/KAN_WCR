@@ -1,0 +1,13 @@
+
+Finished drawing drift and diffusion results
+Finished drawing orbits
+Traceback (most recent call last):
+  File "/home/ubuntu/myproject/wcr_neural_kan/medias.py", line 37, in <module>
+    drawfigures(args.config_file)
+  File "/home/ubuntu/myproject/wcr_neural_kan/medias.py", line 29, in drawfigures
+    plot_error(drift,net_drift,diffusion,net_diffusion,'cuda',config['train']['plot_type'],config['data'])
+  File "/home/ubuntu/myproject/wcr_neural_kan/utils/plot.py", line 109, in plot_error
+    plot_distributioncompare(drift_fun,drift_net,diffusion_fun,diffusion_net,cfg_data)
+  File "/home/ubuntu/myproject/wcr_neural_kan/utils/plot.py", line 34, in plot_distributioncompare
+    initialization=torch.normal(mean=0., std=cfg_data['sigma_init'], size=(samples, dim))
+UnboundLocalError: local variable 'samples' referenced before assignment

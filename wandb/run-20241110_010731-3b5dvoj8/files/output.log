@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/myproject/wcr_neural_kan/medias.py", line 34, in <module>
+    drawfigures(args.config_file)
+  File "/home/ubuntu/myproject/wcr_neural_kan/medias.py", line 25, in drawfigures
+    drift,diffusion = model_select(config['data']['model'],config['data']['frequency'])
+NameError: name 'model_select' is not defined

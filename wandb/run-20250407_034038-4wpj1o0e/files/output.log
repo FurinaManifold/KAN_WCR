@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/myproject/wcr_neural_kan/medias.py", line 73, in <module>
+    drawfigures(args.config_file)
+  File "/home/ubuntu/myproject/wcr_neural_kan/medias.py", line 60, in drawfigures
+    net_diffusion = torch.load(f"./modelckpts/{config['Project']['name']}_diffusion.ckpt", map_location = 'cuda')
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/torch/serialization.py", line 997, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/torch/serialization.py", line 444, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/torch/serialization.py", line 425, in __init__
+    super().__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: './modelckpts/1d_poly_KAN2_2_30_constdif_sampway0_diffusion.ckpt'

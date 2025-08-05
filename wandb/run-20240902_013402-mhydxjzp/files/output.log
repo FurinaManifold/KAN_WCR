@@ -1,0 +1,88 @@
+
+cfg_nn:{'dim': 2, 'widthk': 30, 'depthk': 2, 'grid': 1, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'KAN', 'width': 100, 'depth': 5}
+data:  torch.Size([11, 30000, 2]) tensor(1.6137, device='cuda:0') tensor(-1.8304, device='cuda:0')
+'sampleTestFunc_all' took 0.018799 s
+The model directory exists. Overwrite? True
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 6.1 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+6.1 K     Trainable params
+0         Non-trainable params
+6.1 K     Total params
+0.024     Total estimated model params size (MB)
+
+
+
+
+
+
+
+
+
+Epoch 169: 100%|██████████| 1/1 [00:00<00:00,  8.28it/s, v_num=xjzp, loss_step=0.0687, loss_epoch=0.0699, val_residual=0.0807, drift_error=0.143, diffusion_error=0.468, val_loss=0.610]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 499: 100%|██████████| 1/1 [00:00<00:00,  8.28it/s, v_num=xjzp, loss_step=0.0324, loss_epoch=0.0309, val_residual=0.0307, drift_error=0.0585, diffusion_error=0.468, val_loss=0.526]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 789: 100%|██████████| 1/1 [00:00<00:00,  8.29it/s, v_num=xjzp, loss_step=0.0253, loss_epoch=0.0244, val_residual=0.0244, drift_error=0.122, diffusion_error=0.468, val_loss=0.589]
+
+
+
+
+
+
+Epoch 899: 100%|██████████| 1/1 [00:00<00:00,  8.30it/s, v_num=xjzp, loss_step=0.0222, loss_epoch=0.0256, val_residual=0.0237, drift_error=0.138, diffusion_error=0.468, val_loss=0.605]
+
+
+
+
+
+
+Epoch 999: 100%|██████████| 1/1 [00:00<00:00,  8.28it/s, v_num=xjzp, loss_step=0.0256, loss_epoch=0.0252, val_residual=0.0232, drift_error=0.154, diffusion_error=0.468, val_loss=0.622]
+
+Validation DataLoader 0:   0%|          | 0/1 [00:00<?, ?it/s]
+`Trainer.fit` stopped: `max_epochs=1000` reached.

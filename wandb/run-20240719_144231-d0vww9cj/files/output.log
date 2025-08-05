@@ -1,0 +1,18 @@
+
+data:  torch.Size([6, 40000, 1]) tensor(4.0199, device='cuda:0') tensor(-4.1545, device='cuda:0')
+Traceback (most recent call last):
+  File "/home/ubuntu/myproject/wcr_neural_kan/main_pl.py", line 123, in <module>
+    main(config_file)
+  File "/home/ubuntu/myproject/wcr_neural_kan/main_pl.py", line 63, in main
+    model = Model_pl(t = t,
+  File "/home/ubuntu/myproject/wcr_neural_kan/model/model.py", line 306, in __init__
+    self.model = Model( t = t,
+  File "/home/ubuntu/myproject/wcr_neural_kan/model/model.py", line 72, in __init__
+    self.sample_gaussian()
+  File "/home/ubuntu/myproject/wcr_neural_kan/model/model.py", line 114, in sample_gaussian
+    self.mu_list_all, self.variance = sampleTestFunc_all(data = self.data,
+  File "/home/ubuntu/myproject/wcr_neural_kan/utils/utils.py", line 74, in wrapper
+    result = f(*args, **kwargs)
+  File "/home/ubuntu/myproject/wcr_neural_kan/utils/sampling.py", line 96, in sampleTestFunc_all
+    mu_dist = 1/torch.norm(mu_list_all[:,5,:],p=2,dim = -1)**2
+IndexError: index 5 is out of bounds for dimension 1 with size 4

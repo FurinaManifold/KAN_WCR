@@ -1,0 +1,146 @@
+
+cfg_nn:{'dim': 2, 'widthk': 30, 'depthk': 2, 'grid': 2, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'KAN', 'width': 100, 'depth': 5}
+data:  torch.Size([11, 50000, 2]) tensor(5.7118, device='cuda:0') tensor(-5.8420, device='cuda:0')
+'sampleTestFunc_all' took 0.021543 s
+The model directory exists. Overwrite? True
+Epoch 2: 100%|██████████| 1/1 [00:00<00:00, 10.08it/s, v_num=ik2p, loss_step=0.897, loss_epoch=0.897]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 7.1 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+7.1 K     Trainable params
+0         Non-trainable params
+7.1 K     Total params
+
+Epoch 19: 100%|██████████| 1/1 [00:00<00:00,  4.34it/s, v_num=ik2p, loss_step=0.318, loss_epoch=0.329, val_residual=0.563, drift_error=1.340, diffusion_error=0.000, val_loss=1.340]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 259: 100%|██████████| 1/1 [00:00<00:00,  4.33it/s, v_num=ik2p, loss_step=0.00854, loss_epoch=0.00785, val_residual=0.00859, drift_error=0.0838, diffusion_error=0.000, val_loss=0.0838]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 499: 100%|██████████| 1/1 [00:00<00:00,  4.30it/s, v_num=ik2p, loss_step=0.00747, loss_epoch=0.00759, val_residual=0.00787, drift_error=0.0729, diffusion_error=0.000, val_loss=0.0729]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 889: 100%|██████████| 1/1 [00:00<00:00,  4.34it/s, v_num=ik2p, loss_step=0.00737, loss_epoch=0.00723, val_residual=0.00736, drift_error=0.0762, diffusion_error=0.000, val_loss=0.0762]
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 999: 100%|██████████| 1/1 [00:00<00:00,  4.31it/s, v_num=ik2p, loss_step=0.00737, loss_epoch=0.00755, val_residual=0.00736, drift_error=0.0754, diffusion_error=0.000, val_loss=0.0754]
+Validation DataLoader 0:   0%|          | 0/1 [00:00<?, ?it/s]
+
+`Trainer.fit` stopped: `max_epochs=1000` reached.

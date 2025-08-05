@@ -1,0 +1,5 @@
+2024-07-17 12:03:00,962 INFO    StreamThr :63971 [internal.py:wandb_internal():85] W&B internal server running at pid: 63971, started at: 2024-07-17 12:03:00.960859
+2024-07-17 12:03:00,967 DEBUG   HandlerThread:63971 [handler.py:handle_request():158] handle_request: status
+2024-07-17 12:03:00,969 INFO    WriterThread:63971 [datastore.py:open_for_write():87] open: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20240717_120300-heuv0dp8/run-heuv0dp8.wandb
+2024-07-17 12:03:00,970 DEBUG   SenderThread:63971 [sender.py:send():378] send: header
+2024-07-17 12:03:00,970 DEBUG   SenderThread:63971 [sender.py:send():378] send: run

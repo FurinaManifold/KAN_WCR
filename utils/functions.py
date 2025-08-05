@@ -13,13 +13,24 @@ def model_select(model,frequency):
     elif model == 'zx1':
         drift = lambda x:-(x-1)
         diffusion = diffusion_constant_sq2
+    elif model == '2dcross':
+        drift = drift_2dcross 
+        diffusion = diffusion_constant
     elif model == 'zx2':
         drift = drift_lor
         diffusion = diffusion_constant 
     elif model == 'zx3':
         drift = drift_real2d
         diffusion = lambda x:diffusion_diagonal(0.1,x)
+    elif model == 'pdcd5':
+        drift = drift_poly5
+        diffusion = diffusion_constant
     return drift, diffusion
+
+def drift_2dcross(x):
+    x0=x[...,0].unsqueeze(-1)
+    x1=x[...,1].unsqueeze(-1)
+    return torch.cat([x0*(1-x0**2)*0.2+x1*(1+torch.sin(x0)),-x1+2*x0*(1-x0**2)*(1+torch.sin(x0))],dim = -1)
 
 def drift_lor(x):
     x0=x[...,0].unsqueeze(-1)
@@ -50,6 +61,9 @@ def drift_poly3(x):
     out: sample,dim
     '''
     return x - x ** 3
+
+def drift_poly5(x):
+    return - 2 * x + 8 * x ** 3 - 6.6 * x ** 5
 
 def diffusion_constant(x):
     '''

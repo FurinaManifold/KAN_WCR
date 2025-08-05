@@ -1,0 +1,154 @@
+
+cfg_nn:{'dim': 2, 'widthk': 50, 'depthk': 1, 'grid': 2, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'KAN', 'width': 100, 'depth': 5}
+data:  torch.Size([11, 50000, 2]) tensor(2.3121, device='cuda:0') tensor(-2.3242, device='cuda:0')
+'sampleTestFunc_all' took 0.036430 s
+Epoch 0:   0%|                                                                                                                                                                              | 0/1 [00:00<?, ?it/s]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 18.9 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+18.9 K    Trainable params
+0         Non-trainable params
+18.9 K    Total params
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 319: 100%|████████████████████████████████████| 1/1 [00:00<00:00,  3.91it/s, v_num=ox1z, loss_step=0.0561, loss_epoch=0.0643, val_residual=0.0531, drift_error=0.253, diffusion_error=0.000, val_loss=0.253]
+
+
+
+
+
+
+
+Epoch 379: 100%|████████████████████████████████████| 1/1 [00:00<00:00,  3.95it/s, v_num=ox1z, loss_step=0.0585, loss_epoch=0.0629, val_residual=0.0514, drift_error=0.325, diffusion_error=0.000, val_loss=0.325]
+
+
+
+
+
+
+
+Epoch 439: 100%|████████████████████████████████████| 1/1 [00:00<00:00,  3.96it/s, v_num=ox1z, loss_step=0.0527, loss_epoch=0.0556, val_residual=0.0514, drift_error=0.344, diffusion_error=0.000, val_loss=0.344]
+
+
+
+
+
+
+
+Epoch 499: 100%|████████████████████████████████████| 1/1 [00:00<00:00,  3.95it/s, v_num=ox1z, loss_step=0.0543, loss_epoch=0.0563, val_residual=0.0516, drift_error=0.350, diffusion_error=0.000, val_loss=0.350]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 999: 100%|████████████████████████████████████| 1/1 [00:00<00:00,  9.53it/s, v_num=ox1z, loss_step=0.0513, loss_epoch=0.0513, val_residual=0.0496, drift_error=0.438, diffusion_error=0.000, val_loss=0.438]
+Epoch 999: 100%|████████████████████████████████████| 1/1 [00:00<00:00,  2.73it/s, v_num=ox1z, loss_step=0.0549, loss_epoch=0.0549, val_residual=0.0496, drift_error=0.422, diffusion_error=0.000, val_loss=0.422]
+save model done

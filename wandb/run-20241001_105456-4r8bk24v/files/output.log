@@ -1,0 +1,81 @@
+
+cfg_nn:{'dim': 1, 'widthk': 40, 'depthk': 1, 'grid': 4, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'KAN', 'width': 100, 'depth': 5}
+data:  torch.Size([11, 20000, 1]) tensor(3.5925, device='cuda:0') tensor(-3.8911, device='cuda:0')
+'sampleTestFunc_all' took 0.120074 s
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 15.1 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+15.1 K    Trainable params
+0         Non-trainable params
+15.1 K    Total params
+0.060     Total estimated model params size (MB)
+The model directory exists. Overwrite? True
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 619: 100%|██████████| 1/1 [00:00<00:00,  9.89it/s, v_num=k24v, loss_step=0.0204, loss_epoch=0.0197, val_residual=0.021, drift_error=0.687, diffusion_error=0.000, val_loss=0.687]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 998: 100%|██████████| 1/1 [00:00<00:00, 16.28it/s, v_num=k24v, loss_step=0.0197, loss_epoch=0.0197, val_residual=0.0195, drift_error=0.654, diffusion_error=0.000, val_loss=0.654]
+
+Epoch 999: 100%|██████████| 1/1 [00:00<00:00,  1.86it/s, v_num=k24v, loss_step=0.0182, loss_epoch=0.0182, val_residual=0.0195, drift_error=0.653, diffusion_error=0.000, val_loss=0.653]

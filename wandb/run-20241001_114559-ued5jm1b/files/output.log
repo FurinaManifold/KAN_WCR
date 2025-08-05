@@ -1,0 +1,124 @@
+cfg_nn:{'dim': 1, 'widthk': 20, 'depthk': 2, 'grid': 5, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'KAN', 'width': 100, 'depth': 5}
+data:  torch.Size([11, 20000, 1]) tensor(3.5925, device='cuda:0') tensor(-3.8911, device='cuda:0')
+'sampleTestFunc_all' took 0.053585 s
+The model directory exists. Overwrite? True
+Epoch 2:   0%|          | 0/1 [00:00<?, ?it/s, v_num=jm1b, loss_step=1.240, loss_epoch=1.240]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 5.6 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+5.6 K     Trainable params
+0         Non-trainable params
+5.6 K     Total params
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 289: 100%|██████████| 1/1 [00:00<00:00,  7.19it/s, v_num=jm1b, loss_step=0.0122, loss_epoch=0.0131, val_residual=0.0132, drift_error=0.155, diffusion_error=0.000325, val_loss=0.155]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 499: 100%|██████████| 1/1 [00:00<00:00,  5.02it/s, v_num=jm1b, loss_step=0.0108, loss_epoch=0.0103, val_residual=0.011, drift_error=0.150, diffusion_error=0.000443, val_loss=0.150]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 639: 100%|██████████| 1/1 [00:00<00:00,  4.34it/s, v_num=jm1b, loss_step=0.0105, loss_epoch=0.0105, val_residual=0.0107, drift_error=0.164, diffusion_error=0.000475, val_loss=0.164]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 999: 100%|██████████| 1/1 [00:00<00:00,  1.22it/s, v_num=jm1b, loss_step=0.00989, loss_epoch=0.00989, val_residual=0.0104, drift_error=0.182, diffusion_error=0.000501, val_loss=0.183]
+`Trainer.fit` stopped: `max_epochs=1000` reached.

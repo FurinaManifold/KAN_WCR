@@ -1,0 +1,90 @@
+
+cfg_nn:{'dim': 3, 'widthk': 30, 'depthk': 2, 'grid': 1, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.4, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'KAN', 'width': 100, 'depth': 5}
+data:  torch.Size([11, 30000, 3]) tensor(3.4056, device='cuda:0') tensor(-3.7514, device='cuda:0')
+'sampleTestFunc_all' took 0.029826 s
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 6.5 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+6.5 K     Trainable params
+0         Non-trainable params
+6.5 K     Total params
+0.026     Total estimated model params size (MB)
+The model directory exists. Overwrite? True
+Epoch 9: 100%|█████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  7.98it/s, v_num=cppq, loss_step=1.760, loss_epoch=1.910]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 279: 100%|██████████| 1/1 [00:00<00:00,  7.98it/s, v_num=cppq, loss_step=0.0111, loss_epoch=0.0105, val_residual=0.0111, drift_error=0.331, diffusion_error=0.000, val_loss=0.331]
+
+
+
+
+
+
+
+Epoch 399: 100%|█████████| 1/1 [00:00<00:00,  7.96it/s, v_num=cppq, loss_step=0.00962, loss_epoch=0.0103, val_residual=0.0105, drift_error=0.311, diffusion_error=0.000, val_loss=0.311]
+
+
+
+
+
+
+
+Epoch 519: 100%|████████| 1/1 [00:00<00:00,  7.98it/s, v_num=cppq, loss_step=0.00953, loss_epoch=0.00967, val_residual=0.0103, drift_error=0.304, diffusion_error=0.000, val_loss=0.304]
+
+
+
+
+
+
+
+Epoch 639: 100%|████████| 1/1 [00:00<00:00,  7.96it/s, v_num=cppq, loss_step=0.00908, loss_epoch=0.00963, val_residual=0.0101, drift_error=0.300, diffusion_error=0.000, val_loss=0.300]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 996:   0%|                   | 0/1 [00:00<?, ?it/s, v_num=cppq, loss_step=0.0092, loss_epoch=0.0092, val_residual=0.010, drift_error=0.299, diffusion_error=0.000, val_loss=0.299]
+
+Epoch 999: 100%|███████████| 1/1 [00:00<00:00,  4.98it/s, v_num=cppq, loss_step=0.0098, loss_epoch=0.0098, val_residual=0.010, drift_error=0.297, diffusion_error=0.000, val_loss=0.297]

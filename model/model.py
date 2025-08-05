@@ -14,6 +14,7 @@ import seaborn as sns
 import pytorch_lightning as pl
 import wandb
 import matplotlib.pyplot as plt
+import json
 from torch import optim
 from utils.sampling import sampleTestFunc_all
 from utils.loss import LpLoss, RRMSE, compute_error
@@ -22,7 +23,7 @@ from utils.functions import diffusion_knownnet,diffusion_knownnet_nonconst
 from kan import KAN, LBFGS
 
 class Model(nn.Module):
-    def __init__(self, t, data, testFunc, drift, diffusion, net_drift,net_diffusion, cfg_train, cfg_nn, device):
+    def __init__(self, t, data, testFunc, drift, diffusion, net_drift,net_diffusion, cfg_train, cfg_nn, device,cfg_data):
         super(Model, self).__init__()
         '''
         t: observation time 
@@ -54,13 +55,14 @@ class Model(nn.Module):
         self.cfg_nn = cfg_nn
         self.net_drift = net_drift.to(device) #表示漂移项等神经网络
         if cfg_train["known_diffusion"]:
-            self.net_diffusion = diffusion_knownnet_nonconst
+            self.net_diffusion = diffusion_knownnet
         else: 
             self.net_diffusion = net_diffusion.to(device)
         self.ob_size = data.shape[1] # 轨道数量
         self.sgd_ration = 0.8 #
         self.dimension = self.data.shape[-1]
         self.td_type =cfg_train["LMM"]
+        self.cfg_data = cfg_data
         self.drift = drift
         self.diffusion = diffusion
         self.mean_samp_way = cfg_train["mean_samp_way"] 
@@ -221,9 +223,10 @@ class Model(nn.Module):
         '''
         Compute the residual loss for each frame
         '''
-
+        # print(TX.shape)
         drift_pred = self.net_drift(TX)   # [t, sample, dim]
         diffusion_pred = self.net_diffusion(TX) # [t,sample, dim]
+        # print(diffusion_pred)
         # gauss: gauss,t,sample
         # gauss1: gauss,t,sample,dim
         # gauss2: gauss,t,sample,dim,dim
@@ -254,17 +257,25 @@ class Model(nn.Module):
         # testn_2: gauss,t-2,sample,dim
         # mean: gauss*(t-2)
         self.D = 1/2*(diffusion_pred)#  [t,sample, dim]
-        
-        An_2 = torch.mean(torch.einsum("ijkl,jkl->ijk", [self.testn_2[index], self.D[:-2,:,:]]), dim=2).view(-1) ##gauss*t
+        tempD = self.D[:-2,:,:]
+        if tempD.dim()==2:
+            tempD = tempD.unsqueeze(0)
+        An_2 = torch.mean(torch.einsum("ijkl,jkl->ijk", [self.testn_2[index], tempD]), dim=2).view(-1) ##gauss*t
 
         An = An_1 + An_2
 
+        tempD = self.D[1:-1,:,:]
+        if tempD.dim()==2:
+            tempD = tempD.unsqueeze(0)
         Anp1_1 = torch.mean(torch.sum(drift_pred[1:-1,:,:].unsqueeze(0) * self.testnp1_1[index], dim=3), dim=2).view(-1)
-        Anp1_2 = torch.mean(torch.einsum("ijkl,jkl->ijk", [self.testnp1_2[index], self.D[1:-1,:,:]]), dim=2).view(-1)
+        Anp1_2 = torch.mean(torch.einsum("ijkl,jkl->ijk", [self.testnp1_2[index], tempD]), dim=2).view(-1)
         Anp1 = Anp1_1 + Anp1_2
 
+        tempD = self.D[2:,:,:]
+        if tempD.dim()==2:
+            tempD = tempD.unsqueeze(0)
         Anp2_1 = torch.mean(torch.sum(drift_pred[2:,:,:].unsqueeze(0) * self.testnp2_1[index], dim=3), dim=2).view(-1)
-        Anp2_2 = torch.mean(torch.einsum("ijkl,jkl->ijk", [self.testnp2_2[index], self.D[2:,:,:]]), dim=2).view(-1)
+        Anp2_2 = torch.mean(torch.einsum("ijkl,jkl->ijk", [self.testnp2_2[index], tempD]), dim=2).view(-1)
         Anp2 = Anp2_1 + Anp2_2
         
 
@@ -292,6 +303,7 @@ class Model(nn.Module):
                                                          device=self.device,
                                                          data=self.data,
                                                          error_type=self.error_type,
+                                                         intervalradius = self.cfg_data['intervalradius']
                                                          )
         return drift_error, diffusion_error
     def plot_error(self):
@@ -300,12 +312,13 @@ class Model(nn.Module):
                        drift_net = self.net_drift,
                        diffusion_fun = self.diffusion,
                        diffusion_net = self.net_diffusion,
+                       cfg_data = self.cfg_data,
                        device = self.device,
                        plot_type = self.plot_type)
     
 
 class Model_pl(pl.LightningModule):
-    def __init__(self, t, data, testFunc, drift, diffusion, net_drift,net_diffusion, cfg_train, cfg_nn, seed, device):
+    def __init__(self, t, data, testFunc, drift, diffusion, net_drift,net_diffusion, cfg_train, cfg_nn, seed, device, cfg_data,projname):
         super(Model_pl, self).__init__()
         self.model = Model( t = t, 
                            data = data, 
@@ -315,8 +328,10 @@ class Model_pl(pl.LightningModule):
                            net_drift = net_drift,
                            net_diffusion = net_diffusion, 
                            cfg_train = cfg_train, 
+                           cfg_data = cfg_data,
                            cfg_nn = cfg_nn, 
                            device = device)
+        self.projname = projname
         self.lr = cfg_nn['lr'] 
         self.mode = cfg_nn['mode']
         self.step_size = cfg_nn['step_size'] 
@@ -325,7 +340,8 @@ class Model_pl(pl.LightningModule):
         self.criterion = nn.MSELoss()#H1_loss(alpha = 0.1)
         self.criterion_val = nn.MSELoss()
         self.plotstep = cfg_train['plotstep']
-        self.seed = seed
+        self.seed = seed 
+        self.drift_error_his = []
         
         
     def forward(self, x,mode):
@@ -341,6 +357,14 @@ class Model_pl(pl.LightningModule):
         loss = torch.sum(residual**2)
         #loss_exact = torch.sum(res_exact**2)
         self.log("loss", loss, on_epoch=True, prog_bar=True, logger=True)
+        if self.mode[-1]=='0':
+            dim = self.model.dimension
+            diffusion = torch.sqrt(self.model.net_diffusion(torch.ones(dim).cuda()))
+            if dim == 1:
+                self.log("diffusion", diffusion, on_epoch=True, prog_bar=True, logger=True)
+            else: 
+                for i in range(dim):
+                    self.log(f"diffusion{i}", diffusion[i], on_epoch=True, prog_bar=True, logger=True)
         #self.log("loss_exact", loss_exact, on_epoch=True, prog_bar=True, logger=True)
         
         # self.log("loss_l2", l2, on_epoch=True, prog_bar=True, logger=True)
@@ -366,6 +390,11 @@ class Model_pl(pl.LightningModule):
         self.log('val_residual', val_residual, on_epoch=True, prog_bar=True, logger=True)
         #wandb.log({'val_residual': val_residual.item()})
         self.log('drift_error', drift_error, on_epoch=True, prog_bar=True, logger=True)
+        self.drift_error_his.append(drift_error.item())
+        if len(self.drift_error_his)==100:
+            file = self.projname + '_drifterror.json'
+            with open(file,'w') as f:
+                f.write(json.dumps(self.drift_error_his))
         #wandb.log({'drift_error': drift_error.item()})
         self.log('diffusion_error', diffusion_error, on_epoch=True, prog_bar=True, logger=True)
         #wandb.log({'diffusion_error': diffusion_error.item()})
@@ -377,7 +406,10 @@ class Model_pl(pl.LightningModule):
 
     def configure_optimizers(self, optimizer=None, scheduler=None):
             if optimizer is None:
-                optimizer = optim.AdamW(self.parameters(), lr=self.lr, weight_decay=self.weight_decay)
+                if self.mode[-1] == '0':
+                    optimizer = optim.AdamW([{'params':self.model.net_drift.parameters(), 'lr':self.lr},{'params':self.model.net_diffusion.parameters(), 'lr':0.3}], weight_decay=self.weight_decay)
+                else:
+                    optimizer = optim.AdamW(self.parameters(), lr=self.lr, weight_decay=self.weight_decay)
             if  scheduler is None:
                 scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=self.step_size, gamma=self.gamma)
                 #scheduler = optim.lr_scheduler.CosineAnnealingLR(optimizer,T_max = self.step_size, eta_min= self.eta_min)

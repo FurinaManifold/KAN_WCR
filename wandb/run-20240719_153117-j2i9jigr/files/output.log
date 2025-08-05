@@ -1,0 +1,26 @@
+data:  torch.Size([11, 20000, 1]) tensor(4.8400, device='cuda:0') tensor(-3.7833, device='cuda:0')
+'sampleTestFunc_all' took 0.026552 s
+gaussshape: torch.Size([300, 9, 20000, 1])
+The model directory exists. Overwrite? True
+Sanity Checking DataLoader 0:   0%|          | 0/1 [00:00<?, ?it/s]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 2.4 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+2.4 K     Trainable params
+0         Non-trainable params
+2.4 K     Total params
+
+Epoch 19: 100%|██████████| 1/1 [00:00<00:00,  7.84it/s, v_num=jigr, loss_step=0.795, loss_exact_step=0.0224, loss_epoch=0.810, loss_exact_epoch=0.0219, val_residual=0.824, drift_error=1.000, diffusion_error=8.11e-5, val_loss=1.000]
+
+
+
+
+Epoch 79: 100%|██████████| 1/1 [00:00<00:00,  7.85it/s, v_num=jigr, loss_step=0.626, loss_exact_step=0.0206, loss_epoch=0.608, loss_exact_epoch=0.0209, val_residual=0.658, drift_error=1.000, diffusion_error=0.0154, val_loss=1.020]

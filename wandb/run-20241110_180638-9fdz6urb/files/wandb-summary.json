@@ -1,0 +1,1 @@
+{"loss_epoch": 0.0746316909790039, "epoch": 999, "trainer/global_step": 999, "_timestamp": 1731233309.30523, "_runtime": 110.47280478477478, "_step": 1139, "val_residual": 0.07349635660648346, "drift_error": {"min": 0.012439306825399399}, "diffusion_error": 0.0, "val_loss": 0.013548738323152065, "lr-AdamW": 0.000625, "loss_step": 0.0746316909790039, "_wandb": {"runtime": 106}}

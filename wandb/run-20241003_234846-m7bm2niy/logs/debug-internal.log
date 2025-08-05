@@ -1,0 +1,9 @@
+2024-10-03 23:48:46,680 INFO    StreamThr :11096 [internal.py:wandb_internal():85] W&B internal server running at pid: 11096, started at: 2024-10-03 23:48:46.679086
+2024-10-03 23:48:46,685 DEBUG   HandlerThread:11096 [handler.py:handle_request():158] handle_request: status
+2024-10-03 23:48:46,687 INFO    WriterThread:11096 [datastore.py:open_for_write():87] open: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20241003_234846-m7bm2niy/run-m7bm2niy.wandb
+2024-10-03 23:48:46,688 DEBUG   SenderThread:11096 [sender.py:send():378] send: header
+2024-10-03 23:48:46,688 DEBUG   SenderThread:11096 [sender.py:send():378] send: run
+2024-10-03 23:48:47,802 INFO    SenderThread:11096 [dir_watcher.py:__init__():211] watching files in: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20241003_234846-m7bm2niy/files
+2024-10-03 23:48:47,802 INFO    SenderThread:11096 [sender.py:_start_run_threads():1123] run started: m7bm2niy with start time 1727970526.678384
+2024-10-03 23:48:47,816 DEBUG   HandlerThread:11096 [handler.py:handle_request():158] handle_request: check_version
+2024-10-03 23:48:47,816 DEBUG   SenderThread:11096 [sender.py:send_request():405] send_request: check_version

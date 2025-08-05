@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/myproject/wcr_neural_kan/medias.py", line 34, in <module>
+    drawfigures(args.config_file)
+  File "/home/ubuntu/myproject/wcr_neural_kan/medias.py", line 23, in drawfigures
+    net_drift = torch.load(f"./modelckpts/{config['Project'][name]}_drift.ckpt",map_location = 'cuda')
+NameError: name 'name' is not defined

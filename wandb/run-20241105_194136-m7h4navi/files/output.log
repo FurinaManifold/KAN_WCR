@@ -1,0 +1,55 @@
+cfg_nn:{'dim': 1, 'widthk': 50, 'depthk': 1, 'grid': 3, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'DNN', 'depth': 5, 'width': 100}
+data:  torch.Size([11, 20000, 1]) tensor(2.1591, device='cuda:0') tensor(-2.2868, device='cuda:0')
+'sampleTestFunc_all' took 0.017914 s
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 10.4 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+10.4 K    Trainable params
+0         Non-trainable params
+10.4 K    Total params
+0.042     Total estimated model params size (MB)
+Epoch 9: 100%|██████████| 1/1 [00:00<00:00, 67.34it/s, v_num=navi, loss_step=0.686, loss_epoch=0.858]
+Validation DataLoader 0:   0%|          | 0/1 [00:00<?, ?it/s]
+
+`Trainer.fit` stopped: `max_epochs=10` reached.
+save model done
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 10.4 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+10.4 K    Trainable params
+0         Non-trainable params
+10.4 K    Total params
+0.042     Total estimated model params size (MB)
+Now handling config_1D_poly5_DNN.yaml
+cfg_nn:{'dim': 1, 'widthk': 50, 'depthk': 1, 'grid': 3, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'DNN', 'depth': 5, 'width': 100}
+data:  torch.Size([11, 20000, 1]) tensor(1.5222, device='cuda:0') tensor(-1.4679, device='cuda:0')
+'sampleTestFunc_all' took 0.000885 s
+
+
+
+
+Epoch 609: 100%|██████████| 1/1 [00:00<00:00, 67.20it/s, v_num=navi, loss_step=0.071, loss_epoch=0.0718, val_residual=0.072, drift_error=0.0959, diffusion_error=0.000, val_loss=0.0959]
+
+
+
+Epoch 999: 100%|██████████| 1/1 [00:00<00:00, 63.68it/s, v_num=navi, loss_step=0.0732, loss_epoch=0.0719, val_residual=0.0719, drift_error=0.103, diffusion_error=0.000, val_loss=0.103]
+
+Validation DataLoader 0:   0%|          | 0/1 [00:00<?, ?it/s]
+`Trainer.fit` stopped: `max_epochs=1000` reached.
+save model done

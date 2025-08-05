@@ -1,0 +1,140 @@
+
+cfg_nn:{'dim': 2, 'widthk': 30, 'depthk': 2, 'grid': 2, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'KAN', 'width': 100, 'depth': 5}
+data:  torch.Size([11, 50000, 2]) tensor(5.8085, device='cuda:0') tensor(-5.8446, device='cuda:0')
+'sampleTestFunc_all' took 0.018228 s
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 7.1 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+7.1 K     Trainable params
+0         Non-trainable params
+7.1 K     Total params
+0.029     Total estimated model params size (MB)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 139: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  4.34it/s, v_num=ex5q, loss_step=0.0822, loss_epoch=0.0827, val_residual=0.0867, drift_error=0.365, diffusion_error=0.000, val_loss=0.365]
+
+
+
+
+Epoch 179: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  4.34it/s, v_num=ex5q, loss_step=0.0722, loss_epoch=0.0743, val_residual=0.0746, drift_error=0.310, diffusion_error=0.000, val_loss=0.310]
+
+
+
+
+
+
+
+
+
+
+Epoch 269: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  4.34it/s, v_num=ex5q, loss_step=0.0668, loss_epoch=0.0686, val_residual=0.0625, drift_error=0.253, diffusion_error=0.000, val_loss=0.253]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 519: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  4.34it/s, v_num=ex5q, loss_step=0.0633, loss_epoch=0.0636, val_residual=0.0573, drift_error=0.214, diffusion_error=0.000, val_loss=0.214]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 759: 100%|██████████████████████████████████████████| 1/1 [00:00<00:00,  4.34it/s, v_num=ex5q, loss_step=0.0601, loss_epoch=0.0647, val_residual=0.0561, drift_error=0.193, diffusion_error=0.000, val_loss=0.193]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 999: 100%|████████████████████████████████████████████| 1/1 [00:00<00:00,  2.95it/s, v_num=ex5q, loss_step=0.059, loss_epoch=0.059, val_residual=0.0541, drift_error=0.173, diffusion_error=0.000, val_loss=0.173]
+save model done
+`Trainer.fit` stopped: `max_epochs=1000` reached.

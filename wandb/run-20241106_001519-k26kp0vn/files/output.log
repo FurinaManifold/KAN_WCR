@@ -1,0 +1,11 @@
+wandb: ERROR Run (cr1ax0io) is finished. The call to `_config_callback` will be ignored. Please make sure that you are using an active run.
+Traceback (most recent call last):
+  File "/home/ubuntu/myproject/wcr_neural_kan/main_pl.py", line 132, in <module>
+    main(os.path.join(cwd,file))
+  File "/home/ubuntu/myproject/wcr_neural_kan/main_pl.py", line 36, in main
+    wandb_logger.experiment.config.update(config,'allow_val_change=True')
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/wandb/sdk/wandb_config.py", line 186, in update
+    self._callback(data=sanitized)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 410, in wrapper_fn
+    raise errors.UsageError(resolved_message)
+wandb.errors.UsageError: Run (cr1ax0io) is finished. The call to `_config_callback` will be ignored. Please make sure that you are using an active run.

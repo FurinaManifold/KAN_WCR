@@ -1,0 +1,296 @@
+2025-01-08 16:12:18,171 INFO    StreamThr :171269 [internal.py:wandb_internal():85] W&B internal server running at pid: 171269, started at: 2025-01-08 16:12:18.170400
+2025-01-08 16:12:18,177 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: status
+2025-01-08 16:12:18,179 INFO    WriterThread:171269 [datastore.py:open_for_write():87] open: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/run-atmm1rhq.wandb
+2025-01-08 16:12:18,180 DEBUG   SenderThread:171269 [sender.py:send():378] send: header
+2025-01-08 16:12:18,180 DEBUG   SenderThread:171269 [sender.py:send():378] send: run
+2025-01-08 16:12:19,443 INFO    SenderThread:171269 [dir_watcher.py:__init__():211] watching files in: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/files
+2025-01-08 16:12:19,443 INFO    SenderThread:171269 [sender.py:_start_run_threads():1123] run started: atmm1rhq with start time 1736323938.169584
+2025-01-08 16:12:19,455 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: check_version
+2025-01-08 16:12:19,456 DEBUG   SenderThread:171269 [sender.py:send_request():405] send_request: check_version
+2025-01-08 16:12:20,497 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: run_start
+2025-01-08 16:12:20,508 DEBUG   HandlerThread:171269 [system_info.py:__init__():26] System info init
+2025-01-08 16:12:20,508 DEBUG   HandlerThread:171269 [system_info.py:__init__():41] System info init done
+2025-01-08 16:12:20,509 INFO    HandlerThread:171269 [system_monitor.py:start():194] Starting system monitor
+2025-01-08 16:12:20,509 INFO    SystemMonitor:171269 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2025-01-08 16:12:20,510 INFO    HandlerThread:171269 [system_monitor.py:probe():214] Collecting system info
+2025-01-08 16:12:20,512 INFO    SystemMonitor:171269 [interfaces.py:start():188] Started cpu monitoring
+2025-01-08 16:12:20,514 INFO    SystemMonitor:171269 [interfaces.py:start():188] Started disk monitoring
+2025-01-08 16:12:20,515 INFO    SystemMonitor:171269 [interfaces.py:start():188] Started gpu monitoring
+2025-01-08 16:12:20,517 INFO    SystemMonitor:171269 [interfaces.py:start():188] Started memory monitoring
+2025-01-08 16:12:20,519 INFO    SystemMonitor:171269 [interfaces.py:start():188] Started network monitoring
+2025-01-08 16:12:20,541 DEBUG   HandlerThread:171269 [system_info.py:probe():150] Probing system
+2025-01-08 16:12:20,543 DEBUG   HandlerThread:171269 [gitlib.py:_init_repo():56] git repository is invalid
+2025-01-08 16:12:20,544 DEBUG   HandlerThread:171269 [system_info.py:probe():198] Probing system done
+2025-01-08 16:12:20,544 DEBUG   HandlerThread:171269 [system_monitor.py:probe():223] {'os': 'Linux-5.4.0-177-generic-x86_64-with-glibc2.31', 'python': '3.10.10', 'heartbeatAt': '2025-01-08T08:12:20.542115', 'startedAt': '2025-01-08T08:12:18.162655', 'docker': None, 'cuda': None, 'args': ('-c', 'configs/KAN1D_poly/config_1D_poly_KAN2_2_30_unknowndif.yaml'), 'state': 'running', 'program': '/home/ubuntu/myproject/wcr_neural_kan/medias.py', 'codePathLocal': 'medias.py', 'codePath': 'medias.py', 'host': 'ml-ubuntu20-04-desktop-v1-0-108gb-25m', 'username': 'ubuntu', 'executable': '/opt/miniconda3/bin/python', 'cpu_count': 22, 'cpu_count_logical': 22, 'cpu_freq': {'current': 2800.1840000000007, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2800.184, 'min': 0.0, 'max': 0.0}, {'current': 2800.184, 'min': 0.0, 'max': 0.0}, {'current': 2800.184, 'min': 0.0, 'max': 0.0}, {'current': 2800.184, 'min': 0.0, 'max': 0.0}, {'current': 2800.184, 'min': 0.0, 'max': 0.0}, {'current': 2800.184, 'min': 0.0, 'max': 0.0}, {'current': 2800.184, 'min': 0.0, 'max': 0.0}, {'current': 2800.184, 'min': 0.0, 'max': 0.0}, {'current': 2800.184, 'min': 0.0, 'max': 0.0}, {'current': 2800.184, 'min': 0.0, 'max': 0.0}, {'current': 2800.184, 'min': 0.0, 'max': 0.0}, {'current': 2800.184, 'min': 0.0, 'max': 0.0}, {'current': 2800.184, 'min': 0.0, 'max': 0.0}, {'current': 2800.184, 'min': 0.0, 'max': 0.0}, {'current': 2800.184, 'min': 0.0, 'max': 0.0}, {'current': 2800.184, 'min': 0.0, 'max': 0.0}, {'current': 2800.184, 'min': 0.0, 'max': 0.0}, {'current': 2800.184, 'min': 0.0, 'max': 0.0}, {'current': 2800.184, 'min': 0.0, 'max': 0.0}, {'current': 2800.184, 'min': 0.0, 'max': 0.0}, {'current': 2800.184, 'min': 0.0, 'max': 0.0}, {'current': 2800.184, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 96.73210144042969, 'used': 71.07093811035156}}, 'gpu': 'NVIDIA GeForce RTX 4090', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4090', 'memory_total': 25757220864}, {'name': 'NVIDIA GeForce RTX 4090', 'memory_total': 25757220864}], 'memory': {'total': 106.20393753051758}}
+2025-01-08 16:12:20,544 INFO    HandlerThread:171269 [system_monitor.py:probe():224] Finished collecting system info
+2025-01-08 16:12:20,544 INFO    HandlerThread:171269 [system_monitor.py:probe():227] Publishing system info
+2025-01-08 16:12:20,544 DEBUG   HandlerThread:171269 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2025-01-08 16:12:21,363 DEBUG   HandlerThread:171269 [system_info.py:_save_conda():222] Saving conda packages done
+2025-01-08 16:12:21,364 INFO    HandlerThread:171269 [system_monitor.py:probe():229] Finished publishing system info
+2025-01-08 16:12:21,368 DEBUG   SenderThread:171269 [sender.py:send():378] send: files
+2025-01-08 16:12:21,368 INFO    SenderThread:171269 [sender.py:_save_file():1389] saving file wandb-metadata.json with policy now
+2025-01-08 16:12:21,446 INFO    Thread-12 :171269 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/files/conda-environment.yaml
+2025-01-08 16:12:21,447 INFO    Thread-12 :171269 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/files/wandb-metadata.json
+2025-01-08 16:12:21,478 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: python_packages
+2025-01-08 16:12:21,479 DEBUG   SenderThread:171269 [sender.py:send_request():405] send_request: python_packages
+2025-01-08 16:12:21,481 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: stop_status
+2025-01-08 16:12:21,482 DEBUG   SenderThread:171269 [sender.py:send_request():405] send_request: stop_status
+2025-01-08 16:12:22,444 INFO    Thread-12 :171269 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/files/requirements.txt
+2025-01-08 16:12:22,460 DEBUG   SenderThread:171269 [sender.py:send():378] send: telemetry
+2025-01-08 16:12:22,460 DEBUG   SenderThread:171269 [sender.py:send():378] send: config
+2025-01-08 16:12:22,981 INFO    wandb-upload_0:171269 [upload_job.py:push():130] Uploaded file /tmp/tmp53ziwbghwandb/7l84byhp-wandb-metadata.json
+2025-01-08 16:12:23,462 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: status_report
+2025-01-08 16:12:23,587 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: partial_history
+2025-01-08 16:12:23,588 DEBUG   SenderThread:171269 [sender.py:send():378] send: files
+2025-01-08 16:12:23,589 INFO    SenderThread:171269 [sender.py:_save_file():1389] saving file media/images/1ddata_plot_1_0_6c7a89e717c8a8a5fb3a.png with policy now
+2025-01-08 16:12:23,590 DEBUG   SenderThread:171269 [sender.py:send():378] send: history
+2025-01-08 16:12:23,591 DEBUG   SenderThread:171269 [sender.py:send_request():405] send_request: summary_record
+2025-01-08 16:12:23,591 INFO    SenderThread:171269 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2025-01-08 16:12:23,871 DEBUG   SenderThread:171269 [sender.py:send():378] send: files
+2025-01-08 16:12:23,871 INFO    SenderThread:171269 [sender.py:_save_file():1389] saving file media/images/Image_drift_1_1a4cce5b2cf814d341fa.png with policy now
+2025-01-08 16:12:23,873 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: partial_history
+2025-01-08 16:12:23,874 DEBUG   SenderThread:171269 [sender.py:send():378] send: history
+2025-01-08 16:12:23,874 DEBUG   SenderThread:171269 [sender.py:send_request():405] send_request: summary_record
+2025-01-08 16:12:23,879 INFO    SenderThread:171269 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2025-01-08 16:12:24,180 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: partial_history
+2025-01-08 16:12:24,181 DEBUG   SenderThread:171269 [sender.py:send():378] send: files
+2025-01-08 16:12:24,181 INFO    SenderThread:171269 [sender.py:_save_file():1389] saving file media/images/Image_diffusion_2_d3491e83af8f56cf7aff.png with policy now
+2025-01-08 16:12:24,182 DEBUG   SenderThread:171269 [sender.py:send():378] send: history
+2025-01-08 16:12:24,182 DEBUG   SenderThread:171269 [sender.py:send_request():405] send_request: summary_record
+2025-01-08 16:12:24,183 INFO    SenderThread:171269 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2025-01-08 16:12:24,279 INFO    wandb-upload_0:171269 [upload_job.py:push():130] Uploaded file /tmp/tmp53ziwbghwandb/6hbr9khe-media/images/1ddata_plot_1_0_6c7a89e717c8a8a5fb3a.png
+2025-01-08 16:12:24,445 INFO    Thread-12 :171269 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/files/wandb-summary.json
+2025-01-08 16:12:24,445 INFO    Thread-12 :171269 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/files/media/images/1ddata_plot_1_0_6c7a89e717c8a8a5fb3a.png
+2025-01-08 16:12:24,446 INFO    Thread-12 :171269 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/files/media/images/Image_diffusion_2_d3491e83af8f56cf7aff.png
+2025-01-08 16:12:24,446 INFO    Thread-12 :171269 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/files/output.log
+2025-01-08 16:12:24,447 INFO    Thread-12 :171269 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/files/media/images/Image_drift_1_1a4cce5b2cf814d341fa.png
+2025-01-08 16:12:24,447 INFO    Thread-12 :171269 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/files/media/images
+2025-01-08 16:12:24,447 INFO    Thread-12 :171269 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/files/media
+2025-01-08 16:12:25,130 INFO    wandb-upload_2:171269 [upload_job.py:push():130] Uploaded file /tmp/tmp53ziwbghwandb/d3b9h0hp-media/images/Image_diffusion_2_d3491e83af8f56cf7aff.png
+2025-01-08 16:12:25,647 INFO    wandb-upload_1:171269 [upload_job.py:push():130] Uploaded file /tmp/tmp53ziwbghwandb/0dfa897c-media/images/Image_drift_1_1a4cce5b2cf814d341fa.png
+2025-01-08 16:12:25,809 INFO    wandb-upload_0:171269 [upload_job.py:push():130] Uploaded file /tmp/tmp53ziwbghwandb/onq9gn11-media/images/1ddata_plot_1_0_6c7a89e717c8a8a5fb3a.png
+2025-01-08 16:12:26,446 INFO    Thread-12 :171269 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/files/output.log
+2025-01-08 16:12:26,608 INFO    wandb-upload_2:171269 [upload_job.py:push():130] Uploaded file /tmp/tmp53ziwbghwandb/yqiqkigd-media/images/Image_diffusion_2_d3491e83af8f56cf7aff.png
+2025-01-08 16:12:26,672 INFO    wandb-upload_1:171269 [upload_job.py:push():130] Uploaded file /tmp/tmp53ziwbghwandb/am50jo9o-media/images/Image_drift_1_1a4cce5b2cf814d341fa.png
+2025-01-08 16:12:29,284 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: status_report
+2025-01-08 16:12:34,285 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: status_report
+2025-01-08 16:12:36,480 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: stop_status
+2025-01-08 16:12:36,481 DEBUG   SenderThread:171269 [sender.py:send_request():405] send_request: stop_status
+2025-01-08 16:12:39,869 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: status_report
+2025-01-08 16:12:44,871 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: status_report
+2025-01-08 16:12:49,912 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: status_report
+2025-01-08 16:12:50,461 INFO    Thread-12 :171269 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/files/config.yaml
+2025-01-08 16:12:51,481 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: stop_status
+2025-01-08 16:12:51,482 DEBUG   SenderThread:171269 [sender.py:send_request():405] send_request: stop_status
+2025-01-08 16:12:55,864 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: status_report
+2025-01-08 16:13:00,866 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: status_report
+2025-01-08 16:13:05,868 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: status_report
+2025-01-08 16:13:06,482 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: stop_status
+2025-01-08 16:13:06,482 DEBUG   SenderThread:171269 [sender.py:send_request():405] send_request: stop_status
+2025-01-08 16:13:11,868 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: status_report
+2025-01-08 16:13:16,870 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: status_report
+2025-01-08 16:13:20,519 DEBUG   SystemMonitor:171269 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2025-01-08 16:13:20,522 DEBUG   SenderThread:171269 [sender.py:send():378] send: stats
+2025-01-08 16:13:21,482 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: stop_status
+2025-01-08 16:13:21,483 DEBUG   SenderThread:171269 [sender.py:send_request():405] send_request: stop_status
+2025-01-08 16:13:21,929 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: status_report
+2025-01-08 16:13:26,931 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: status_report
+2025-01-08 16:13:28,222 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: partial_history
+2025-01-08 16:13:28,227 DEBUG   SenderThread:171269 [sender.py:send():378] send: files
+2025-01-08 16:13:28,227 INFO    SenderThread:171269 [sender.py:_save_file():1389] saving file media/images/orbits_3_412769b1548b45572efe.png with policy now
+2025-01-08 16:13:28,228 DEBUG   SenderThread:171269 [sender.py:send():378] send: history
+2025-01-08 16:13:28,228 DEBUG   SenderThread:171269 [sender.py:send_request():405] send_request: summary_record
+2025-01-08 16:13:28,243 INFO    SenderThread:171269 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2025-01-08 16:13:28,486 INFO    Thread-12 :171269 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/files/wandb-summary.json
+2025-01-08 16:13:28,486 INFO    Thread-12 :171269 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/files/media/images/orbits_3_412769b1548b45572efe.png
+2025-01-08 16:13:28,487 INFO    Thread-12 :171269 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/files/media/images
+2025-01-08 16:13:30,007 INFO    wandb-upload_0:171269 [upload_job.py:push():130] Uploaded file /tmp/tmp53ziwbghwandb/mbgwp9o6-media/images/orbits_3_412769b1548b45572efe.png
+2025-01-08 16:13:30,487 INFO    Thread-12 :171269 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/files/output.log
+2025-01-08 16:13:32,079 INFO    wandb-upload_1:171269 [upload_job.py:push():130] Uploaded file /tmp/tmp53ziwbghwandb/hgjx8lkf-media/images/orbits_3_412769b1548b45572efe.png
+2025-01-08 16:13:32,245 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: status_report
+2025-01-08 16:13:36,482 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: stop_status
+2025-01-08 16:13:36,483 DEBUG   SenderThread:171269 [sender.py:send_request():405] send_request: stop_status
+2025-01-08 16:13:37,807 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: status_report
+2025-01-08 16:13:40,623 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: partial_history
+2025-01-08 16:13:40,650 DEBUG   SenderThread:171269 [sender.py:send():378] send: files
+2025-01-08 16:13:40,650 INFO    SenderThread:171269 [sender.py:_save_file():1389] saving file media/images/gendata_distribution_dim_4_66dd3e4997fde8f0a745.png with policy now
+2025-01-08 16:13:40,650 DEBUG   SenderThread:171269 [sender.py:send():378] send: history
+2025-01-08 16:13:40,650 DEBUG   SenderThread:171269 [sender.py:send_request():405] send_request: summary_record
+2025-01-08 16:13:40,651 INFO    SenderThread:171269 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2025-01-08 16:13:41,394 INFO    wandb-upload_0:171269 [upload_job.py:push():130] Uploaded file /tmp/tmp53ziwbghwandb/832hur9l-media/images/gendata_distribution_dim_4_66dd3e4997fde8f0a745.png
+2025-01-08 16:13:41,457 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: partial_history
+2025-01-08 16:13:41,459 DEBUG   SenderThread:171269 [sender.py:send():378] send: files
+2025-01-08 16:13:41,460 INFO    SenderThread:171269 [sender.py:_save_file():1389] saving file media/images/exactdata_distribution_dim_5_65a59a27c5304dd99192.png with policy now
+2025-01-08 16:13:41,460 DEBUG   SenderThread:171269 [sender.py:send():378] send: history
+2025-01-08 16:13:41,461 DEBUG   SenderThread:171269 [sender.py:send_request():405] send_request: summary_record
+2025-01-08 16:13:41,463 INFO    SenderThread:171269 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2025-01-08 16:13:41,495 INFO    Thread-12 :171269 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/files/wandb-summary.json
+2025-01-08 16:13:41,495 INFO    Thread-12 :171269 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/files/media/images/gendata_distribution_dim_4_66dd3e4997fde8f0a745.png
+2025-01-08 16:13:41,496 INFO    Thread-12 :171269 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/files/media/images/exactdata_distribution_dim_5_65a59a27c5304dd99192.png
+2025-01-08 16:13:41,496 INFO    Thread-12 :171269 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/files/media/images
+2025-01-08 16:13:42,198 INFO    wandb-upload_1:171269 [upload_job.py:push():130] Uploaded file /tmp/tmp53ziwbghwandb/7a86jctn-media/images/exactdata_distribution_dim_5_65a59a27c5304dd99192.png
+2025-01-08 16:13:42,275 INFO    wandb-upload_0:171269 [upload_job.py:push():130] Uploaded file /tmp/tmp53ziwbghwandb/yeba6fwp-media/images/gendata_distribution_dim_4_66dd3e4997fde8f0a745.png
+2025-01-08 16:13:42,495 INFO    Thread-12 :171269 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/files/output.log
+2025-01-08 16:13:43,006 INFO    wandb-upload_2:171269 [upload_job.py:push():130] Uploaded file /tmp/tmp53ziwbghwandb/wb4ylg8x-media/images/exactdata_distribution_dim_5_65a59a27c5304dd99192.png
+2025-01-08 16:13:43,464 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: status_report
+2025-01-08 16:13:48,467 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: status_report
+2025-01-08 16:13:50,524 DEBUG   SenderThread:171269 [sender.py:send():378] send: stats
+2025-01-08 16:13:51,483 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: stop_status
+2025-01-08 16:13:51,484 DEBUG   SenderThread:171269 [sender.py:send_request():405] send_request: stop_status
+2025-01-08 16:13:53,805 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: status_report
+2025-01-08 16:13:58,807 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: status_report
+2025-01-08 16:14:03,809 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: status_report
+2025-01-08 16:14:06,483 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: stop_status
+2025-01-08 16:14:06,484 DEBUG   SenderThread:171269 [sender.py:send_request():405] send_request: stop_status
+2025-01-08 16:14:08,840 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: status_report
+2025-01-08 16:14:13,842 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: status_report
+2025-01-08 16:14:18,844 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: status_report
+2025-01-08 16:14:19,493 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: partial_history
+2025-01-08 16:14:19,495 DEBUG   SenderThread:171269 [sender.py:send():378] send: history
+2025-01-08 16:14:19,495 DEBUG   SenderThread:171269 [sender.py:send_request():405] send_request: summary_record
+2025-01-08 16:14:19,501 INFO    SenderThread:171269 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2025-01-08 16:14:19,503 DEBUG   SenderThread:171269 [sender.py:send():378] send: exit
+2025-01-08 16:14:19,503 INFO    SenderThread:171269 [sender.py:send_exit():585] handling exit code: 0
+2025-01-08 16:14:19,503 INFO    SenderThread:171269 [sender.py:send_exit():587] handling runtime: 119
+2025-01-08 16:14:19,503 INFO    SenderThread:171269 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2025-01-08 16:14:19,504 INFO    SenderThread:171269 [sender.py:send_exit():593] send defer
+2025-01-08 16:14:19,504 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: defer
+2025-01-08 16:14:19,504 INFO    HandlerThread:171269 [handler.py:handle_request_defer():184] handle defer: 0
+2025-01-08 16:14:19,505 DEBUG   SenderThread:171269 [sender.py:send_request():405] send_request: defer
+2025-01-08 16:14:19,505 INFO    SenderThread:171269 [sender.py:send_request_defer():609] handle sender defer: 0
+2025-01-08 16:14:19,505 INFO    SenderThread:171269 [sender.py:transition_state():613] send defer: 1
+2025-01-08 16:14:19,505 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: defer
+2025-01-08 16:14:19,505 INFO    HandlerThread:171269 [handler.py:handle_request_defer():184] handle defer: 1
+2025-01-08 16:14:19,505 DEBUG   SenderThread:171269 [sender.py:send_request():405] send_request: defer
+2025-01-08 16:14:19,506 INFO    SenderThread:171269 [sender.py:send_request_defer():609] handle sender defer: 1
+2025-01-08 16:14:19,506 INFO    SenderThread:171269 [sender.py:transition_state():613] send defer: 2
+2025-01-08 16:14:19,506 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: defer
+2025-01-08 16:14:19,506 INFO    HandlerThread:171269 [handler.py:handle_request_defer():184] handle defer: 2
+2025-01-08 16:14:19,506 INFO    HandlerThread:171269 [system_monitor.py:finish():203] Stopping system monitor
+2025-01-08 16:14:19,507 INFO    HandlerThread:171269 [interfaces.py:finish():200] Joined cpu monitor
+2025-01-08 16:14:19,508 DEBUG   SystemMonitor:171269 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2025-01-08 16:14:19,508 DEBUG   SystemMonitor:171269 [system_monitor.py:_start():183] Publishing last batch of metrics
+2025-01-08 16:14:19,510 INFO    HandlerThread:171269 [interfaces.py:finish():200] Joined disk monitor
+2025-01-08 16:14:19,520 INFO    Thread-12 :171269 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/files/wandb-summary.json
+2025-01-08 16:14:19,582 INFO    HandlerThread:171269 [interfaces.py:finish():200] Joined gpu monitor
+2025-01-08 16:14:19,583 INFO    HandlerThread:171269 [interfaces.py:finish():200] Joined memory monitor
+2025-01-08 16:14:19,583 INFO    HandlerThread:171269 [interfaces.py:finish():200] Joined network monitor
+2025-01-08 16:14:19,583 DEBUG   SenderThread:171269 [sender.py:send_request():405] send_request: defer
+2025-01-08 16:14:19,584 INFO    SenderThread:171269 [sender.py:send_request_defer():609] handle sender defer: 2
+2025-01-08 16:14:19,584 INFO    SenderThread:171269 [sender.py:transition_state():613] send defer: 3
+2025-01-08 16:14:19,584 DEBUG   SenderThread:171269 [sender.py:send():378] send: stats
+2025-01-08 16:14:19,585 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: defer
+2025-01-08 16:14:19,585 INFO    HandlerThread:171269 [handler.py:handle_request_defer():184] handle defer: 3
+2025-01-08 16:14:19,585 DEBUG   SenderThread:171269 [sender.py:send_request():405] send_request: defer
+2025-01-08 16:14:19,585 INFO    SenderThread:171269 [sender.py:send_request_defer():609] handle sender defer: 3
+2025-01-08 16:14:19,585 INFO    SenderThread:171269 [sender.py:transition_state():613] send defer: 4
+2025-01-08 16:14:19,585 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: defer
+2025-01-08 16:14:19,586 INFO    HandlerThread:171269 [handler.py:handle_request_defer():184] handle defer: 4
+2025-01-08 16:14:19,586 DEBUG   SenderThread:171269 [sender.py:send_request():405] send_request: defer
+2025-01-08 16:14:19,586 INFO    SenderThread:171269 [sender.py:send_request_defer():609] handle sender defer: 4
+2025-01-08 16:14:19,586 INFO    SenderThread:171269 [sender.py:transition_state():613] send defer: 5
+2025-01-08 16:14:19,586 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: defer
+2025-01-08 16:14:19,587 INFO    HandlerThread:171269 [handler.py:handle_request_defer():184] handle defer: 5
+2025-01-08 16:14:19,587 DEBUG   SenderThread:171269 [sender.py:send():378] send: summary
+2025-01-08 16:14:19,588 INFO    SenderThread:171269 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2025-01-08 16:14:19,588 DEBUG   SenderThread:171269 [sender.py:send_request():405] send_request: defer
+2025-01-08 16:14:19,588 INFO    SenderThread:171269 [sender.py:send_request_defer():609] handle sender defer: 5
+2025-01-08 16:14:19,588 INFO    SenderThread:171269 [sender.py:transition_state():613] send defer: 6
+2025-01-08 16:14:19,589 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: defer
+2025-01-08 16:14:19,589 INFO    HandlerThread:171269 [handler.py:handle_request_defer():184] handle defer: 6
+2025-01-08 16:14:19,589 DEBUG   SenderThread:171269 [sender.py:send_request():405] send_request: defer
+2025-01-08 16:14:19,589 INFO    SenderThread:171269 [sender.py:send_request_defer():609] handle sender defer: 6
+2025-01-08 16:14:19,589 INFO    SenderThread:171269 [sender.py:transition_state():613] send defer: 7
+2025-01-08 16:14:19,590 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: status_report
+2025-01-08 16:14:19,590 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: defer
+2025-01-08 16:14:19,590 INFO    HandlerThread:171269 [handler.py:handle_request_defer():184] handle defer: 7
+2025-01-08 16:14:19,591 DEBUG   SenderThread:171269 [sender.py:send_request():405] send_request: defer
+2025-01-08 16:14:19,591 INFO    SenderThread:171269 [sender.py:send_request_defer():609] handle sender defer: 7
+2025-01-08 16:14:20,425 INFO    SenderThread:171269 [sender.py:transition_state():613] send defer: 8
+2025-01-08 16:14:20,426 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: defer
+2025-01-08 16:14:20,426 INFO    HandlerThread:171269 [handler.py:handle_request_defer():184] handle defer: 8
+2025-01-08 16:14:20,427 DEBUG   SenderThread:171269 [sender.py:send_request():405] send_request: defer
+2025-01-08 16:14:20,427 INFO    SenderThread:171269 [sender.py:send_request_defer():609] handle sender defer: 8
+2025-01-08 16:14:20,427 INFO    SenderThread:171269 [job_builder.py:build():432] Attempting to build job artifact
+2025-01-08 16:14:20,428 INFO    SenderThread:171269 [job_builder.py:_get_source_type():576] no source found
+2025-01-08 16:14:20,429 INFO    SenderThread:171269 [sender.py:transition_state():613] send defer: 9
+2025-01-08 16:14:20,429 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: defer
+2025-01-08 16:14:20,429 INFO    HandlerThread:171269 [handler.py:handle_request_defer():184] handle defer: 9
+2025-01-08 16:14:20,430 DEBUG   SenderThread:171269 [sender.py:send_request():405] send_request: defer
+2025-01-08 16:14:20,430 INFO    SenderThread:171269 [sender.py:send_request_defer():609] handle sender defer: 9
+2025-01-08 16:14:20,430 INFO    SenderThread:171269 [dir_watcher.py:finish():358] shutting down directory watcher
+2025-01-08 16:14:20,502 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-08 16:14:20,521 INFO    Thread-12 :171269 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/files/output.log
+2025-01-08 16:14:20,522 INFO    SenderThread:171269 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/files/wandb-summary.json
+2025-01-08 16:14:20,522 INFO    SenderThread:171269 [dir_watcher.py:finish():388] scan: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/files
+2025-01-08 16:14:20,523 INFO    SenderThread:171269 [dir_watcher.py:finish():402] scan save: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/files/config.yaml config.yaml
+2025-01-08 16:14:20,523 INFO    SenderThread:171269 [dir_watcher.py:finish():402] scan save: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/files/conda-environment.yaml conda-environment.yaml
+2025-01-08 16:14:20,523 INFO    SenderThread:171269 [dir_watcher.py:finish():402] scan save: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/files/requirements.txt requirements.txt
+2025-01-08 16:14:20,523 INFO    SenderThread:171269 [dir_watcher.py:finish():402] scan save: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/files/wandb-summary.json wandb-summary.json
+2025-01-08 16:14:20,524 INFO    SenderThread:171269 [dir_watcher.py:finish():402] scan save: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/files/output.log output.log
+2025-01-08 16:14:20,524 INFO    SenderThread:171269 [dir_watcher.py:finish():402] scan save: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/files/wandb-metadata.json wandb-metadata.json
+2025-01-08 16:14:20,530 INFO    SenderThread:171269 [dir_watcher.py:finish():402] scan save: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/files/media/images/Image_diffusion_2_d3491e83af8f56cf7aff.png media/images/Image_diffusion_2_d3491e83af8f56cf7aff.png
+2025-01-08 16:14:20,530 INFO    SenderThread:171269 [dir_watcher.py:finish():402] scan save: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/files/media/images/gendata_distribution_dim_4_66dd3e4997fde8f0a745.png media/images/gendata_distribution_dim_4_66dd3e4997fde8f0a745.png
+2025-01-08 16:14:20,530 INFO    SenderThread:171269 [dir_watcher.py:finish():402] scan save: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/files/media/images/1ddata_plot_1_0_6c7a89e717c8a8a5fb3a.png media/images/1ddata_plot_1_0_6c7a89e717c8a8a5fb3a.png
+2025-01-08 16:14:20,531 INFO    SenderThread:171269 [dir_watcher.py:finish():402] scan save: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/files/media/images/Image_drift_1_1a4cce5b2cf814d341fa.png media/images/Image_drift_1_1a4cce5b2cf814d341fa.png
+2025-01-08 16:14:20,531 INFO    SenderThread:171269 [dir_watcher.py:finish():402] scan save: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/files/media/images/exactdata_distribution_dim_5_65a59a27c5304dd99192.png media/images/exactdata_distribution_dim_5_65a59a27c5304dd99192.png
+2025-01-08 16:14:20,531 INFO    SenderThread:171269 [dir_watcher.py:finish():402] scan save: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/files/media/images/orbits_3_412769b1548b45572efe.png media/images/orbits_3_412769b1548b45572efe.png
+2025-01-08 16:14:20,531 INFO    SenderThread:171269 [sender.py:transition_state():613] send defer: 10
+2025-01-08 16:14:20,531 DEBUG   SenderThread:171269 [sender.py:send_request():405] send_request: poll_exit
+2025-01-08 16:14:20,547 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: defer
+2025-01-08 16:14:20,547 INFO    HandlerThread:171269 [handler.py:handle_request_defer():184] handle defer: 10
+2025-01-08 16:14:20,548 DEBUG   SenderThread:171269 [sender.py:send_request():405] send_request: defer
+2025-01-08 16:14:20,548 INFO    SenderThread:171269 [sender.py:send_request_defer():609] handle sender defer: 10
+2025-01-08 16:14:20,548 INFO    SenderThread:171269 [file_pusher.py:finish():169] shutting down file pusher
+2025-01-08 16:14:21,215 INFO    wandb-upload_1:171269 [upload_job.py:push():130] Uploaded file /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/files/config.yaml
+2025-01-08 16:14:21,245 INFO    wandb-upload_0:171269 [upload_job.py:push():130] Uploaded file /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/files/conda-environment.yaml
+2025-01-08 16:14:21,503 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-08 16:14:21,504 DEBUG   SenderThread:171269 [sender.py:send_request():405] send_request: poll_exit
+2025-01-08 16:14:21,751 INFO    wandb-upload_3:171269 [upload_job.py:push():130] Uploaded file /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/files/wandb-summary.json
+2025-01-08 16:14:21,761 INFO    wandb-upload_4:171269 [upload_job.py:push():130] Uploaded file /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/files/output.log
+2025-01-08 16:14:21,773 INFO    wandb-upload_2:171269 [upload_job.py:push():130] Uploaded file /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/files/requirements.txt
+2025-01-08 16:14:21,974 INFO    Thread-11 (_thread_body):171269 [sender.py:transition_state():613] send defer: 11
+2025-01-08 16:14:21,975 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: defer
+2025-01-08 16:14:21,975 INFO    HandlerThread:171269 [handler.py:handle_request_defer():184] handle defer: 11
+2025-01-08 16:14:21,976 DEBUG   SenderThread:171269 [sender.py:send_request():405] send_request: defer
+2025-01-08 16:14:21,976 INFO    SenderThread:171269 [sender.py:send_request_defer():609] handle sender defer: 11
+2025-01-08 16:14:21,976 INFO    SenderThread:171269 [file_pusher.py:join():175] waiting for file pusher
+2025-01-08 16:14:21,979 INFO    SenderThread:171269 [sender.py:transition_state():613] send defer: 12
+2025-01-08 16:14:21,979 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: defer
+2025-01-08 16:14:21,979 INFO    HandlerThread:171269 [handler.py:handle_request_defer():184] handle defer: 12
+2025-01-08 16:14:21,980 DEBUG   SenderThread:171269 [sender.py:send_request():405] send_request: defer
+2025-01-08 16:14:21,980 INFO    SenderThread:171269 [sender.py:send_request_defer():609] handle sender defer: 12
+2025-01-08 16:14:21,980 INFO    SenderThread:171269 [file_stream.py:finish():601] file stream finish called
+2025-01-08 16:14:22,505 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-08 16:14:23,267 INFO    SenderThread:171269 [file_stream.py:finish():605] file stream finish is done
+2025-01-08 16:14:23,267 INFO    SenderThread:171269 [sender.py:transition_state():613] send defer: 13
+2025-01-08 16:14:23,268 DEBUG   SenderThread:171269 [sender.py:send_request():405] send_request: poll_exit
+2025-01-08 16:14:23,268 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: defer
+2025-01-08 16:14:23,268 INFO    HandlerThread:171269 [handler.py:handle_request_defer():184] handle defer: 13
+2025-01-08 16:14:23,269 DEBUG   SenderThread:171269 [sender.py:send_request():405] send_request: defer
+2025-01-08 16:14:23,269 INFO    SenderThread:171269 [sender.py:send_request_defer():609] handle sender defer: 13
+2025-01-08 16:14:23,269 INFO    SenderThread:171269 [sender.py:transition_state():613] send defer: 14
+2025-01-08 16:14:23,270 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: defer
+2025-01-08 16:14:23,270 INFO    HandlerThread:171269 [handler.py:handle_request_defer():184] handle defer: 14
+2025-01-08 16:14:23,271 DEBUG   SenderThread:171269 [sender.py:send():378] send: final
+2025-01-08 16:14:23,271 DEBUG   SenderThread:171269 [sender.py:send():378] send: footer
+2025-01-08 16:14:23,271 DEBUG   SenderThread:171269 [sender.py:send_request():405] send_request: defer
+2025-01-08 16:14:23,271 INFO    SenderThread:171269 [sender.py:send_request_defer():609] handle sender defer: 14
+2025-01-08 16:14:23,273 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-08 16:14:23,273 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: poll_exit
+2025-01-08 16:14:23,274 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: server_info
+2025-01-08 16:14:23,274 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: get_summary
+2025-01-08 16:14:23,274 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: sampled_history
+2025-01-08 16:14:23,275 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: internal_messages
+2025-01-08 16:14:23,276 DEBUG   SenderThread:171269 [sender.py:send_request():405] send_request: poll_exit
+2025-01-08 16:14:23,276 DEBUG   SenderThread:171269 [sender.py:send_request():405] send_request: poll_exit
+2025-01-08 16:14:23,277 DEBUG   SenderThread:171269 [sender.py:send_request():405] send_request: server_info
+2025-01-08 16:14:23,602 INFO    MainThread:171269 [wandb_run.py:_footer_history_summary_info():3994] rendering history
+2025-01-08 16:14:23,603 INFO    MainThread:171269 [wandb_run.py:_footer_history_summary_info():4026] rendering summary
+2025-01-08 16:14:23,603 INFO    MainThread:171269 [wandb_run.py:_footer_sync_info():3953] logging synced files
+2025-01-08 16:14:23,603 DEBUG   HandlerThread:171269 [handler.py:handle_request():158] handle_request: shutdown
+2025-01-08 16:14:23,604 INFO    HandlerThread:171269 [handler.py:finish():882] shutting down handler
+2025-01-08 16:14:24,276 INFO    WriterThread:171269 [datastore.py:close():296] close: /home/ubuntu/myproject/wcr_neural_kan/wandb/run-20250108_161218-atmm1rhq/run-atmm1rhq.wandb
+2025-01-08 16:14:24,602 INFO    SenderThread:171269 [sender.py:finish():1545] shutting down sender
+2025-01-08 16:14:24,602 INFO    SenderThread:171269 [file_pusher.py:finish():169] shutting down file pusher
+2025-01-08 16:14:24,602 INFO    SenderThread:171269 [file_pusher.py:join():175] waiting for file pusher

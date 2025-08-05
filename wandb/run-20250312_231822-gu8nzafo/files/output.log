@@ -1,0 +1,10 @@
+cfg_nn:{'dim': 1, 'widthk': 50, 'depthk': 1, 'grid': 3, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'DNN0', 'depth': 5, 'width': 100}
+data:  torch.Size([3, 20000, 1]) tensor(2.1477, device='cuda:0') tensor(-2.0175, device='cuda:0')
+Traceback (most recent call last):
+  File "/home/ubuntu/myproject/wcr_neural_kan/main_pl.py", line 136, in <module>
+    main(args.config_file)
+  File "/home/ubuntu/myproject/wcr_neural_kan/main_pl.py", line 69, in main
+    net_drift , net_diffusion = net_select(cfg_nn)
+  File "/home/ubuntu/myproject/wcr_neural_kan/model/net.py", line 26, in net_select
+    net_diffusion = constant_output()
+TypeError: constant_output.__init__() takes 0 positional arguments but 1 was given

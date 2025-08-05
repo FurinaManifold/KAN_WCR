@@ -1,0 +1,158 @@
+
+cfg_nn:{'dim': 2, 'widthk': 30, 'depthk': 2, 'grid': 3, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'KAN', 'width': 100, 'depth': 5}
+data:  torch.Size([11, 50000, 2]) tensor(2.3121, device='cuda:0') tensor(-2.3242, device='cuda:0')
+'sampleTestFunc_all' took 0.035444 s
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 8.2 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+8.2 K     Trainable params
+0         Non-trainable params
+8.2 K     Total params
+0.033     Total estimated model params size (MB)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 399: 100%|██████████| 1/1 [00:00<00:00,  3.82it/s, v_num=jyj7, loss_step=0.049, loss_epoch=0.0557, val_residual=0.0475, drift_error=0.113, diffusion_error=0.000, val_loss=0.113]
+
+
+
+Epoch 429: 100%|██████████| 1/1 [00:00<00:00,  3.82it/s, v_num=jyj7, loss_step=0.0488, loss_epoch=0.0507, val_residual=0.0476, drift_error=0.114, diffusion_error=0.000, val_loss=0.114]
+
+
+
+
+
+
+
+
+
+
+Epoch 509: 100%|██████████| 1/1 [00:00<00:00,  3.82it/s, v_num=jyj7, loss_step=0.053, loss_epoch=0.0474, val_residual=0.0469, drift_error=0.119, diffusion_error=0.000, val_loss=0.119]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 829: 100%|██████████| 1/1 [00:00<00:00,  3.82it/s, v_num=jyj7, loss_step=0.0505, loss_epoch=0.0504, val_residual=0.046, drift_error=0.129, diffusion_error=0.000, val_loss=0.129]
+
+
+
+Epoch 859: 100%|██████████| 1/1 [00:00<00:00,  3.82it/s, v_num=jyj7, loss_step=0.0491, loss_epoch=0.0494, val_residual=0.0459, drift_error=0.131, diffusion_error=0.000, val_loss=0.131]
+
+
+
+Epoch 889: 100%|██████████| 1/1 [00:00<00:00,  3.82it/s, v_num=jyj7, loss_step=0.0519, loss_epoch=0.0463, val_residual=0.0462, drift_error=0.131, diffusion_error=0.000, val_loss=0.131]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 998: 100%|██████████| 1/1 [00:00<00:00,  9.17it/s, v_num=jyj7, loss_step=0.0503, loss_epoch=0.0503, val_residual=0.0464, drift_error=0.135, diffusion_error=0.000, val_loss=0.135]
+Epoch 999: 100%|██████████| 1/1 [00:00<00:00,  2.65it/s, v_num=jyj7, loss_step=0.052, loss_epoch=0.052, val_residual=0.0461, drift_error=0.134, diffusion_error=0.000, val_loss=0.134]
+save model done

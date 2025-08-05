@@ -1,0 +1,88 @@
+
+cfg_nn:{'dim': 2, 'widthk': 30, 'depthk': 2, 'grid': 1, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'KAN', 'width': 100, 'depth': 5}
+data:  torch.Size([11, 30000, 2]) tensor(1.6137, device='cuda:0') tensor(-1.8304, device='cuda:0')
+'sampleTestFunc_all' took 0.017933 s
+The model directory exists. Overwrite? True
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+  | Name          | Type    | Params
+------------------------------------------
+0 | model         | Model   | 6.1 K
+1 | criterion     | MSELoss | 0
+2 | criterion_val | MSELoss | 0
+------------------------------------------
+6.1 K     Trainable params
+0         Non-trainable params
+6.1 K     Total params
+0.024     Total estimated model params size (MB)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 309: 100%|██████████| 1/1 [00:00<00:00,  8.27it/s, v_num=u6aw, loss_step=0.130, loss_epoch=0.141, val_residual=0.129, drift_error=0.275, diffusion_error=0.000, val_loss=0.275]
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 499: 100%|██████████| 1/1 [00:00<00:00,  8.23it/s, v_num=u6aw, loss_step=0.128, loss_epoch=0.121, val_residual=0.113, drift_error=0.297, diffusion_error=0.000, val_loss=0.297]
+
+Epoch 519: 100%|██████████| 1/1 [00:00<00:00,  8.30it/s, v_num=u6aw, loss_step=0.115, loss_epoch=0.123, val_residual=0.111, drift_error=0.295, diffusion_error=0.000, val_loss=0.295]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 769: 100%|██████████| 1/1 [00:00<00:00,  8.25it/s, v_num=u6aw, loss_step=0.0948, loss_epoch=0.103, val_residual=0.0998, drift_error=0.299, diffusion_error=0.000, val_loss=0.299]
+
+
+
+Epoch 829: 100%|██████████| 1/1 [00:00<00:00,  8.30it/s, v_num=u6aw, loss_step=0.106, loss_epoch=0.103, val_residual=0.0968, drift_error=0.292, diffusion_error=0.000, val_loss=0.292]
+
+
+
+
+
+
+
+
+
+
+Epoch 999: 100%|██████████| 1/1 [00:00<00:00,  8.28it/s, v_num=u6aw, loss_step=0.0957, loss_epoch=0.103, val_residual=0.0934, drift_error=0.292, diffusion_error=0.000, val_loss=0.292]
+Validation DataLoader 0:   0%|          | 0/1 [00:00<?, ?it/s]
+
+`Trainer.fit` stopped: `max_epochs=1000` reached.

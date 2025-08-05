@@ -1,0 +1,12 @@
+
+cfg_nn:{'dim': 1, 'widthk': 50, 'depthk': 1, 'grid': 3, 'activation': 'GeLU', 'lr': 0.01, 'gamma': 0.5, 'step_size': 200, 'weight_decay': 1e-05, 'iter': 2000, 'mode': 'DNN0', 'depth': 5, 'width': 100}
+Traceback (most recent call last):
+  File "/home/ubuntu/myproject/wcr_neural_kan/main_pl.py", line 136, in <module>
+    main(args.config_file)
+  File "/home/ubuntu/myproject/wcr_neural_kan/main_pl.py", line 53, in main
+    data = dataset.get_data(plot_hist=True) # t, sample_num ,dim
+  File "/home/ubuntu/myproject/wcr_neural_kan/data/GenerateData_fun.py", line 63, in get_data
+    data[0, :, :] = self.subSDE(0, self.time_instants[0], self.initialization)  # self.initialization
+  File "/home/ubuntu/myproject/wcr_neural_kan/data/GenerateData_fun.py", line 51, in subSDE
+    print(y.device())
+TypeError: 'torch.device' object is not callable
